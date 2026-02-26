@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aerotur - Keyword Rankings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #111111;
+      --bg-secondary: #1e1e1e;
+      --bg-card: #2a2a2a;
+      --text-primary: #ffffff;
+      --text-secondary: #a0a0a0;
+      --border-color: #3d3d3d;
+      --gradient-naper: linear-gradient(135deg, #ff2f2f 0%, #ef7b16 36%, #8a43e1 70%, #d511fd 100%);
+      --color-orange: #ef7b16;
+      --color-purple: #8a43e1;
+      --color-green: #22c55e;
+      --color-red: #ef4444;
+      --radius: 12px;
+      --spacing: 24px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ─── Header ─── */
+    .header {
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .header-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px var(--spacing);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .header h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .header-domain {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-left: 12px;
+    }
+
+    .header-meta {
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    .gradient-bar {
+      height: 3px;
+      background: var(--gradient-naper);
+      width: 100%;
+    }
+
+    /* ─── Container ─── */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: var(--spacing);
+    }
+
+    /* ─── Scorecards ─── */
+    .scorecards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--spacing);
+      margin-bottom: var(--spacing);
+    }
+
+    .scorecard {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: var(--spacing);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .scorecard::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--gradient-naper);
+    }
+
+    .scorecard-keyword {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .scorecard-position {
+      font-size: 3rem;
+      font-weight: 700;
+      background: var(--gradient-naper);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.1;
+    }
+
+    .scorecard-url {
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      margin-top: 8px;
+      word-break: break-all;
+    }
+
+    .trend {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    .trend-up {
+      color: var(--color-green);
+      background: rgba(34, 197, 94, 0.15);
+    }
+
+    .trend-down {
+      color: var(--color-red);
+      background: rgba(239, 68, 68, 0.15);
+    }
+
+    .trend-neutral {
+      color: var(--text-secondary);
+      background: rgba(160, 160, 160, 0.15);
+    }
+
+    /* ─── Cards ─── */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: var(--spacing);
+      margin-bottom: var(--spacing);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .card-header h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    /* ─── Dropdown ─── */
+    .dropdown {
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 8px 12px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .dropdown:focus {
+      border-color: var(--color-purple);
+    }
+
+    /* ─── Chart ─── */
+    .chart-container {
+      position: relative;
+      height: 350px;
+    }
+
+    /* ─── Table ─── */
+    .table-wrapper {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    th {
+      color: var(--text-secondary);
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    td {
+      font-size: 0.9rem;
+    }
+
+    td a {
+      color: var(--color-orange);
+      text-decoration: none;
+    }
+
+    td a:hover {
+      text-decoration: underline;
+    }
+
+    tr.is-site {
+      background: rgba(138, 67, 225, 0.15);
+    }
+
+    tr.is-site td:first-child {
+      font-weight: 700;
+    }
+
+    /* ─── Footer ─── */
+    .footer {
+      text-align: center;
+      padding: 24px var(--spacing);
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .footer strong {
+      background: var(--gradient-naper);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ─── Loading ─── */
+    .loading {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-secondary);
+    }
+
+    .loading-spinner {
+      width: 40px;
+      height: 40px;
+      border: 3px solid var(--border-color);
+      border-top-color: var(--color-purple);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin: 0 auto 16px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* ─── Empty state ─── */
+    .empty-state {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--text-secondary);
+    }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 640px) {
+      .header-content { flex-direction: column; align-items: flex-start; }
+      .header-domain { margin-left: 0; display: block; }
+      .scorecards { grid-template-columns: 1fr; }
+      .card-header { flex-direction: column; align-items: flex-start; }
+      .chart-container { height: 250px; }
+      .container { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-content">
+      <div>
+        <h1>Keyword Rankings</h1>
+        <span class="header-domain">aerotur.com.br</span>
+      </div>
+      <div class="header-meta">
+        <span id="last-updated">Carregando...</span>
+      </div>
+    </div>
+    <div class="gradient-bar"></div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container" id="app">
+    <div class="loading" id="loading">
+      <div class="loading-spinner"></div>
+      <p>Carregando dados...</p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>Powered by </span>
+    <strong>Naper AI</strong>
+    <span> | Dados: DataForSEO</span>
+  </footer>
+
+  <!-- CHART.JS -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+
+  <script>
+    (async function () {
+      const app = document.getElementById("app");
+      const loadingEl = document.getElementById("loading");
+
+      // ─── Carregar dados ───
+      let data;
+      try {
+        const res = await fetch("./data/rankings.json");
+        data = await res.json();
+      } catch (err) {
+        loadingEl.innerHTML = '<p class="empty-state">Erro ao carregar dados. Verifique se rankings.json existe.</p>';
+        return;
+      }
+
+      if (!data.collections || data.collections.length === 0) {
+        loadingEl.innerHTML = '<p class="empty-state">Nenhum dado coletado ainda. Execute o workflow no GitHub Actions.</p>';
+        // Atualizar header
+        document.getElementById("last-updated").textContent = "Sem dados";
+        return;
+      }
+
+      // ─── Atualizar header ───
+      if (data.lastUpdated) {
+        const d = new Date(data.lastUpdated);
+        document.getElementById("last-updated").textContent =
+          "Atualizado: " + d.toLocaleDateString("pt-BR");
+      }
+
+      // ─── Montar HTML principal ───
+      loadingEl.remove();
+      app.innerHTML = `
+        <section class="scorecards" id="scorecards"></section>
+
+        <section class="card">
+          <div class="card-header">
+            <h2>Evolu\u00e7\u00e3o da Posi\u00e7\u00e3o</h2>
+            <select id="chart-filter" class="dropdown">
+              <option value="all">Todas as keywords</option>
+            </select>
+          </div>
+          <div class="chart-container">
+            <canvas id="ranking-chart"></canvas>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="card-header">
+            <h2>Top 10 Concorrentes</h2>
+            <select id="table-keyword-filter" class="dropdown"></select>
+          </div>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Dom\u00ednio</th>
+                  <th>T\u00edtulo</th>
+                  <th>URL</th>
+                </tr>
+              </thead>
+              <tbody id="competitors-body"></tbody>
+            </table>
+          </div>
+        </section>
+      `;
+
+      // ─── Preencher dropdowns ───
+      var chartFilter = document.getElementById("chart-filter");
+      var tableFilter = document.getElementById("table-keyword-filter");
+
+      data.keywords.forEach(function (kw, i) {
+        chartFilter.appendChild(new Option(kw, kw));
+        tableFilter.appendChild(new Option(kw, kw));
+        if (i === 0) tableFilter.value = kw;
+      });
+
+      // ─── Scorecards ───
+      function renderScorecards() {
+        var container = document.getElementById("scorecards");
+        container.innerHTML = "";
+
+        data.keywords.forEach(function (kw) {
+          var entries = data.collections
+            .filter(function (c) { return c.keyword === kw; })
+            .sort(function (a, b) { return b.date.localeCompare(a.date); });
+
+          var latest = entries[0];
+          var previous = entries[1];
+
+          var position = latest ? latest.sitePosition : 0;
+          var posText = position > 0 ? position + "\u00aa" : "N/R";
+
+          var trendHtml = "";
+          if (latest && previous && previous.sitePosition > 0 && latest.sitePosition > 0) {
+            var diff = previous.sitePosition - latest.sitePosition;
+            if (diff > 0) {
+              trendHtml = '<span class="trend trend-up">&#9650; Subiu ' + diff + " posi\u00e7\u00f5es</span>";
+            } else if (diff < 0) {
+              trendHtml = '<span class="trend trend-down">&#9660; Caiu ' + Math.abs(diff) + " posi\u00e7\u00f5es</span>";
+            } else {
+              trendHtml = '<span class="trend trend-neutral">&#8212; Est\u00e1vel</span>';
+            }
+          }
+
+          var card = document.createElement("div");
+          card.className = "scorecard";
+          card.innerHTML =
+            '<div class="scorecard-keyword">' + kw + "</div>" +
+            '<div class="scorecard-position">' + posText + "</div>" +
+            '<div class="scorecard-url">' + (latest ? latest.siteUrl : "") + "</div>" +
+            trendHtml;
+          container.appendChild(card);
+        });
+      }
+
+      // ─── Gráfico ───
+      var ctx = document.getElementById("ranking-chart").getContext("2d");
+      var colors = ["#ef7b16", "#8a43e1", "#ff2f2f", "#d511fd"];
+      var chart = null;
+
+      function renderChart(filterKeyword) {
+        var keywordsToShow = filterKeyword === "all" ? data.keywords : [filterKeyword];
+
+        var allDates = [];
+        var dateSet = {};
+        data.collections.forEach(function (c) {
+          if (!dateSet[c.date]) {
+            dateSet[c.date] = true;
+            allDates.push(c.date);
+          }
+        });
+        allDates.sort();
+
+        var datasets = keywordsToShow.map(function (kw, i) {
+          var kwEntries = data.collections.filter(function (c) { return c.keyword === kw; });
+          var dateMap = {};
+          kwEntries.forEach(function (e) { dateMap[e.date] = e.sitePosition; });
+
+          return {
+            label: kw,
+            data: allDates.map(function (d) {
+              var val = dateMap[d];
+              return val && val > 0 ? val : null;
+            }),
+            borderColor: colors[i % colors.length],
+            backgroundColor: colors[i % colors.length] + "33",
+            borderWidth: 2,
+            pointRadius: 5,
+            pointHoverRadius: 7,
+            pointBackgroundColor: colors[i % colors.length],
+            tension: 0.3,
+            fill: false,
+            spanGaps: true,
+          };
+        });
+
+        // Formatar labels de data
+        var labels = allDates.map(function (d) {
+          var parts = d.split("-");
+          return parts[2] + "/" + parts[1];
+        });
+
+        if (chart) chart.destroy();
+
+        chart = new Chart(ctx, {
+          type: "line",
+          data: { labels: labels, datasets: datasets },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+              y: {
+                reverse: true,
+                min: 1,
+                ticks: {
+                  stepSize: 1,
+                  color: "#a0a0a0",
+                  font: { family: "Inter" },
+                },
+                grid: { color: "#3d3d3d" },
+                title: {
+                  display: true,
+                  text: "Posi\u00e7\u00e3o (menor = melhor)",
+                  color: "#a0a0a0",
+                  font: { family: "Inter" },
+                },
+              },
+              x: {
+                ticks: {
+                  color: "#a0a0a0",
+                  font: { family: "Inter" },
+                },
+                grid: { color: "#3d3d3d" },
+              },
+            },
+            plugins: {
+              legend: {
+                labels: {
+                  color: "#ffffff",
+                  font: { family: "Inter" },
+                  usePointStyle: true,
+                  pointStyle: "circle",
+                },
+              },
+              tooltip: {
+                backgroundColor: "#2a2a2a",
+                borderColor: "#3d3d3d",
+                borderWidth: 1,
+                titleFont: { family: "Inter" },
+                bodyFont: { family: "Inter" },
+                callbacks: {
+                  label: function (context) {
+                    var pos = context.parsed.y;
+                    return context.dataset.label + ": " + (pos > 0 ? pos + "\u00aa posi\u00e7\u00e3o" : "N\u00e3o encontrado");
+                  },
+                },
+              },
+            },
+          },
+        });
+      }
+
+      // ─── Tabela de concorrentes ───
+      function renderTable(keyword) {
+        var tbody = document.getElementById("competitors-body");
+        tbody.innerHTML = "";
+
+        var entries = data.collections
+          .filter(function (c) { return c.keyword === keyword; })
+          .sort(function (a, b) { return b.date.localeCompare(a.date); });
+
+        if (entries.length === 0) {
+          tbody.innerHTML = '<tr><td colspan="4" class="empty-state">Sem dados para esta keyword</td></tr>';
+          return;
+        }
+
+        var latest = entries[0];
+
+        latest.top10.forEach(function (item) {
+          var tr = document.createElement("tr");
+          var isSite = item.domain && item.domain.indexOf("aerotur.com.br") !== -1;
+          if (isSite) tr.className = "is-site";
+
+          tr.innerHTML =
+            "<td><strong>" + item.position + "</strong></td>" +
+            "<td>" + item.domain + "</td>" +
+            "<td>" + item.title + "</td>" +
+            '<td><a href="' + item.url + '" target="_blank" rel="noopener">' + truncateUrl(item.url) + "</a></td>";
+          tbody.appendChild(tr);
+        });
+      }
+
+      function truncateUrl(url) {
+        if (!url) return "";
+        try {
+          var u = new URL(url);
+          var p = u.pathname.length > 30 ? u.pathname.slice(0, 30) + "..." : u.pathname;
+          return u.hostname + p;
+        } catch (e) {
+          return url.length > 50 ? url.slice(0, 50) + "..." : url;
+        }
+      }
+
+      // ─── Event listeners ───
+      chartFilter.addEventListener("change", function () {
+        renderChart(chartFilter.value);
+      });
+
+      tableFilter.addEventListener("change", function () {
+        renderTable(tableFilter.value);
+      });
+
+      // ─── Render inicial ───
+      renderScorecards();
+      renderChart("all");
+      renderTable(data.keywords[0]);
+    })();
+  </script>
+</body>
+</html>
