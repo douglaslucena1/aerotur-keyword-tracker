@@ -2,16 +2,21 @@ name: Collect Keyword Rankings
 
 on:
   schedule:
-    # Toda segunda-feira às 10:00 UTC = 07:00 BRT
-    - cron: "0 10 * * 1"
-  workflow_dispatch: # Trigger manual para testes
+    # Toda sexta-feira às 10:00 UTC = 07:00 de Brasília
+    - cron: "0 10 * * 5"
+  workflow_dispatch: # coleta manual (para testes)
 
 permissions:
   contents: write
 
+concurrency:
+  group: coleta-do-radar
+  cancel-in-progress: false
+
 jobs:
   collect:
     runs-on: ubuntu-latest
+    timeout-minutes: 70
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4

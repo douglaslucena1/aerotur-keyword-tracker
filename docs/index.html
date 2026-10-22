@@ -1,616 +1,556 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aerotur - Keyword Rankings</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Radar de SEO · Aerotur</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --fundo: #f4f6f9;
+    --cartao: #ffffff;
+    --texto: #0f1b2d;
+    --suave: #5b6b82;
+    --borda: #e3e8ef;
+    --linha: #eef2f6;
+    --marinho: #0d3d60;
+    --marinho-claro: #e8f0f7;
+    --vermelho: #91181b;
+    --top3: #0f7b4d;
+    --top3-fundo: #e3f5ec;
+    --pag1: #136f8a;
+    --pag1-fundo: #e2f2f7;
+    --top20: #9a6a12;
+    --top20-fundo: #fbf1dc;
+    --top100: #475569;
+    --top100-fundo: #eef1f5;
+    --fora: #94a3b8;
+    --sobe: #0f7b4d;
+    --desce: #b42318;
+    --sombra: 0 1px 2px rgba(15, 27, 45, .05), 0 4px 16px rgba(15, 27, 45, .05);
+  }
+  @media (prefers-color-scheme: dark) {
     :root {
-      --bg-primary: #111111;
-      --bg-secondary: #1e1e1e;
-      --bg-card: #2a2a2a;
-      --text-primary: #ffffff;
-      --text-secondary: #a0a0a0;
-      --border-color: #3d3d3d;
-      --gradient-naper: linear-gradient(135deg, #ff2f2f 0%, #ef7b16 36%, #8a43e1 70%, #d511fd 100%);
-      --color-orange: #ef7b16;
-      --color-purple: #8a43e1;
-      --color-green: #22c55e;
-      --color-red: #ef4444;
-      --radius: 12px;
-      --spacing: 24px;
+      --fundo: #0b1220;
+      --cartao: #121b2c;
+      --texto: #e6edf6;
+      --suave: #93a3b8;
+      --borda: #22304a;
+      --linha: #1a2538;
+      --marinho: #7fb4e0;
+      --marinho-claro: #16273d;
+      --top3: #4ad18f;
+      --top3-fundo: #12301f;
+      --pag1: #5cc4e0;
+      --pag1-fundo: #0f2a33;
+      --top20: #e8b75b;
+      --top20-fundo: #33270f;
+      --top100: #b5c2d3;
+      --top100-fundo: #1c2738;
+      --fora: #5b6b82;
+      --sobe: #4ad18f;
+      --desce: #f2836f;
+      --sombra: 0 1px 2px rgba(0, 0, 0, .3);
     }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 14px;
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+  }
+  .numeros { font-variant-numeric: tabular-nums; }
+  .pagina { max-width: 1180px; margin: 0 auto; padding: 0 20px 48px; }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+  /* Topo */
+  header.topo {
+    background: linear-gradient(135deg, #0d3d60 0%, #12507d 60%, #0d3d60 100%);
+    color: #fff;
+    padding: 32px 0 72px;
+  }
+  header.topo .pagina { padding-bottom: 0; }
+  .marca { display: flex; align-items: center; gap: 10px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; font-size: 12px; opacity: .85; }
+  .marca .ponto { width: 8px; height: 8px; border-radius: 50%; background: #e04a4d; box-shadow: 0 0 0 4px rgba(224, 74, 77, .25); }
+  h1 { font-size: 30px; line-height: 1.15; margin: 12px 0 6px; font-weight: 800; letter-spacing: -.01em; }
+  .sub { margin: 0; opacity: .85; font-size: 15px; max-width: 640px; }
+  .selos { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+  .selo { background: rgba(255, 255, 255, .12); border: 1px solid rgba(255, 255, 255, .18); border-radius: 999px; padding: 5px 12px; font-size: 12.5px; }
 
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background-color: var(--bg-primary);
-      color: var(--text-primary);
-      line-height: 1.6;
-      min-height: 100vh;
-    }
+  /* Indicadores */
+  .indicadores { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: -48px; }
+  .indicador { background: var(--cartao); border: 1px solid var(--borda); border-radius: 14px; padding: 16px 18px; box-shadow: var(--sombra); }
+  .indicador .rotulo { color: var(--suave); font-size: 12.5px; font-weight: 500; }
+  .indicador .valor { font-size: 30px; font-weight: 800; margin: 4px 0 2px; letter-spacing: -.02em; }
+  .indicador .valor small { font-size: 14px; color: var(--suave); font-weight: 600; }
+  .indicador .partes { display: flex; gap: 12px; font-size: 12.5px; color: var(--suave); }
+  .indicador .partes b { color: var(--texto); font-weight: 600; }
+  .variacao { font-size: 12px; font-weight: 600; margin-left: 6px; }
+  .variacao.sobe { color: var(--sobe); }
+  .variacao.desce { color: var(--desce); }
 
-    /* ─── Header ─── */
-    .header {
-      background: var(--bg-secondary);
-      border-bottom: 1px solid var(--border-color);
-    }
+  /* Painel */
+  .painel { background: var(--cartao); border: 1px solid var(--borda); border-radius: 14px; margin-top: 18px; box-shadow: var(--sombra); overflow: hidden; }
+  .painel-topo { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; padding: 16px 18px; border-bottom: 1px solid var(--borda); }
+  .painel-topo h2 { font-size: 16px; margin: 0; font-weight: 700; }
+  .controles { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .segmentos { display: inline-flex; background: var(--fundo); border: 1px solid var(--borda); border-radius: 10px; padding: 3px; }
+  .segmentos button { border: 0; background: transparent; color: var(--suave); font: inherit; font-weight: 600; font-size: 12.5px; padding: 6px 12px; border-radius: 7px; cursor: pointer; }
+  .segmentos button[aria-pressed="true"] { background: var(--cartao); color: var(--texto); box-shadow: 0 1px 2px rgba(0, 0, 0, .08); }
+  .busca { border: 1px solid var(--borda); background: var(--fundo); color: var(--texto); border-radius: 10px; padding: 7px 12px; font: inherit; font-size: 13px; width: 180px; }
+  .busca:focus, .segmentos button:focus-visible, .celula:focus-visible { outline: 2px solid var(--marinho); outline-offset: 2px; }
 
-    .header-content {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 20px var(--spacing);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
+  .legenda { display: flex; flex-wrap: wrap; gap: 6px 16px; padding: 10px 18px; border-bottom: 1px solid var(--borda); font-size: 12px; color: var(--suave); }
+  .legenda span { display: inline-flex; align-items: center; gap: 6px; }
+  .legenda i { font-style: normal; }
+  .legenda .pos { min-width: 0; padding: 2px 7px; font-size: 11.5px; }
+  .legenda .exemplo-outra { color: var(--top20); font-size: 12px; }
+  table.capitais { width: 100%; border-collapse: collapse; }
+  .capitais th { text-align: left; font-size: 11.5px; letter-spacing: .05em; text-transform: uppercase; color: var(--suave); font-weight: 600; padding: 10px 18px; background: var(--fundo); border-bottom: 1px solid var(--borda); }
+  .capitais td { padding: 6px 18px; border-bottom: 1px solid var(--linha); vertical-align: middle; }
+  .capitais tr.regiao td { background: var(--marinho-claro); color: var(--marinho); font-weight: 700; font-size: 12px; letter-spacing: .04em; text-transform: uppercase; padding: 7px 18px; }
+  .capitais .cidade { font-weight: 600; white-space: nowrap; }
+  .capitais .cidade span { color: var(--suave); font-weight: 500; margin-left: 6px; font-size: 12px; }
+  .celula { display: flex; align-items: center; gap: 10px; width: 100%; border: 0; background: transparent; color: inherit; font: inherit; padding: 6px 8px; margin: 0 -8px; border-radius: 10px; cursor: pointer; text-align: left; }
+  .celula:hover { background: var(--fundo); }
+  .pos { min-width: 46px; text-align: center; font-weight: 700; font-size: 13px; padding: 4px 8px; border-radius: 8px; }
+  .pos.top3 { background: var(--top3-fundo); color: var(--top3); }
+  .pos.pag1 { background: var(--pag1-fundo); color: var(--pag1); }
+  .pos.top20 { background: var(--top20-fundo); color: var(--top20); }
+  .pos.top100 { background: var(--top100-fundo); color: var(--top100); }
+  .pos.fora { color: var(--fora); font-weight: 600; }
+  .delta { min-width: 44px; font-size: 12px; font-weight: 600; }
+  .delta.sobe { color: var(--sobe); }
+  .delta.desce { color: var(--desce); }
+  .delta.neutro { color: var(--fora); }
+  .spark { flex: 0 0 auto; }
+  .pagina-certa { font-size: 12px; color: var(--suave); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 150px; }
+  .pagina-certa.outra { color: var(--top20); }
+  .vazio { text-align: center; color: var(--suave); padding: 28px; }
 
-    .header h1 {
-      font-size: 1.5rem;
-      font-weight: 700;
-    }
+  /* Detalhe */
+  .fundo-detalhe { position: fixed; inset: 0; background: rgba(8, 15, 28, .45); opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 20; }
+  .fundo-detalhe.aberto { opacity: 1; pointer-events: auto; }
+  .detalhe { position: fixed; top: 0; right: 0; height: 100%; width: min(560px, 100%); background: var(--cartao); border-left: 1px solid var(--borda); transform: translateX(100%); transition: transform .25s ease; z-index: 21; overflow-y: auto; }
+  .detalhe.aberto { transform: none; }
+  .detalhe-topo { position: sticky; top: 0; background: var(--cartao); padding: 18px 20px 14px; border-bottom: 1px solid var(--borda); display: flex; gap: 12px; justify-content: space-between; align-items: flex-start; z-index: 1; }
+  .detalhe-topo .familia { font-size: 11.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--marinho); }
+  .detalhe-topo h3 { margin: 4px 0 0; font-size: 18px; line-height: 1.25; }
+  .fechar { border: 1px solid var(--borda); background: var(--fundo); color: var(--texto); border-radius: 10px; width: 34px; height: 34px; font-size: 18px; cursor: pointer; flex: 0 0 auto; }
+  .detalhe-corpo { padding: 16px 20px 28px; }
+  .resumo { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .resumo div { background: var(--fundo); border-radius: 10px; padding: 10px 12px; }
+  .resumo small { display: block; color: var(--suave); font-size: 11.5px; }
+  .resumo b { font-size: 20px; }
+  .detalhe h4 { margin: 20px 0 8px; font-size: 13px; text-transform: uppercase; letter-spacing: .05em; color: var(--suave); }
+  .grafico { height: 220px; }
+  .url { font-size: 13px; word-break: break-all; }
+  .url a { color: var(--marinho); text-decoration: none; }
+  .url a:hover { text-decoration: underline; }
+  .aviso { background: var(--top20-fundo); color: var(--top20); border-radius: 10px; padding: 10px 12px; font-size: 13px; margin-top: 8px; }
+  .aviso.ok { background: var(--top3-fundo); color: var(--top3); }
+  table.serp { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .serp td { padding: 7px 4px; border-bottom: 1px solid var(--linha); vertical-align: top; }
+  .serp td:first-child { width: 28px; color: var(--suave); font-weight: 600; }
+  .serp .dominio { font-weight: 600; }
+  .serp .titulo { color: var(--suave); font-size: 12.5px; }
+  .serp tr.nossa td { background: var(--marinho-claro); }
+  .serp tr.canal td { background: var(--fundo); }
+  .serp .titulo a { color: inherit; text-decoration: none; }
+  .serp .titulo a:hover { text-decoration: underline; }
+  .etiqueta { display: inline-block; margin-left: 8px; font-size: 10.5px; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; color: var(--marinho); background: var(--cartao); border: 1px solid var(--borda); border-radius: 999px; padding: 1px 7px; vertical-align: 1px; }
+  .etiqueta.canal { color: var(--suave); }
+  .sem-historico { color: var(--suave); background: var(--fundo); border-radius: 10px; padding: 12px; margin: 0; font-size: 13px; }
+  .nossas li { margin-bottom: 4px; }
 
-    .header-domain {
-      color: var(--text-secondary);
-      font-size: 0.9rem;
-      margin-left: 12px;
-    }
+  details.leitura { margin-top: 18px; background: var(--cartao); border: 1px solid var(--borda); border-radius: 14px; padding: 14px 18px; }
+  details.leitura summary { cursor: pointer; font-weight: 600; }
+  details.leitura p, details.leitura li { color: var(--suave); }
+  footer { color: var(--suave); font-size: 12.5px; text-align: center; margin-top: 28px; }
+  footer b { color: var(--texto); }
 
-    .header-meta {
-      color: var(--text-secondary);
-      font-size: 0.85rem;
-    }
-
-    .gradient-bar {
-      height: 3px;
-      background: var(--gradient-naper);
-      width: 100%;
-    }
-
-    /* ─── Container ─── */
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: var(--spacing);
-    }
-
-    /* ─── Scorecards ─── */
-    .scorecards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: var(--spacing);
-      margin-bottom: var(--spacing);
-    }
-
-    .scorecard {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: var(--radius);
-      padding: var(--spacing);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .scorecard::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 3px;
-      background: var(--gradient-naper);
-    }
-
-    .scorecard-keyword {
-      font-size: 0.85rem;
-      color: var(--text-secondary);
-      margin-bottom: 8px;
-      font-weight: 500;
-    }
-
-    .scorecard-position {
-      font-size: 3rem;
-      font-weight: 700;
-      background: var(--gradient-naper);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      line-height: 1.1;
-    }
-
-    .scorecard-url {
-      font-size: 0.75rem;
-      color: var(--text-secondary);
-      margin-top: 8px;
-      word-break: break-all;
-    }
-
-    .trend {
-      display: inline-block;
-      margin-top: 8px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      padding: 2px 8px;
-      border-radius: 4px;
-    }
-
-    .trend-up {
-      color: var(--color-green);
-      background: rgba(34, 197, 94, 0.15);
-    }
-
-    .trend-down {
-      color: var(--color-red);
-      background: rgba(239, 68, 68, 0.15);
-    }
-
-    .trend-neutral {
-      color: var(--text-secondary);
-      background: rgba(160, 160, 160, 0.15);
-    }
-
-    /* ─── Cards ─── */
-    .card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: var(--radius);
-      padding: var(--spacing);
-      margin-bottom: var(--spacing);
-    }
-
-    .card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .card-header h2 {
-      font-size: 1.1rem;
-      font-weight: 600;
-    }
-
-    /* ─── Dropdown ─── */
-    .dropdown {
-      background: var(--bg-secondary);
-      color: var(--text-primary);
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      padding: 8px 12px;
-      font-family: 'Inter', sans-serif;
-      font-size: 0.85rem;
-      cursor: pointer;
-      outline: none;
-    }
-
-    .dropdown:focus {
-      border-color: var(--color-purple);
-    }
-
-    /* ─── Chart ─── */
-    .chart-container {
-      position: relative;
-      height: 350px;
-    }
-
-    /* ─── Table ─── */
-    .table-wrapper {
-      overflow-x: auto;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    th, td {
-      padding: 12px 16px;
-      text-align: left;
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    th {
-      color: var(--text-secondary);
-      font-weight: 600;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    td {
-      font-size: 0.9rem;
-    }
-
-    td a {
-      color: var(--color-orange);
-      text-decoration: none;
-    }
-
-    td a:hover {
-      text-decoration: underline;
-    }
-
-    tr.is-site {
-      background: rgba(138, 67, 225, 0.15);
-    }
-
-    tr.is-site td:first-child {
-      font-weight: 700;
-    }
-
-    /* ─── Footer ─── */
-    .footer {
-      text-align: center;
-      padding: 24px var(--spacing);
-      color: var(--text-secondary);
-      font-size: 0.8rem;
-      border-top: 1px solid var(--border-color);
-    }
-
-    .footer strong {
-      background: var(--gradient-naper);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    /* ─── Loading ─── */
-    .loading {
-      text-align: center;
-      padding: 60px 20px;
-      color: var(--text-secondary);
-    }
-
-    .loading-spinner {
-      width: 40px;
-      height: 40px;
-      border: 3px solid var(--border-color);
-      border-top-color: var(--color-purple);
-      border-radius: 50%;
-      animation: spin 0.8s linear infinite;
-      margin: 0 auto 16px;
-    }
-
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-
-    /* ─── Empty state ─── */
-    .empty-state {
-      text-align: center;
-      padding: 40px 20px;
-      color: var(--text-secondary);
-    }
-
-    /* ─── Responsive ─── */
-    @media (max-width: 640px) {
-      .header-content { flex-direction: column; align-items: flex-start; }
-      .header-domain { margin-left: 0; display: block; }
-      .scorecards { grid-template-columns: 1fr; }
-      .card-header { flex-direction: column; align-items: flex-start; }
-      .chart-container { height: 250px; }
-      .container { padding: 16px; }
-    }
-  </style>
+  .outra-curta { display: none; font-size: 11px; font-weight: 600; color: var(--top20); background: var(--top20-fundo); border-radius: 999px; padding: 1px 8px; }
+  @media (max-width: 900px) {
+    .indicadores { grid-template-columns: repeat(2, 1fr); }
+    .celula .pagina-certa { display: none; }
+    .outra-curta { display: inline-block; }
+  }
+  @media (max-width: 640px) {
+    h1 { font-size: 24px; }
+    .pagina { padding: 0 16px 40px; }
+    .busca { width: 100%; }
+    .controles { width: 100%; }
+    .capitais thead { display: none; }
+    .capitais, .capitais tbody, .capitais tr, .capitais td { display: block; width: 100%; }
+    .capitais tr.cidade-linha { display: grid; grid-template-columns: 1fr 1fr; gap: 0 12px; padding: 10px 16px 12px; border-bottom: 1px solid var(--linha); }
+    .capitais tr.cidade-linha td.cidade { grid-column: 1 / -1; }
+    .capitais td { border: 0; padding: 2px 0; }
+    .capitais td[data-rotulo]::before { content: attr(data-rotulo); display: block; font-size: 10.5px; color: var(--suave); text-transform: uppercase; letter-spacing: .04em; margin-top: 6px; }
+    .celula { margin: 0; padding: 4px 0; gap: 8px; flex-wrap: wrap; }
+    .celula .spark { display: none; }
+    .resumo { grid-template-columns: repeat(3, 1fr); }
+  }
+</style>
 </head>
 <body>
+<header class="topo">
+  <div class="pagina">
+    <div class="marca"><span class="ponto"></span>Aerotur · Radar de SEO</div>
+    <h1>Posição no Google por capital</h1>
+    <p class="sub">As buscas "agência de viagens corporativas em…" e "agência de viagens em…" nas 27 capitais, com a página da Aerotur que aparece em cada uma.</p>
+    <div class="selos" id="selos"></div>
+  </div>
+</header>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="header-content">
-      <div>
-        <h1>Keyword Rankings</h1>
-        <span class="header-domain">aerotur.com.br</span>
-      </div>
-      <div class="header-meta">
-        <span id="last-updated">Carregando...</span>
+<main class="pagina">
+  <section class="indicadores" id="indicadores" aria-label="Resumo da semana"></section>
+
+  <section class="painel">
+    <div class="painel-topo">
+      <h2>Capitais</h2>
+      <div class="controles">
+        <div class="segmentos" role="group" aria-label="Família de busca" id="familias">
+          <button type="button" data-familia="todas" aria-pressed="true">Corporativo e lazer</button>
+          <button type="button" data-familia="corporativo" aria-pressed="false">Corporativo</button>
+          <button type="button" data-familia="lazer" aria-pressed="false">Lazer</button>
+        </div>
+        <input class="busca" id="busca" type="search" placeholder="Buscar capital" aria-label="Buscar capital">
       </div>
     </div>
-    <div class="gradient-bar"></div>
-  </header>
-
-  <!-- MAIN -->
-  <main class="container" id="app">
-    <div class="loading" id="loading">
-      <div class="loading-spinner"></div>
-      <p>Carregando dados...</p>
+    <div class="legenda" aria-label="Legenda das cores">
+      <span><i class="pos top3">1–3</i>top 3</span>
+      <span><i class="pos pag1">4–10</i>1ª página</span>
+      <span><i class="pos top20">11–20</i>2ª página</span>
+      <span><i class="pos top100">21–100</i>até a 10ª página</span>
+      <span><i class="pos fora">—</i>fora do top 100</span>
+      <span><i class="exemplo-outra">/outra-pagina</i>o Google mostra outra página da Aerotur, não a da capital</span>
     </div>
-  </main>
+    <table class="capitais">
+      <thead id="cabecalho"></thead>
+      <tbody id="linhas"><tr><td class="vazio" colspan="3">Carregando…</td></tr></tbody>
+    </table>
+  </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <span>Powered by </span>
-    <strong>Naper AI</strong>
-    <span> | Dados: DataForSEO</span>
+  <details class="leitura">
+    <summary>Como ler este radar</summary>
+    <ul>
+      <li><b>Posição</b>: o lugar da Aerotur entre os resultados orgânicos do Google Brasil (computador), sem anúncios. "—" quer dizer fora dos 100 primeiros.</li>
+      <li><b>Variação</b>: comparada à coleta anterior. Verde subiu, vermelho caiu, "novo" entrou no top 100 e "saiu" deixou o top 100.</li>
+      <li><b>Página</b>: qual página da Aerotur aparece. Quando não é a página da capital, ela vem em destaque: o Google está mostrando outra página no lugar da certa.</li>
+      <li>A coleta é automática, toda sexta-feira às 7h (Brasília), pelo DataForSEO.</li>
+    </ul>
+  </details>
+
+  <footer>
+    Dados: <b>DataForSEO</b> · Google Brasil, computador, top 100 · Feito pela <b>Naper AI</b>
   </footer>
+</main>
 
-  <!-- CHART.JS -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+<div class="fundo-detalhe" id="fundo"></div>
+<aside class="detalhe" id="detalhe" aria-hidden="true" aria-labelledby="detalhe-titulo">
+  <div class="detalhe-topo">
+    <div>
+      <div class="familia" id="detalhe-familia"></div>
+      <h3 id="detalhe-titulo"></h3>
+    </div>
+    <button class="fechar" id="fechar" type="button" aria-label="Fechar">×</button>
+  </div>
+  <div class="detalhe-corpo" id="detalhe-corpo"></div>
+</aside>
 
-  <script>
-    (async function () {
-      const app = document.getElementById("app");
-      const loadingEl = document.getElementById("loading");
+<script>
+(() => {
+  const REGIOES = ["Nordeste", "Sudeste", "Sul", "Centro-Oeste", "Norte"];
+  const FAMILIAS = { corporativo: "Corporativo", lazer: "Lazer" };
+  const estado = { familia: "todas", busca: "" };
+  let dados = null;
+  let grafico = null;
 
-      // ─── Carregar dados ───
-      let data;
-      try {
-        const res = await fetch("./data/rankings.json");
-        data = await res.json();
-      } catch (err) {
-        loadingEl.innerHTML = '<p class="empty-state">Erro ao carregar dados. Verifique se rankings.json existe.</p>';
-        return;
-      }
+  const el = (id) => document.getElementById(id);
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const dataBr = (iso, comAno = true) => {
+    const [a, m, d] = iso.slice(0, 10).split("-");
+    return comAno ? `${d}/${m}/${a}` : `${d}/${m}`;
+  };
+  const normalizar = (url) => String(url || "").replace(/^https?:\/\/(www\.)?/, "").replace(/\/+$/, "").toLowerCase();
+  const semAcento = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 
-      if (!data.collections || data.collections.length === 0) {
-        loadingEl.innerHTML = '<p class="empty-state">Nenhum dado coletado ainda. Execute o workflow no GitHub Actions.</p>';
-        // Atualizar header
-        document.getElementById("last-updated").textContent = "Sem dados";
-        return;
-      }
+  function faixa(pos) {
+    if (!pos) return "fora";
+    if (pos <= 3) return "top3";
+    if (pos <= 10) return "pag1";
+    if (pos <= 20) return "top20";
+    return "top100";
+  }
 
-      // ─── Atualizar header ───
-      if (data.lastUpdated) {
-        const d = new Date(data.lastUpdated);
-        document.getElementById("last-updated").textContent =
-          "Atualizado: " + d.toLocaleDateString("pt-BR");
-      }
+  /** `anterior` undefined = não houve coleta anterior (1ª coleta): sem variação. */
+  function variacao(atual, anterior) {
+    if (anterior === undefined) return { classe: "neutro", texto: "" };
+    if (atual && anterior) {
+      const d = anterior - atual;
+      if (d > 0) return { classe: "sobe", texto: `▲ ${d}` };
+      if (d < 0) return { classe: "desce", texto: `▼ ${-d}` };
+      return { classe: "neutro", texto: "=" };
+    }
+    if (atual && !anterior) return { classe: "sobe", texto: "novo" };
+    if (!atual && anterior) return { classe: "desce", texto: "saiu" };
+    return { classe: "neutro", texto: "" };
+  }
 
-      // ─── Montar HTML principal ───
-      loadingEl.remove();
-      app.innerHTML = `
-        <section class="scorecards" id="scorecards"></section>
-
-        <section class="card">
-          <div class="card-header">
-            <h2>Evolu\u00e7\u00e3o da Posi\u00e7\u00e3o</h2>
-            <select id="chart-filter" class="dropdown">
-              <option value="all">Todas as keywords</option>
-            </select>
-          </div>
-          <div class="chart-container">
-            <canvas id="ranking-chart"></canvas>
-          </div>
-        </section>
-
-        <section class="card">
-          <div class="card-header">
-            <h2>Top 10 Concorrentes</h2>
-            <select id="table-keyword-filter" class="dropdown"></select>
-          </div>
-          <div class="table-wrapper">
-            <table>
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Dom\u00ednio</th>
-                  <th>T\u00edtulo</th>
-                  <th>URL</th>
-                </tr>
-              </thead>
-              <tbody id="competitors-body"></tbody>
-            </table>
-          </div>
-        </section>
-      `;
-
-      // ─── Preencher dropdowns ───
-      var chartFilter = document.getElementById("chart-filter");
-      var tableFilter = document.getElementById("table-keyword-filter");
-
-      data.keywords.forEach(function (kw, i) {
-        chartFilter.appendChild(new Option(kw, kw));
-        tableFilter.appendChild(new Option(kw, kw));
-        if (i === 0) tableFilter.value = kw;
+  /** As coletas em ordem e a série de cada keyword. */
+  function preparar(bruto) {
+    const coletas = [...bruto.coletas].sort((a, b) => a.data.localeCompare(b.data));
+    const serie = {};
+    for (const kw of bruto.keywords) {
+      serie[kw.id] = coletas.map((c) => {
+        const r = c.resultados[kw.id];
+        return r ? { data: c.data, pos: r.pos || null, url: r.url || null, aerotur: r.aerotur || [], coletada: !r.erro } : { data: c.data, pos: null, url: null, aerotur: [], coletada: false };
       });
+    }
+    return { ...bruto, coletas, serie };
+  }
 
-      // ─── Scorecards ───
-      function renderScorecards() {
-        var container = document.getElementById("scorecards");
-        container.innerHTML = "";
+  /** A última coleta que trouxe a keyword e a anterior a ela. */
+  function ultimas(id) {
+    const pontos = dados.serie[id].filter((p) => p.coletada);
+    return { atual: pontos[pontos.length - 1] || null, anterior: pontos[pontos.length - 2] || null, pontos };
+  }
 
-        data.keywords.forEach(function (kw) {
-          var entries = data.collections
-            .filter(function (c) { return c.keyword === kw; })
-            .sort(function (a, b) { return b.date.localeCompare(a.date); });
+  function paginaCerta(kw, url) {
+    return url && normalizar(url) === normalizar(kw.urlAlvo);
+  }
 
-          var latest = entries[0];
-          var previous = entries[1];
+  function sparkline(pontos) {
+    const ultimos = pontos.slice(-12);
+    const w = 84, h = 24, pad = 2;
+    if (ultimos.length < 2) return `<svg class="spark" width="${w}" height="${h}" aria-hidden="true"></svg>`;
+    const maximo = Math.max(10, ...ultimos.map((p) => p.pos || 0));
+    const x = (i) => pad + (i * (w - 2 * pad)) / (ultimos.length - 1);
+    const y = (pos) => pad + ((pos - 1) * (h - 2 * pad)) / Math.max(1, maximo - 1);
+    let caminho = "";
+    let aberto = false;
+    ultimos.forEach((p, i) => {
+      if (p.pos) {
+        caminho += `${aberto ? "L" : "M"}${x(i).toFixed(1)},${y(p.pos).toFixed(1)} `;
+        aberto = true;
+      } else aberto = false;
+    });
+    const ultimo = ultimos[ultimos.length - 1];
+    const ponto = ultimo.pos ? `<circle cx="${x(ultimos.length - 1).toFixed(1)}" cy="${y(ultimo.pos).toFixed(1)}" r="2.2" fill="currentColor"/>` : "";
+    return `<svg class="spark" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-hidden="true" style="color:var(--marinho)"><line x1="0" x2="${w}" y1="${h - 1}" y2="${h - 1}" stroke="var(--linha)"/><path d="${caminho}" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>${ponto}</svg>`;
+  }
 
-          var position = latest ? latest.sitePosition : 0;
-          var posText = position > 0 ? position + "\u00aa" : "N/R";
+  function celula(kw) {
+    const { atual, anterior, pontos } = ultimas(kw.id);
+    const pos = atual?.pos || null;
+    const v = variacao(pos, anterior ? anterior.pos || null : undefined);
+    const certa = paginaCerta(kw, atual?.url);
+    const pagina = !pos ? "" : certa ? "página da capital" : (atual.url || "").replace(/^https?:\/\/(www\.)?aerotur\.com\.br/, "") || "/";
+    if (!atual) {
+      return `<button class="celula" type="button" data-id="${esc(kw.id)}" title="${esc(`${kw.keyword}: aguardando a primeira coleta`)}">
+        <span class="pos fora">·</span><span class="delta neutro">aguardando</span>
+      </button>`;
+    }
+    const titulo = `${kw.keyword}: ${pos ? `${pos}ª posição` : "fora do top 100"}${pos && !certa ? `, com a página ${atual.url}` : ""}`;
+    return `<button class="celula" type="button" data-id="${esc(kw.id)}" title="${esc(titulo)}">
+      <span class="pos ${faixa(pos)} numeros">${pos || "—"}</span>
+      <span class="delta ${v.classe} numeros">${esc(v.texto)}</span>
+      ${sparkline(pontos)}
+      <span class="pagina-certa ${pos && !certa ? "outra" : ""}">${esc(pagina)}</span>
+      ${pos && !certa ? '<span class="outra-curta">outra página</span>' : ""}
+    </button>`;
+  }
 
-          var trendHtml = "";
-          if (latest && previous && previous.sitePosition > 0 && latest.sitePosition > 0) {
-            var diff = previous.sitePosition - latest.sitePosition;
-            if (diff > 0) {
-              trendHtml = '<span class="trend trend-up">&#9650; Subiu ' + diff + " posi\u00e7\u00f5es</span>";
-            } else if (diff < 0) {
-              trendHtml = '<span class="trend trend-down">&#9660; Caiu ' + Math.abs(diff) + " posi\u00e7\u00f5es</span>";
-            } else {
-              trendHtml = '<span class="trend trend-neutral">&#8212; Est\u00e1vel</span>';
-            }
-          }
-
-          var card = document.createElement("div");
-          card.className = "scorecard";
-          card.innerHTML =
-            '<div class="scorecard-keyword">' + kw + "</div>" +
-            '<div class="scorecard-position">' + posText + "</div>" +
-            '<div class="scorecard-url">' + (latest ? latest.siteUrl : "") + "</div>" +
-            trendHtml;
-          container.appendChild(card);
-        });
+  function desenharTabela() {
+    const familias = estado.familia === "todas" ? ["corporativo", "lazer"] : [estado.familia];
+    el("cabecalho").innerHTML = `<tr><th>Capital</th>${familias.map((f) => `<th>${FAMILIAS[f]}</th>`).join("")}</tr>`;
+    const busca = semAcento(estado.busca.trim());
+    const porCidade = new Map();
+    for (const kw of dados.keywords) {
+      if (!porCidade.has(kw.slug)) porCidade.set(kw.slug, { cidade: kw.cidade, uf: kw.uf, regiao: kw.regiao, kws: {} });
+      porCidade.get(kw.slug).kws[kw.familia] = kw;
+    }
+    let html = "";
+    for (const regiao of REGIOES) {
+      const cidades = [...porCidade.values()].filter((c) => c.regiao === regiao && (!busca || semAcento(c.cidade).includes(busca)));
+      if (!cidades.length) continue;
+      html += `<tr class="regiao"><td colspan="${familias.length + 1}">${regiao}</td></tr>`;
+      for (const c of cidades) {
+        html += `<tr class="cidade-linha"><td class="cidade">${esc(c.cidade)}<span>${esc(c.uf)}</span></td>${familias
+          .map((f) => `<td data-rotulo="${FAMILIAS[f]}">${c.kws[f] ? celula(c.kws[f]) : ""}</td>`)
+          .join("")}</tr>`;
       }
+    }
+    el("linhas").innerHTML = html || `<tr><td class="vazio" colspan="${familias.length + 1}">Nenhuma capital com esse nome.</td></tr>`;
+  }
 
-      // ─── Gráfico ───
-      var ctx = document.getElementById("ranking-chart").getContext("2d");
-      var colors = ["#ef7b16", "#8a43e1", "#ff2f2f", "#d511fd"];
-      var chart = null;
+  /** Conta as keywords que passam no filtro. `soComAnterior`: só as que têm coleta anterior (para comparar igual com igual). */
+  function contar(filtro, qual, soComAnterior = false) {
+    const porFamilia = { corporativo: 0, lazer: 0 };
+    for (const kw of dados.keywords) {
+      const u = ultimas(kw.id);
+      if (soComAnterior && !u.anterior) continue;
+      const ponto = u[qual];
+      if (ponto && filtro(kw, ponto)) porFamilia[kw.familia]++;
+    }
+    return porFamilia;
+  }
 
-      function renderChart(filterKeyword) {
-        var keywordsToShow = filterKeyword === "all" ? data.keywords : [filterKeyword];
+  function desenharIndicadores() {
+    const total = dados.keywords.length;
+    const cartoes = [
+      { rotulo: "No top 3", filtro: (kw, u) => u.pos && u.pos <= 3 },
+      { rotulo: "Na 1ª página (top 10)", filtro: (kw, u) => u.pos && u.pos <= 10 },
+      { rotulo: "No top 100", filtro: (kw, u) => !!u.pos },
+      { rotulo: "Com a página certa", filtro: (kw, u) => paginaCerta(kw, u.url) },
+    ];
+    el("indicadores").innerHTML = cartoes
+      .map((c) => {
+        const agora = contar(c.filtro, "atual");
+        const soma = agora.corporativo + agora.lazer;
+        // A variação só aparece quando a maioria das keywords tem coleta anterior, comparando as mesmas keywords.
+        const comAnterior = dados.keywords.filter((kw) => ultimas(kw.id).anterior).length;
+        const temAnterior = comAnterior >= dados.keywords.length / 2;
+        const agoraComparavel = contar(c.filtro, "atual", true);
+        const antes = contar(c.filtro, "anterior", true);
+        const d = agoraComparavel.corporativo + agoraComparavel.lazer - (antes.corporativo + antes.lazer);
+        const v = temAnterior && d ? `<span class="variacao ${d > 0 ? "sobe" : "desce"}">${d > 0 ? "+" : ""}${d}</span>` : "";
+        return `<div class="indicador">
+          <div class="rotulo">${c.rotulo}</div>
+          <div class="valor numeros">${soma}<small> de ${total}</small>${v}</div>
+          <div class="partes"><span>Corporativo <b class="numeros">${agora.corporativo}</b></span><span>Lazer <b class="numeros">${agora.lazer}</b></span></div>
+        </div>`;
+      })
+      .join("");
+  }
 
-        var allDates = [];
-        var dateSet = {};
-        data.collections.forEach(function (c) {
-          if (!dateSet[c.date]) {
-            dateSet[c.date] = true;
-            allDates.push(c.date);
-          }
-        });
-        allDates.sort();
+  function desenharSelos() {
+    const ultima = dados.coletas[dados.coletas.length - 1];
+    const proxima = new Date();
+    proxima.setDate(proxima.getDate() + ((5 - proxima.getDay() + 7) % 7 || 7));
+    el("selos").innerHTML = [
+      ultima ? `Última coleta: ${dataBr(ultima.data)}` : "Sem coletas ainda",
+      `Próxima: sexta, ${dataBr(proxima.toISOString(), false)}`,
+      `${dados.keywords.length} buscas · ${dados.coletas.length} coletas`,
+    ]
+      .map((t) => `<span class="selo">${esc(t)}</span>`)
+      .join("");
+  }
 
-        var datasets = keywordsToShow.map(function (kw, i) {
-          var kwEntries = data.collections.filter(function (c) { return c.keyword === kw; });
-          var dateMap = {};
-          kwEntries.forEach(function (e) { dateMap[e.date] = e.sitePosition; });
-
-          return {
-            label: kw,
-            data: allDates.map(function (d) {
-              var val = dateMap[d];
-              return val && val > 0 ? val : null;
-            }),
-            borderColor: colors[i % colors.length],
-            backgroundColor: colors[i % colors.length] + "33",
-            borderWidth: 2,
-            pointRadius: 5,
-            pointHoverRadius: 7,
-            pointBackgroundColor: colors[i % colors.length],
-            tension: 0.3,
-            fill: false,
-            spanGaps: true,
-          };
-        });
-
-        // Formatar labels de data
-        var labels = allDates.map(function (d) {
-          var parts = d.split("-");
-          return parts[2] + "/" + parts[1];
-        });
-
-        if (chart) chart.destroy();
-
-        chart = new Chart(ctx, {
-          type: "line",
-          data: { labels: labels, datasets: datasets },
-          options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            scales: {
-              y: {
-                reverse: true,
-                min: 1,
-                ticks: {
-                  stepSize: 1,
-                  color: "#a0a0a0",
-                  font: { family: "Inter" },
-                },
-                grid: { color: "#3d3d3d" },
-                title: {
-                  display: true,
-                  text: "Posi\u00e7\u00e3o (menor = melhor)",
-                  color: "#a0a0a0",
-                  font: { family: "Inter" },
-                },
-              },
-              x: {
-                ticks: {
-                  color: "#a0a0a0",
-                  font: { family: "Inter" },
-                },
-                grid: { color: "#3d3d3d" },
-              },
-            },
-            plugins: {
-              legend: {
-                labels: {
-                  color: "#ffffff",
-                  font: { family: "Inter" },
-                  usePointStyle: true,
-                  pointStyle: "circle",
-                },
-              },
-              tooltip: {
-                backgroundColor: "#2a2a2a",
-                borderColor: "#3d3d3d",
-                borderWidth: 1,
-                titleFont: { family: "Inter" },
-                bodyFont: { family: "Inter" },
-                callbacks: {
-                  label: function (context) {
-                    var pos = context.parsed.y;
-                    return context.dataset.label + ": " + (pos > 0 ? pos + "\u00aa posi\u00e7\u00e3o" : "N\u00e3o encontrado");
-                  },
-                },
-              },
-            },
+  function abrir(id) {
+    const kw = dados.keywords.find((k) => k.id === id);
+    if (!kw) return;
+    const { atual, anterior, pontos } = ultimas(id);
+    const posicoes = pontos.map((p) => p.pos).filter(Boolean);
+    const melhor = posicoes.length ? Math.min(...posicoes) : null;
+    const v = variacao(atual?.pos || null, anterior ? anterior.pos || null : undefined);
+    el("detalhe-familia").textContent = `${FAMILIAS[kw.familia]} · ${kw.cidade} (${kw.uf})`;
+    el("detalhe-titulo").textContent = kw.keyword;
+    const serp = dados.serp[id];
+    const certa = paginaCerta(kw, atual?.url);
+    const outras = (atual?.aerotur || []).filter(([, url]) => normalizar(url) !== normalizar(atual?.url));
+    el("detalhe-corpo").innerHTML = `
+      <div class="resumo">
+        <div><small>Posição agora</small><b class="numeros">${atual?.pos || "—"}</b></div>
+        <div><small>Variação</small><b class="numeros" style="color:var(--${v.classe === "sobe" ? "sobe" : v.classe === "desce" ? "desce" : "suave"})">${esc(v.texto || "—")}</b></div>
+        <div><small>Melhor posição</small><b class="numeros">${melhor || "—"}</b></div>
+      </div>
+      <h4>Evolução</h4>
+      ${pontos.length > 1 ? '<div class="grafico"><canvas id="canvas-evolucao"></canvas></div>' : '<p class="sem-historico">O gráfico aparece a partir da segunda coleta (a próxima sexta-feira).</p>'}
+      <h4>Página da Aerotur</h4>
+      <div class="url">${atual?.url ? `<a href="${esc(atual.url)}" target="_blank" rel="noopener">${esc(atual.url)}</a>` : "Nenhuma página da Aerotur no top 100."}</div>
+      ${atual?.pos ? `<div class="aviso ${certa ? "ok" : ""}">${certa ? "É a página desta capital." : `Não é a página desta capital. A página certa é <a href="${esc(kw.urlAlvo)}" target="_blank" rel="noopener">${esc(kw.urlAlvo.replace("https://", ""))}</a>.`}</div>` : `<div class="aviso">A página desta capital é <a href="${esc(kw.urlAlvo)}" target="_blank" rel="noopener">${esc(kw.urlAlvo.replace("https://", ""))}</a>.</div>`}
+      ${outras.length ? `<h4>Outras páginas da Aerotur no top 100</h4><ul class="nossas">${outras.map(([p, url]) => `<li class="url"><b class="numeros">${p}º</b> <a href="${esc(url)}" target="_blank" rel="noopener">${esc(url.replace(/^https?:\/\/(www\.)?/, ""))}</a></li>`).join("")}</ul>` : ""}
+      <h4>Top 10 do Google${serp ? ` em ${dataBr(serp.data)}` : ""}</h4>
+      ${serp && serp.top10.length ? `<table class="serp"><tbody>${serp.top10
+        .map(([p, dominio, url, titulo]) => {
+          const site = /aerotur\.com\.br/.test(dominio);
+          // Outros canais da Aerotur (Instagram, Facebook, LinkedIn…) também contam como presença da marca.
+          const canal = !site && /aerotur/i.test(`${url} ${titulo}`);
+          const etiqueta = site ? '<span class="etiqueta">site da Aerotur</span>' : canal ? '<span class="etiqueta canal">canal da Aerotur</span>' : "";
+          return `<tr class="${site ? "nossa" : canal ? "canal" : ""}"><td class="numeros">${p}</td><td><div class="dominio">${esc(dominio)}${etiqueta}</div><div class="titulo"><a href="${esc(url)}" target="_blank" rel="noopener">${esc(titulo)}</a></div></td></tr>`;
+        })
+        .join("")}</tbody></table>` : '<p class="vazio">Sem dados de concorrentes ainda.</p>'}
+    `;
+    if (grafico) {
+      grafico.destroy();
+      grafico = null;
+    }
+    const canvas = document.getElementById("canvas-evolucao");
+    if (canvas && window.Chart) {
+      const estilo = getComputedStyle(document.documentElement);
+      const cor = estilo.getPropertyValue("--marinho").trim();
+      const grade = estilo.getPropertyValue("--linha").trim();
+      const suave = estilo.getPropertyValue("--suave").trim();
+      const maximo = Math.max(10, ...posicoes) + 2;
+      grafico = new Chart(canvas, {
+        type: "line",
+        data: {
+          labels: pontos.map((p) => dataBr(p.data, false)),
+          datasets: [{ data: pontos.map((p) => p.pos), borderColor: cor, backgroundColor: cor, pointRadius: 3, pointHoverRadius: 5, borderWidth: 2, tension: 0.25, spanGaps: false }],
+        },
+        options: {
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => (c.parsed.y ? `${c.parsed.y}ª posição` : "fora do top 100") } } },
+          scales: {
+            y: { reverse: true, min: 1, max: Math.min(100, maximo), ticks: { color: suave, precision: 0 }, grid: { color: grade } },
+            x: { ticks: { color: suave, maxRotation: 0, autoSkip: true, maxTicksLimit: 8 }, grid: { display: false } },
           },
-        });
-      }
-
-      // ─── Tabela de concorrentes ───
-      function renderTable(keyword) {
-        var tbody = document.getElementById("competitors-body");
-        tbody.innerHTML = "";
-
-        var entries = data.collections
-          .filter(function (c) { return c.keyword === keyword; })
-          .sort(function (a, b) { return b.date.localeCompare(a.date); });
-
-        if (entries.length === 0) {
-          tbody.innerHTML = '<tr><td colspan="4" class="empty-state">Sem dados para esta keyword</td></tr>';
-          return;
-        }
-
-        var latest = entries[0];
-
-        latest.top10.forEach(function (item) {
-          var tr = document.createElement("tr");
-          var isSite = item.domain && item.domain.indexOf("aerotur.com.br") !== -1;
-          if (isSite) tr.className = "is-site";
-
-          tr.innerHTML =
-            "<td><strong>" + item.position + "</strong></td>" +
-            "<td>" + item.domain + "</td>" +
-            "<td>" + item.title + "</td>" +
-            '<td><a href="' + item.url + '" target="_blank" rel="noopener">' + truncateUrl(item.url) + "</a></td>";
-          tbody.appendChild(tr);
-        });
-      }
-
-      function truncateUrl(url) {
-        if (!url) return "";
-        try {
-          var u = new URL(url);
-          var p = u.pathname.length > 30 ? u.pathname.slice(0, 30) + "..." : u.pathname;
-          return u.hostname + p;
-        } catch (e) {
-          return url.length > 50 ? url.slice(0, 50) + "..." : url;
-        }
-      }
-
-      // ─── Event listeners ───
-      chartFilter.addEventListener("change", function () {
-        renderChart(chartFilter.value);
+        },
       });
+    }
+    el("detalhe").classList.add("aberto");
+    el("detalhe").setAttribute("aria-hidden", "false");
+    el("fundo").classList.add("aberto");
+    el("fechar").focus();
+  }
 
-      tableFilter.addEventListener("change", function () {
-        renderTable(tableFilter.value);
-      });
+  function fechar() {
+    el("detalhe").classList.remove("aberto");
+    el("detalhe").setAttribute("aria-hidden", "true");
+    el("fundo").classList.remove("aberto");
+  }
 
-      // ─── Render inicial ───
-      renderScorecards();
-      renderChart("all");
-      renderTable(data.keywords[0]);
-    })();
-  </script>
+  el("familias").addEventListener("click", (e) => {
+    const b = e.target.closest("button[data-familia]");
+    if (!b) return;
+    estado.familia = b.dataset.familia;
+    el("familias").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    desenharTabela();
+  });
+  el("busca").addEventListener("input", (e) => {
+    estado.busca = e.target.value;
+    desenharTabela();
+  });
+  el("linhas").addEventListener("click", (e) => {
+    const b = e.target.closest(".celula");
+    if (b) abrir(b.dataset.id);
+  });
+  el("fechar").addEventListener("click", fechar);
+  el("fundo").addEventListener("click", fechar);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") fechar();
+  });
+
+  fetch("data/rankings.json", { cache: "no-store" })
+    .then((r) => r.json())
+    .then((bruto) => {
+      dados = preparar(bruto);
+      desenharSelos();
+      desenharIndicadores();
+      desenharTabela();
+    })
+    .catch(() => {
+      el("linhas").innerHTML = '<tr><td class="vazio" colspan="3">Não foi possível carregar os dados.</td></tr>';
+    });
+})();
+</script>
 </body>
 </html>
