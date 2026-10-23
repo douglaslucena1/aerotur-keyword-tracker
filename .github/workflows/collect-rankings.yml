@@ -7,9 +7,14 @@ on:
   workflow_dispatch: # coleta manual (para testes)
     inputs:
       posicoes:
-        description: "Posições no Google (DataForSEO, cerca de US$ 0,25)"
+        description: "Posições no Google (DataForSEO, 3 buscas por keyword, cerca de US$ 0,40 por dispositivo)"
         type: boolean
         default: true
+      dispositivos:
+        description: "Dispositivos das posições"
+        type: choice
+        options: ["desktop,mobile", "desktop", "mobile"]
+        default: "desktop,mobile"
       leads:
         description: "Cliques no WhatsApp (GA4, grátis)"
         type: boolean
@@ -25,7 +30,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 70
+    timeout-minutes: 100
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -40,6 +45,7 @@ jobs:
         env:
           DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
           DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          DISPOSITIVOS: ${{ github.event_name == 'workflow_dispatch' && inputs.dispositivos || 'desktop,mobile' }}
         run: node scripts/collect.js
 
       # Roda mesmo se a etapa anterior falhar; nesse caso o job fica vermelho, mas os dados que vieram são salvos.

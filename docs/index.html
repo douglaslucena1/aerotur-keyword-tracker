@@ -176,6 +176,9 @@
   .etiqueta { display: inline-block; margin-left: 8px; font-size: 10.5px; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; color: var(--marinho); background: var(--cartao); border: 1px solid var(--borda); border-radius: 999px; padding: 1px 7px; vertical-align: 1px; }
   .etiqueta.canal { color: var(--suave); }
   .sem-historico { color: var(--suave); background: var(--fundo); border-radius: 10px; padding: 12px; margin: 0; font-size: 13px; }
+  .outro-dispositivo { margin: 10px 0 0; font-size: 13px; color: var(--suave); }
+  .freq { font-style: normal; font-size: 11px; font-weight: 700; color: var(--suave); background: var(--fundo); border: 1px solid var(--borda); border-radius: 999px; padding: 0 6px; line-height: 18px; white-space: nowrap; }
+  .outro-dispositivo b { color: var(--texto); }
   .nossas li { margin-bottom: 4px; }
 
   details.leitura { margin-top: 18px; background: var(--cartao); border: 1px solid var(--borda); border-radius: 14px; padding: 14px 18px; }
@@ -187,7 +190,13 @@
   .outra-curta { display: none; font-size: 11px; font-weight: 600; color: var(--top20); background: var(--top20-fundo); border-radius: 999px; padding: 1px 8px; }
 
   /* Atalhos do topo */
-  .atalhos { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .barra-topo { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; justify-content: space-between; margin-top: 16px; }
+  .dispositivo-topo { display: flex; align-items: center; gap: 10px; font-size: 13px; color: rgba(255, 255, 255, .85); }
+  .segmentos.escuro { background: rgba(255, 255, 255, .08); border-color: rgba(255, 255, 255, .24); }
+  .segmentos.escuro button { color: rgba(255, 255, 255, .85); }
+  .segmentos.escuro button[aria-pressed="true"] { background: #fff; color: #0d3d60; }
+  .segmentos.escuro button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+  .atalhos { display: flex; flex-wrap: wrap; gap: 8px; }
   .atalhos a { color: #fff; text-decoration: none; font-weight: 600; font-size: 13px; padding: 7px 14px; border-radius: 10px; background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .24); }
   .atalhos a:hover { background: rgba(255, 255, 255, .18); }
   .atalhos a:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
@@ -282,10 +291,19 @@
     <h1>Posição no Google e leads do WhatsApp</h1>
     <p class="sub">As buscas "agência de viagens corporativas em…" e "agência de viagens em…" nas 27 capitais, a página da Aerotur que aparece em cada uma e os cliques no WhatsApp que o site gera.</p>
     <div class="selos" id="selos"></div>
-    <nav class="atalhos" aria-label="Seções">
-      <a href="#posicoes">Posições no Google</a>
-      <a href="#leads">Leads do WhatsApp</a>
-    </nav>
+    <div class="barra-topo">
+      <nav class="atalhos" aria-label="Seções">
+        <a href="#posicoes">Posições no Google</a>
+        <a href="#leads">Leads do WhatsApp</a>
+      </nav>
+      <div class="dispositivo-topo">
+        <span id="rotulo-dispositivos">Posições no</span>
+        <div class="segmentos escuro" role="group" aria-labelledby="rotulo-dispositivos" id="dispositivos">
+          <button type="button" data-dispositivo="computador" aria-pressed="true">Computador</button>
+          <button type="button" data-dispositivo="celular" aria-pressed="false">Celular</button>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -308,8 +326,9 @@
       <span><i class="pos top3">1–3</i>top 3</span>
       <span><i class="pos pag1">4–10</i>1ª página</span>
       <span><i class="pos top20">11–20</i>2ª página</span>
-      <span><i class="pos top100">21–100</i>até a 10ª página</span>
-      <span><i class="pos fora">—</i>fora do top 100</span>
+      <span><i class="pos top100">21–50</i>até a 5ª página</span>
+      <span><i class="pos fora">—</i>fora do top 50</span>
+      <span><i class="freq">2/3</i>apareceu em 2 das 3 buscas da coleta</span>
       <span><i class="exemplo-outra">/outra-pagina</i>o Google mostra outra página da Aerotur, não a da capital</span>
     </div>
     <table class="capitais">
@@ -339,9 +358,10 @@
   <details class="leitura">
     <summary>Como ler este radar</summary>
     <ul>
-      <li><b>Posição</b>: o lugar da Aerotur entre os resultados orgânicos do Google no computador, sem anúncios. "—" quer dizer fora dos 100 primeiros.</li>
+      <li><b>Posição</b>: o lugar da Aerotur entre os resultados orgânicos do Google, sem anúncios, no computador ou no celular (escolha no topo da página). "—" quer dizer fora dos 50 primeiros (até 22/10/2026, dos 100 primeiros). O celular é medido desde 23/10/2026.</li>
+      <li><b>Três buscas por coleta</b>: o Google alterna entre versões diferentes da página de resultados para a mesma busca, então cada busca é feita 3 vezes. A posição mostrada é a melhor das 3, e "2/3" quer dizer que a Aerotur apareceu em 2 delas.</li>
       <li><b>De onde a busca é feita</b>: da própria capital, como alguém de lá vê (Salvador para "em Salvador", e assim por diante). Buscas com nome de cidade mudam muito conforme o lugar de quem busca. Antes de 22/10/2026 a busca era feita para o Brasil em geral, e as posições daquela época não entram nas variações.</li>
-      <li><b>Variação</b>: comparada à coleta anterior. Verde subiu, vermelho caiu, "novo" entrou no top 100 e "saiu" deixou o top 100.</li>
+      <li><b>Variação</b>: comparada à coleta anterior. Verde subiu, vermelho caiu, "novo" entrou no top 50 e "saiu" deixou o top 50. Só compara coletas medidas do mesmo jeito.</li>
       <li><b>Página</b>: qual página da Aerotur aparece. Quando não é a página da capital, ela vem em destaque: o Google está mostrando outra página no lugar da certa.</li>
       <li><b>Leads do WhatsApp</b>: cada clique num link do WhatsApp do site, medido pelo Google Analytics 4. Nem todo clique vira conversa, mas é o sinal de contato que o site registra.</li>
       <li>Nos leads, a <b>página</b> é onde a pessoa estava quando clicou. <b>Busca orgânica</b> quer dizer que a visita começou numa busca no Google ou em outro buscador, sem anúncio.</li>
@@ -351,7 +371,7 @@
   </details>
 
   <footer>
-    Dados: <b>DataForSEO</b> (Google no computador, busca feita de cada capital, top 100) e <b>Google Analytics 4</b> · Feito pela <b>Naper AI</b>
+    Dados: <b>DataForSEO</b> (Google no computador e no celular, busca feita de cada capital, 3 vezes, top 50) e <b>Google Analytics 4</b> · Feito pela <b>Naper AI</b>
   </footer>
 </main>
 
@@ -371,9 +391,22 @@
 (() => {
   const REGIOES = ["Nordeste", "Sudeste", "Sul", "Centro-Oeste", "Norte"];
   const FAMILIAS = { corporativo: "Corporativo", lazer: "Lazer" };
-  const estado = { familia: "todas", busca: "" };
+  // Onde cada dispositivo fica nas coletas e no top 10 (o celular entrou em 23/10/2026).
+  const DISPOSITIVOS = {
+    computador: { campo: "resultados", serp: "serp", nome: "computador", outro: "celular" },
+    celular: { campo: "celular", serp: "serpCelular", nome: "celular", outro: "computador" },
+  };
+  const lembrado = (() => {
+    try {
+      return localStorage.getItem("radar-dispositivo");
+    } catch {
+      return null;
+    }
+  })();
+  const estado = { familia: "todas", busca: "", dispositivo: DISPOSITIVOS[lembrado] ? lembrado : "computador" };
   let dados = null;
   let grafico = null;
+  let abertoId = null;
 
   const el = (id) => document.getElementById(id);
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -406,27 +439,33 @@
     return { classe: "neutro", texto: "" };
   }
 
-  /** As coletas em ordem e a série de cada keyword. */
+  /** As coletas em ordem e a série de cada keyword, por dispositivo. */
   function preparar(bruto) {
     const coletas = [...bruto.coletas].sort((a, b) => a.data.localeCompare(b.data));
     const serie = {};
-    for (const kw of bruto.keywords) {
-      serie[kw.id] = coletas.map((c) => {
-        const r = c.resultados[kw.id];
-        // local: de onde a busca foi feita ("capital" desde 22/10/2026; antes, o Brasil em geral)
-        const local = c.local || "brasil";
-        return r ? { data: c.data, local, pos: r.pos || null, url: r.url || null, aerotur: r.aerotur || [], coletada: !r.erro } : { data: c.data, local, pos: null, url: null, aerotur: [], coletada: false };
-      });
+    for (const [disp, conf] of Object.entries(DISPOSITIVOS)) {
+      serie[disp] = {};
+      for (const kw of bruto.keywords) {
+        serie[disp][kw.id] = coletas.map((c) => {
+          const r = (c[conf.campo] || {})[kw.id];
+          // método = de onde a busca foi feita ("capital" desde 22/10/2026; antes, o Brasil em geral) e quantas vezes
+          const metodo = `${c.local || "brasil"}|${c.amostras || 1}`;
+          const base = { data: c.data, local: c.local || "brasil", metodo };
+          return r
+            ? { ...base, pos: r.pos || null, url: r.url || null, aerotur: r.aerotur || [], amostras: r.amostras || null, coletada: !r.erro }
+            : { ...base, pos: null, url: null, aerotur: [], amostras: null, coletada: false };
+        });
+      }
     }
     return { ...bruto, coletas, serie };
   }
 
-  /** A última coleta que trouxe a keyword e a anterior a ela (só se foi feita do mesmo lugar, senão não compara). */
-  function ultimas(id) {
-    const pontos = dados.serie[id].filter((p) => p.coletada);
+  /** A última coleta que trouxe a keyword e a anterior a ela (só se foi medida do mesmo jeito, senão não compara). */
+  function ultimas(id, dispositivo = estado.dispositivo) {
+    const pontos = dados.serie[dispositivo][id].filter((p) => p.coletada);
     const atual = pontos[pontos.length - 1] || null;
     const anterior = pontos[pontos.length - 2] || null;
-    return { atual, anterior: anterior && atual && anterior.local === atual.local ? anterior : null, pontos };
+    return { atual, anterior: anterior && atual && anterior.metodo === atual.metodo ? anterior : null, pontos };
   }
 
   function paginaCerta(kw, url) {
@@ -453,6 +492,13 @@
     return `<svg class="spark" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-hidden="true" style="color:var(--marinho)"><line x1="0" x2="${w}" y1="${h - 1}" y2="${h - 1}" stroke="var(--linha)"/><path d="${caminho}" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>${ponto}</svg>`;
   }
 
+  /** Em quantas das buscas da coleta a Aerotur apareceu (só quando a coleta fez mais de uma busca). */
+  function frequencia(ponto) {
+    const a = ponto?.amostras;
+    if (!a || a.length < 2) return null;
+    return { vezes: a.filter(Boolean).length, de: a.length };
+  }
+
   function celula(kw) {
     const { atual, anterior, pontos } = ultimas(kw.id);
     const pos = atual?.pos || null;
@@ -464,9 +510,12 @@
         <span class="pos fora">·</span><span class="delta neutro">aguardando</span>
       </button>`;
     }
-    const titulo = `${kw.keyword}: ${pos ? `${pos}ª posição` : "fora do top 100"}${pos && !certa ? `, com a página ${atual.url}` : ""}`;
+    const f = frequencia(atual);
+    const parcial = f && f.vezes > 0 && f.vezes < f.de;
+    const titulo = `${kw.keyword}: ${pos ? `${pos}ª posição` : "fora do top 50"}${parcial ? ` (apareceu em ${f.vezes} das ${f.de} buscas)` : ""}${pos && !certa ? `, com a página ${atual.url}` : ""}`;
     return `<button class="celula" type="button" data-id="${esc(kw.id)}" title="${esc(titulo)}">
       <span class="pos ${faixa(pos)} numeros">${pos || "—"}</span>
+      ${parcial ? `<span class="freq numeros">${f.vezes}/${f.de}</span>` : ""}
       <span class="delta ${v.classe} numeros">${esc(v.texto)}</span>
       ${sparkline(pontos)}
       <span class="pagina-certa ${pos && !certa ? "outra" : ""}">${esc(pagina)}</span>
@@ -514,7 +563,7 @@
     const cartoes = [
       { rotulo: "No top 3", filtro: (kw, u) => u.pos && u.pos <= 3 },
       { rotulo: "Na 1ª página (top 10)", filtro: (kw, u) => u.pos && u.pos <= 10 },
-      { rotulo: "No top 100", filtro: (kw, u) => !!u.pos },
+      { rotulo: "No top 50", filtro: (kw, u) => !!u.pos },
       { rotulo: "Com a página certa", filtro: (kw, u) => paginaCerta(kw, u.url) },
     ];
     el("posicoes").innerHTML = cartoes
@@ -561,35 +610,45 @@
   function abrir(id) {
     const kw = dados.keywords.find((k) => k.id === id);
     if (!kw) return;
+    abertoId = id;
+    const conf = DISPOSITIVOS[estado.dispositivo];
     const { atual, anterior, pontos } = ultimas(id);
     const posicoes = pontos.map((p) => p.pos).filter(Boolean);
     const melhor = posicoes.length ? Math.min(...posicoes) : null;
     const v = variacao(atual?.pos || null, anterior ? anterior.pos || null : undefined);
-    el("detalhe-familia").textContent = `${FAMILIAS[kw.familia]} · ${kw.cidade} (${kw.uf})`;
+    el("detalhe-familia").textContent = `${FAMILIAS[kw.familia]} · ${kw.cidade} (${kw.uf}) · no ${conf.nome}`;
     el("detalhe-titulo").textContent = kw.keyword;
-    const serp = dados.serp[id];
+    const serp = (dados[conf.serp] || {})[id];
     const certa = paginaCerta(kw, atual?.url);
     const outras = (atual?.aerotur || []).filter(([, url]) => normalizar(url) !== normalizar(atual?.url));
+    const noOutro = ultimas(id, conf.outro).atual;
+    const textoOutro = !noOutro ? "ainda sem coleta" : noOutro.pos ? `${noOutro.pos}º lugar` : "fora do top 50";
+    const f = frequencia(atual);
+    const textoAmostras = f
+      ? `<p class="outro-dispositivo">Nesta coleta a busca foi feita ${f.de} vezes: <b>${atual.amostras.map((p) => (p ? `${p}º` : "fora")).join(", ")}</b>. A posição acima é a melhor delas. O Google alterna entre versões da página de resultados.</p>`
+      : "";
     el("detalhe-corpo").innerHTML = `
       <div class="resumo">
         <div><small>Posição agora</small><b class="numeros">${atual?.pos || "—"}</b></div>
         <div><small>Variação</small><b class="numeros" style="color:var(--${v.classe === "sobe" ? "sobe" : v.classe === "desce" ? "desce" : "suave"})">${esc(v.texto || "—")}</b></div>
         <div><small>Melhor posição</small><b class="numeros">${melhor || "—"}</b></div>
       </div>
+      ${textoAmostras}
+      <p class="outro-dispositivo">No ${DISPOSITIVOS[conf.outro].nome}: <b>${textoOutro}</b>${noOutro ? ` (coleta de ${dataBr(noOutro.data)})` : ""}.</p>
       <h4>Evolução</h4>
       ${pontos.length > 1 ? '<div class="grafico"><canvas id="canvas-evolucao"></canvas></div>' : '<p class="sem-historico">O gráfico aparece a partir da segunda coleta (a próxima sexta-feira).</p>'}
       ${(() => {
         const primeiraNaCapital = pontos.find((p) => p.local === "capital");
         return primeiraNaCapital && pontos.some((p) => p.local !== "capital")
-          ? `<p class="sem-historico" style="margin-top:8px">Até ${dataBr(pontos.filter((p) => p.local !== "capital").pop().data)}, a posição era medida para o Brasil em geral. Desde ${dataBr(primeiraNaCapital.data)}, a busca é feita a partir de ${esc(kw.cidade)}, como alguém de lá vê. Por isso o histórico muda de patamar nessa data.</p>`
+          ? `<p class="sem-historico" style="margin-top:8px">Até ${dataBr(pontos.filter((p) => p.local !== "capital").pop().data)}, a posição era medida para o Brasil em geral, uma busca por coleta. Desde ${dataBr(primeiraNaCapital.data)}, a busca é feita a partir de ${esc(kw.cidade)}, como alguém de lá vê. Por isso o histórico muda de patamar nessa data.</p>`
           : "";
       })()}
       <h4>Página da Aerotur</h4>
-      <div class="url">${atual?.url ? `<a href="${esc(atual.url)}" target="_blank" rel="noopener">${esc(atual.url)}</a>` : "Nenhuma página da Aerotur no top 100."}</div>
+      <div class="url">${atual?.url ? `<a href="${esc(atual.url)}" target="_blank" rel="noopener">${esc(atual.url)}</a>` : "Nenhuma página da Aerotur no top 50."}</div>
       ${atual?.pos ? `<div class="aviso ${certa ? "ok" : ""}">${certa ? "É a página desta capital." : `Não é a página desta capital. A página certa é <a href="${esc(kw.urlAlvo)}" target="_blank" rel="noopener">${esc(kw.urlAlvo.replace("https://", ""))}</a>.`}</div>` : `<div class="aviso">A página desta capital é <a href="${esc(kw.urlAlvo)}" target="_blank" rel="noopener">${esc(kw.urlAlvo.replace("https://", ""))}</a>.</div>`}
       ${leadsDaPagina(kw.urlAlvo)}
-      ${outras.length ? `<h4>Outras páginas da Aerotur no top 100</h4><ul class="nossas">${outras.map(([p, url]) => `<li class="url"><b class="numeros">${p}º</b> <a href="${esc(url)}" target="_blank" rel="noopener">${esc(url.replace(/^https?:\/\/(www\.)?/, ""))}</a></li>`).join("")}</ul>` : ""}
-      <h4>Top 10 do Google${serp ? ` em ${dataBr(serp.data)}` : ""}</h4>
+      ${outras.length ? `<h4>Outras páginas da Aerotur no top 50</h4><ul class="nossas">${outras.map(([p, url]) => `<li class="url"><b class="numeros">${p}º</b> <a href="${esc(url)}" target="_blank" rel="noopener">${esc(url.replace(/^https?:\/\/(www\.)?/, ""))}</a></li>`).join("")}</ul>` : ""}
+      <h4>Top 10 do Google no ${conf.nome}${serp ? ` em ${dataBr(serp.data)}` : ""}</h4>
       ${serp && serp.top10.length ? `<table class="serp"><tbody>${serp.top10
         .map(([p, dominio, url, titulo]) => {
           const site = /aerotur\.com\.br/.test(dominio);
@@ -619,7 +678,7 @@
         },
         options: {
           maintainAspectRatio: false,
-          plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => (c.parsed.y ? `${c.parsed.y}ª posição` : "fora do top 100") } } },
+          plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => (c.parsed.y ? `${c.parsed.y}ª posição` : "fora do top") } } },
           scales: {
             y: { reverse: true, min: 1, max: Math.min(100, maximo), ticks: { color: suave, precision: 0 }, grid: { color: grade } },
             x: { ticks: { color: suave, maxRotation: 0, autoSkip: true, maxTicksLimit: 8 }, grid: { display: false } },
@@ -634,10 +693,29 @@
   }
 
   function fechar() {
+    abertoId = null;
     el("detalhe").classList.remove("aberto");
     el("detalhe").setAttribute("aria-hidden", "true");
     el("fundo").classList.remove("aberto");
   }
+
+  function marcarDispositivo() {
+    el("dispositivos").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.dispositivo === estado.dispositivo)));
+  }
+  marcarDispositivo();
+  el("dispositivos").addEventListener("click", (e) => {
+    const b = e.target.closest("button[data-dispositivo]");
+    if (!b || b.dataset.dispositivo === estado.dispositivo) return;
+    estado.dispositivo = b.dataset.dispositivo;
+    try {
+      localStorage.setItem("radar-dispositivo", estado.dispositivo);
+    } catch {}
+    marcarDispositivo();
+    if (!dados) return;
+    desenharIndicadores();
+    desenharTabela();
+    if (abertoId) abrir(abertoId);
+  });
 
   el("familias").addEventListener("click", (e) => {
     const b = e.target.closest("button[data-familia]");
