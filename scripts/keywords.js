@@ -37,6 +37,39 @@ const CAPITAIS = [
 
 const SITE = "https://aerotur.com.br";
 
+// De onde a busca é feita: a própria capital (código de cidade do DataForSEO, "Cidade,State of ...,Brazil").
+// Buscas com nome de cidade mudam muito conforme o lugar: "agência de viagens corporativas em salvador" feita
+// para o Brasil em geral não traz a Aerotur, e feita de Salvador traz em 3º (teste de 22/10/2026).
+const LOCAIS = {
+  fortaleza: 1001538,
+  salvador: 1001533,
+  recife: 1001625,
+  natal: 1001662,
+  maceio: 1001506,
+  "joao-pessoa": 1001622,
+  aracaju: 1001715,
+  teresina: 1001629,
+  "sao-luis": 1001561,
+  "sao-paulo": 1001773,
+  "rio-de-janeiro": 1001655,
+  "belo-horizonte": 1001566,
+  vitoria: 1001549,
+  curitiba: 1001634,
+  "porto-alegre": 1001686,
+  florianopolis: 1001706,
+  brasilia: 1001541,
+  goiania: 1001552,
+  cuiaba: 1001602,
+  "campo-grande": 1001593,
+  manaus: 1001511,
+  belem: 1001610,
+  "porto-velho": 1001666,
+  "rio-branco": 1001504,
+  "boa-vista": 1031488,
+  macapa: 1001515,
+  palmas: 1031867,
+};
+
 function montar() {
   const lista = [];
   for (const [slug, nome, uf, regiao, artigoCorp = "em", artigoLazer = "em"] of CAPITAIS) {
@@ -49,6 +82,7 @@ function montar() {
       slug,
       uf,
       regiao,
+      local: LOCAIS[slug],
       urlAlvo: `${SITE}/agencia-de-viagens-corporativas-${artigoCorp}-${slug}/`,
     });
     lista.push({
@@ -59,6 +93,7 @@ function montar() {
       slug,
       uf,
       regiao,
+      local: LOCAIS[slug],
       urlAlvo: `${SITE}/agencia-de-viagens-${artigoLazer}-${slug}/`,
     });
   }
@@ -67,4 +102,4 @@ function montar() {
 
 const KEYWORDS = montar();
 
-module.exports = { KEYWORDS, CAPITAIS, SITE };
+module.exports = { KEYWORDS, CAPITAIS, LOCAIS, SITE };

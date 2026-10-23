@@ -339,7 +339,8 @@
   <details class="leitura">
     <summary>Como ler este radar</summary>
     <ul>
-      <li><b>Posição</b>: o lugar da Aerotur entre os resultados orgânicos do Google Brasil (computador), sem anúncios. "—" quer dizer fora dos 100 primeiros.</li>
+      <li><b>Posição</b>: o lugar da Aerotur entre os resultados orgânicos do Google no computador, sem anúncios. "—" quer dizer fora dos 100 primeiros.</li>
+      <li><b>De onde a busca é feita</b>: da própria capital, como alguém de lá vê (Salvador para "em Salvador", e assim por diante). Buscas com nome de cidade mudam muito conforme o lugar de quem busca. Antes de 22/10/2026 a busca era feita para o Brasil em geral, e as posições daquela época não entram nas variações.</li>
       <li><b>Variação</b>: comparada à coleta anterior. Verde subiu, vermelho caiu, "novo" entrou no top 100 e "saiu" deixou o top 100.</li>
       <li><b>Página</b>: qual página da Aerotur aparece. Quando não é a página da capital, ela vem em destaque: o Google está mostrando outra página no lugar da certa.</li>
       <li><b>Leads do WhatsApp</b>: cada clique num link do WhatsApp do site, medido pelo Google Analytics 4. Nem todo clique vira conversa, mas é o sinal de contato que o site registra.</li>
@@ -350,7 +351,7 @@
   </details>
 
   <footer>
-    Dados: <b>DataForSEO</b> (Google Brasil, computador, top 100) e <b>Google Analytics 4</b> · Feito pela <b>Naper AI</b>
+    Dados: <b>DataForSEO</b> (Google no computador, busca feita de cada capital, top 100) e <b>Google Analytics 4</b> · Feito pela <b>Naper AI</b>
   </footer>
 </main>
 
@@ -412,16 +413,20 @@
     for (const kw of bruto.keywords) {
       serie[kw.id] = coletas.map((c) => {
         const r = c.resultados[kw.id];
-        return r ? { data: c.data, pos: r.pos || null, url: r.url || null, aerotur: r.aerotur || [], coletada: !r.erro } : { data: c.data, pos: null, url: null, aerotur: [], coletada: false };
+        // local: de onde a busca foi feita ("capital" desde 22/10/2026; antes, o Brasil em geral)
+        const local = c.local || "brasil";
+        return r ? { data: c.data, local, pos: r.pos || null, url: r.url || null, aerotur: r.aerotur || [], coletada: !r.erro } : { data: c.data, local, pos: null, url: null, aerotur: [], coletada: false };
       });
     }
     return { ...bruto, coletas, serie };
   }
 
-  /** A última coleta que trouxe a keyword e a anterior a ela. */
+  /** A última coleta que trouxe a keyword e a anterior a ela (só se foi feita do mesmo lugar, senão não compara). */
   function ultimas(id) {
     const pontos = dados.serie[id].filter((p) => p.coletada);
-    return { atual: pontos[pontos.length - 1] || null, anterior: pontos[pontos.length - 2] || null, pontos };
+    const atual = pontos[pontos.length - 1] || null;
+    const anterior = pontos[pontos.length - 2] || null;
+    return { atual, anterior: anterior && atual && anterior.local === atual.local ? anterior : null, pontos };
   }
 
   function paginaCerta(kw, url) {
@@ -573,6 +578,12 @@
       </div>
       <h4>Evolução</h4>
       ${pontos.length > 1 ? '<div class="grafico"><canvas id="canvas-evolucao"></canvas></div>' : '<p class="sem-historico">O gráfico aparece a partir da segunda coleta (a próxima sexta-feira).</p>'}
+      ${(() => {
+        const primeiraNaCapital = pontos.find((p) => p.local === "capital");
+        return primeiraNaCapital && pontos.some((p) => p.local !== "capital")
+          ? `<p class="sem-historico" style="margin-top:8px">Até ${dataBr(pontos.filter((p) => p.local !== "capital").pop().data)}, a posição era medida para o Brasil em geral. Desde ${dataBr(primeiraNaCapital.data)}, a busca é feita a partir de ${esc(kw.cidade)}, como alguém de lá vê. Por isso o histórico muda de patamar nessa data.</p>`
+          : "";
+      })()}
       <h4>Página da Aerotur</h4>
       <div class="url">${atual?.url ? `<a href="${esc(atual.url)}" target="_blank" rel="noopener">${esc(atual.url)}</a>` : "Nenhuma página da Aerotur no top 100."}</div>
       ${atual?.pos ? `<div class="aviso ${certa ? "ok" : ""}">${certa ? "É a página desta capital." : `Não é a página desta capital. A página certa é <a href="${esc(kw.urlAlvo)}" target="_blank" rel="noopener">${esc(kw.urlAlvo.replace("https://", ""))}</a>.`}</div>` : `<div class="aviso">A página desta capital é <a href="${esc(kw.urlAlvo)}" target="_blank" rel="noopener">${esc(kw.urlAlvo.replace("https://", ""))}</a>.</div>`}

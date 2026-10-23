@@ -1,7 +1,9 @@
 // scripts/collect.js
 //
-// Coleta semanal do radar: a posição da aerotur.com.br no Google (Brasil, desktop) para as keywords de
+// Coleta semanal do radar: a posição da aerotur.com.br no Google (computador) para as keywords de
 // scripts/keywords.js, pela API de SERP do DataForSEO, e salva em docs/data/rankings.json.
+// Cada busca é feita a partir da própria capital (kw.local): é o que alguém de lá vê. Antes de 22/10/2026 era o
+// Brasil em geral; as coletas guardam `local` para o painel não comparar posições medidas de lugares diferentes.
 //
 // Usa a FILA PADRÃO do DataForSEO (task_post + task_get), mais barata que a chamada ao vivo; o que não ficar pronto
 // a tempo vai pela chamada ao vivo. Guarda, por coleta, a melhor posição da Aerotur, a URL que ranqueia e todas as
@@ -22,13 +24,15 @@ const DOMINIO = "aerotur.com.br";
 const API = "https://api.dataforseo.com/v3";
 const ARQUIVO = path.join(__dirname, "..", "docs", "data", "rankings.json");
 const PROFUNDIDADE = Number(process.env.PROFUNDIDADE || 100);
+const BRASIL = 2076;
 const PARAMETROS = {
-  location_code: 2076, // Brasil
   language_code: "pt",
   device: "desktop",
   os: "windows",
   depth: PROFUNDIDADE,
 };
+/** A tarefa do DataForSEO para uma keyword, buscada a partir da capital dela. */
+const tarefa = (kw) => ({ ...PARAMETROS, location_code: kw.local || BRASIL, keyword: kw.keyword, tag: kw.id });
 const ESPERA_MAXIMA_MS = 45 * 60 * 1000;
 const INTERVALO_MS = 30 * 1000;
 
@@ -38,7 +42,7 @@ const AO_VIVO = args.includes("--ao-vivo");
 const SO = (args.find((a) => a.startsWith("--so=")) || "").slice(5).split(",").filter(Boolean);
 
 const esperar = (ms) => new Promise((r) => setTimeout(r, ms));
-const hoje = () => new Date().toISOString().slice(0, 10);
+const hoje = () => new Date(Date.now() - 3 * 3600 * 1000).toISOString().slice(0, 10); // data de Brasília
 
 // ─── Arquivo de dados (com a conversão do formato antigo) ───────────────────
 function carregar() {
@@ -134,7 +138,7 @@ function ler(resultado) {
 }
 
 async function aoVivo(kw, auth) {
-  const json = await chamar("POST", "/serp/google/organic/live/advanced", [{ ...PARAMETROS, keyword: kw.keyword, tag: kw.id }], auth);
+  const json = await chamar("POST", "/serp/google/organic/live/advanced", [tarefa(kw)], auth);
   const tarefa = json.tasks[0];
   if (tarefa.status_code !== 20000) throw new Error(`${tarefa.status_code} ${tarefa.status_message}`);
   return { ...ler(tarefa.result[0]), custo: tarefa.cost || 0 };
@@ -147,7 +151,7 @@ async function pelaFila(lista, auth) {
   const pendentes = new Map(); // id da tarefa -> keyword
   for (let i = 0; i < lista.length; i += 100) {
     const lote = lista.slice(i, i + 100);
-    const json = await chamar("POST", "/serp/google/organic/task_post", lote.map((kw) => ({ ...PARAMETROS, keyword: kw.keyword, tag: kw.id })), auth);
+    const json = await chamar("POST", "/serp/google/organic/task_post", lote.map(tarefa), auth);
     json.tasks.forEach((t, j) => {
       custo += t.cost || 0;
       if (t.status_code === 20100) pendentes.set(t.id, lote[j]);
@@ -204,7 +208,7 @@ async function main() {
   dados.versao = 2;
   dados.dominio = DOMINIO;
   dados.keywords = KEYWORDS;
-  dados.fonte = { api: "DataForSEO", pais: "Brasil", idioma: "pt", dispositivo: "desktop", profundidade: PROFUNDIDADE };
+  dados.fonte = { api: "DataForSEO", localizacao: "a própria capital de cada busca", idioma: "pt", dispositivo: "desktop", profundidade: PROFUNDIDADE };
 
   const lista = SO.length ? KEYWORDS.filter((k) => SO.includes(k.id)) : KEYWORDS;
   console.log(`${lista.length} keywords · profundidade ${PROFUNDIDADE} · ${AO_VIVO ? "ao vivo" : "fila padrão"}`);
@@ -234,9 +238,13 @@ async function main() {
   const data = hoje();
   let coleta = dados.coletas.find((c) => c.data === data);
   if (!coleta) {
-    coleta = { data, resultados: {} };
+    coleta = { data, local: "capital", resultados: {} };
     dados.coletas.push(coleta);
     dados.coletas.sort((a, b) => a.data.localeCompare(b.data));
+  } else if (coleta.local !== "capital") {
+    // a coleta do mesmo dia foi feita para o Brasil em geral: é substituída, para não misturar os dois jeitos
+    coleta.local = "capital";
+    coleta.resultados = {};
   }
   let comPosicao = 0;
   let erros = 0;
