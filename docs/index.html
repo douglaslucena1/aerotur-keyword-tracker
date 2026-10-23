@@ -199,11 +199,17 @@
   .bloco-topo h2 { font-size: 22px; margin: 0; font-weight: 800; letter-spacing: -.01em; }
   .bloco-topo p { margin: 4px 0 0; color: var(--suave); max-width: 620px; }
   .indicadores.sem-sobreposicao { margin-top: 0; }
-  .indicador .comparacao { font-size: 12px; color: var(--suave); margin-top: 6px; }
+  .nota-comparacao { margin: -2px 0 12px; color: var(--suave); font-size: 12.5px; }
+  .comparacoes { list-style: none; margin: 10px 0 0; padding: 8px 0 0; border-top: 1px solid var(--linha); font-size: 12px; color: var(--suave); display: grid; gap: 4px; }
+  .comparacoes li { display: grid; grid-template-columns: 42px minmax(0, 1fr); column-gap: 4px; align-items: baseline; }
+  .comparacoes li.sem-variacao { display: block; }
+  .comparacoes .variacao { margin: 0; }
+  .variacao.neutra { color: var(--suave); }
   .painel-corpo { padding: 14px 18px 18px; }
   .legenda-grafico { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 12.5px; color: var(--suave); }
   .legenda-grafico span { display: inline-flex; align-items: center; gap: 6px; }
   .legenda-grafico i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+  .legenda-grafico i.linha { width: 16px; height: 2px; border-radius: 1px; background: var(--texto); }
   .grafico-semanas { position: relative; height: 260px; }
   details.tabela-semanas { margin-top: 12px; font-size: 13px; }
   details.tabela-semanas summary { cursor: pointer; color: var(--suave); font-weight: 600; font-size: 12.5px; }
@@ -226,8 +232,6 @@
   .tipo.blog { color: var(--texto); }
   .mais { display: block; width: 100%; border: 0; border-top: 1px solid var(--borda); background: transparent; color: var(--marinho); font: inherit; font-weight: 600; font-size: 13px; padding: 11px; cursor: pointer; }
   .mais:hover { background: var(--fundo); }
-  .subtitulo { font-size: 11.5px; text-transform: uppercase; letter-spacing: .05em; color: var(--suave); font-weight: 600; margin: 20px 0 10px; }
-  .subtitulo:first-child { margin-top: 2px; }
   .barras { list-style: none; margin: 0; padding: 0; display: grid; gap: 9px; }
   .barras li { display: grid; grid-template-columns: minmax(96px, 40%) minmax(0, 1fr); gap: 10px; align-items: center; font-size: 13px; }
   .barras .nome { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -235,6 +239,9 @@
   .barras .barra { height: 10px; background: var(--serie-1); border-radius: 0 4px 4px 0; min-width: 2px; flex: 0 0 auto; }
   .barras .num { font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }
   .barras .num small { color: var(--suave); font-weight: 500; margin-left: 4px; font-size: 12px; }
+  .barras .explicacao { grid-column: 1 / -1; margin-top: -5px; color: var(--suave); font-size: 12px; line-height: 1.35; }
+  .painel-topo.empilhado { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .painel-topo.empilhado p { margin: 0; color: var(--suave); font-size: 12.5px; }
   .leads-vazio { background: var(--cartao); border: 1px dashed var(--borda); border-radius: 14px; padding: 28px; text-align: center; color: var(--suave); }
   .rotulo-curto { display: none; }
 
@@ -337,6 +344,7 @@
       <li><b>Página</b>: qual página da Aerotur aparece. Quando não é a página da capital, ela vem em destaque: o Google está mostrando outra página no lugar da certa.</li>
       <li><b>Leads do WhatsApp</b>: cada clique num link do WhatsApp do site, medido pelo Google Analytics 4. Nem todo clique vira conversa, mas é o sinal de contato que o site registra.</li>
       <li>Nos leads, a <b>página</b> é onde a pessoa estava quando clicou. <b>Busca orgânica</b> quer dizer que a visita começou numa busca no Google ou em outro buscador, sem anúncio.</li>
+      <li><b>Comparações dos leads</b>: cada número é comparado com o período imediatamente anterior (por exemplo, os 28 dias antes) e com o mesmo período do ano anterior. No gráfico, a linha é o total da mesma semana um ano antes. O Google Analytics da Aerotur mede desde 11/11/2024.</li>
       <li>Tudo é atualizado automaticamente toda sexta-feira às 7h (Brasília): as posições pelo DataForSEO e os cliques pelo Google Analytics, até o dia anterior.</li>
     </ul>
   </details>
@@ -690,10 +698,53 @@
     return { ...bruto, grupo, familia, organico: bruto.canais.indexOf("Organic Search"), banner: bruto.formas.indexOf("banner") };
   }
 
-  /** Janela de `dias` dias terminando no último dia com dados; `voltar` = quantas janelas para trás. */
-  function janela(dias, voltar = 0) {
-    const fim = somarDias(leads.periodo.fim, -voltar * dias);
+  /** Janela de `dias` dias terminando no último dia com dados. */
+  function janela(dias) {
+    const fim = leads.periodo.fim;
     return { ini: somarDias(fim, -(dias - 1)), fim };
+  }
+
+  /** A mesma data um ano antes (29/02 vira 28/02). */
+  function menosUmAno(iso) {
+    const [a, m, d] = iso.split("-").map(Number);
+    const data = new Date(Date.UTC(a - 1, m - 1, d));
+    if (data.getUTCMonth() !== m - 1) data.setUTCDate(0);
+    return data.toISOString().slice(0, 10);
+  }
+
+  /** Quanto de uma janela o GA4 mediu (a medição começou em leads.periodo.inicio). */
+  function cobertura(j) {
+    const inicio = leads.periodo.inicio;
+    return j.ini >= inicio ? "completa" : j.fim >= inicio ? "parcial" : "nenhuma";
+  }
+
+  /** "24/09 a 21/10/2025" (o ano só aparece uma vez quando é o mesmo). */
+  const periodoBr = (j) => (j.ini.slice(0, 4) === j.fim.slice(0, 4) ? `${dataBr(j.ini, false)} a ${dataBr(j.fim)}` : `${dataBr(j.ini)} a ${dataBr(j.fim)}`);
+
+  /**
+   * As bases de comparação de uma janela: o período imediatamente anterior e o mesmo período do ano anterior.
+   * Em 12 meses as duas seriam iguais, então fica só a do ano anterior.
+   */
+  function bases(atual, dias) {
+    const anoAntes = { ini: menosUmAno(atual.ini), fim: menosUmAno(atual.fim) };
+    const ano = anoAntes.ini.slice(0, 4) === anoAntes.fim.slice(0, 4) ? anoAntes.ini.slice(0, 4) : null;
+    const lista = [];
+    if (dias < 365) {
+      const anterior = { ini: somarDias(atual.ini, -dias), fim: somarDias(atual.ini, -1) };
+      lista.push({ ...anterior, cobertura: cobertura(anterior), nome: `${PERIODOS[dias]} anteriores`, curto: `${PERIODOS[dias]} antes` });
+    }
+    lista.push({ ...anoAntes, cobertura: cobertura(anoAntes), nome: ano ? `mesmo período de ${ano}` : "mesmo período do ano anterior", curto: ano || "ano anterior" });
+    return lista;
+  }
+
+  /** Variação em %; com base pequena (menos de 10 cliques) a % engana, então mostra a diferença em cliques. */
+  function badgeVariacao(v, a) {
+    if (!a && !v) return "";
+    const emCliques = a < 10;
+    const d = emCliques ? v - a : Math.round(((v - a) / a) * 100);
+    const classe = d > 0 ? "sobe" : d < 0 ? "desce" : "neutra";
+    const titulo = emCliques ? "diferença em cliques" : "variação percentual";
+    return `<span class="variacao ${classe}" title="${titulo}">${d > 0 ? "+" : ""}${fmt(d)}${emCliques ? "" : "%"}</span>`;
   }
 
   function somar(j, filtro) {
@@ -715,9 +766,12 @@
   function leadsIndicadores() {
     const dias = estadoLeads.dias;
     const atual = janela(dias);
-    const antes = janela(dias, 1);
-    const comparavel = antes.ini >= leads.periodo.inicio;
+    const comparacoes = bases(atual, dias);
     const total = somar(atual);
+    const incompletas = comparacoes.filter((b) => b.cobertura !== "completa");
+    const nota =
+      `Período: ${periodoBr(atual)}. Comparado com ${comparacoes.map((b) => `${b.nome.startsWith("mesmo") ? "o" : "os"} ${b.nome} (${periodoBr(b)})`).join(" e com ")}.` +
+      (incompletas.length ? ` O Google Analytics só mede desde ${dataBr(leads.periodo.inicio)}, então o que cai antes disso fica sem variação.` : "");
     const cartoes = [
       { rotulo: "Cliques no WhatsApp", filtro: null, partes: () => "no site inteiro" },
       {
@@ -734,24 +788,23 @@
       },
       { rotulo: "Pela busca orgânica", filtro: (l) => l[2] === leads.organico, partes: (v) => `<span><b>${pct(v, total)}</b> de todos os cliques</span>` },
     ];
-    return `<div class="indicadores sem-sobreposicao">${cartoes
+    return `<p class="nota-comparacao">${nota}</p><div class="indicadores sem-sobreposicao">${cartoes
       .map((c) => {
         const v = somar(atual, c.filtro);
-        const a = somar(antes, c.filtro);
-        let variacaoHtml = "";
-        let comparacao = "";
-        if (comparavel) {
-          comparacao = `${fmt(a)} nos ${PERIODOS[dias]} anteriores`;
-          if (a > 0 && v !== a) {
-            const d = Math.round(((v - a) / a) * 100);
-            if (d) variacaoHtml = `<span class="variacao ${d > 0 ? "sobe" : "desce"}">${d > 0 ? "+" : ""}${d}%</span>`;
-          }
-        }
+        const linhas = comparacoes
+          .map((b) => {
+            const base = `vs. <span class="rotulo-longo">${b.nome}</span><span class="rotulo-curto">${b.curto}</span>`;
+            if (b.cobertura === "nenhuma") return `<li class="sem-variacao">${base}: sem dados</li>`;
+            const a = somar(b, c.filtro);
+            if (b.cobertura === "parcial") return `<li class="sem-variacao">${base}: incompleto (${fmt(a)} desde ${dataBr(leads.periodo.inicio)})</li>`;
+            return `<li>${badgeVariacao(v, a) || "<span></span>"}<span>${base} (${fmt(a)})</span></li>`;
+          })
+          .join("");
         return `<div class="indicador">
           <div class="rotulo">${c.rotulo}</div>
-          <div class="valor">${fmt(v)}${variacaoHtml}</div>
+          <div class="valor">${fmt(v)}</div>
           <div class="partes">${c.partes(v)}</div>
-          ${comparacao ? `<div class="comparacao">${comparacao}</div>` : ""}
+          <ul class="comparacoes">${linhas}</ul>
         </div>`;
       })
       .join("")}</div>`;
@@ -768,16 +821,31 @@
     return lista;
   }
 
+  // A mesma semana um ano antes = 52 semanas (364 dias) atrás, para cair nos mesmos dias da semana.
+  const UM_ANO_EM_SEMANAS = 364;
+
+  /** Cliques por semana e grupo de página, mais o total da mesma semana um ano antes. */
   function valoresPorSemana(lista) {
+    const n = lista.length;
     const fimMs = Date.parse(`${leads.periodo.fim}T12:00:00Z`);
-    const valores = Object.fromEntries(GRUPOS.map((g) => [g.id, new Array(lista.length).fill(0)]));
+    const valores = Object.fromEntries(GRUPOS.map((g) => [g.id, new Array(n).fill(0)]));
+    const anoAnteriorSemana = new Array(n).fill(0);
     for (const l of leads.linhas) {
       const dif = Math.round((fimMs - Date.parse(`${l[0]}T12:00:00Z`)) / 86400000);
-      const b = lista.length - 1 - Math.floor(dif / 7);
-      if (dif < 0 || b < 0) continue;
-      valores[leads.grupo[l[1]]][b] += l[5];
+      if (dif < 0) continue;
+      const b = n - 1 - Math.floor(dif / 7);
+      if (b >= 0) valores[leads.grupo[l[1]]][b] += l[5];
+      const difAntes = dif - UM_ANO_EM_SEMANAS;
+      if (difAntes >= 0) {
+        const bAntes = n - 1 - Math.floor(difAntes / 7);
+        if (bAntes >= 0) anoAnteriorSemana[bAntes] += l[5];
+      }
     }
-    return valores;
+    // semana do ano anterior que começa antes da medição fica sem valor (não é zero, é falta de dado)
+    lista.forEach((s, i) => {
+      if (somarDias(s.ini, -UM_ANO_EM_SEMANAS) < leads.periodo.inicio) anoAnteriorSemana[i] = null;
+    });
+    return { ...valores, anoAnterior: anoAnteriorSemana };
   }
 
   function leadsGrafico(lista, valores) {
@@ -786,19 +854,20 @@
       .reverse()
       .map(({ s, i }) => {
         const soma = GRUPOS.reduce((t, g) => t + valores[g.id][i], 0);
-        return `<tr><td>${dataBr(s.ini, false)} a ${dataBr(s.fim, false)}</td>${GRUPOS.map((g) => `<td>${fmt(valores[g.id][i])}</td>`).join("")}<td><b>${fmt(soma)}</b></td></tr>`;
+        const antes = valores.anoAnterior[i];
+        return `<tr><td>${dataBr(s.ini, false)} a ${dataBr(s.fim, false)}</td>${GRUPOS.map((g) => `<td>${fmt(valores[g.id][i])}</td>`).join("")}<td><b>${fmt(soma)}</b></td><td>${antes === null ? "sem dado" : fmt(antes)}</td></tr>`;
       })
       .join("");
     return `<div class="painel">
       <div class="painel-topo">
         <h2>Cliques por semana</h2>
-        <div class="legenda-grafico">${GRUPOS.map((g) => `<span><i style="background:var(${g.cor})"></i>${g.rotulo}</span>`).join("")}</div>
+        <div class="legenda-grafico">${GRUPOS.map((g) => `<span><i style="background:var(${g.cor})"></i>${g.rotulo}</span>`).join("")}<span><i class="linha"></i>Total da mesma semana no ano anterior</span></div>
       </div>
       <div class="painel-corpo">
-        <div class="grafico-semanas"><canvas id="canvas-leads" role="img" aria-label="Cliques no WhatsApp por semana, por tipo de página"></canvas></div>
+        <div class="grafico-semanas"><canvas id="canvas-leads" role="img" aria-label="Cliques no WhatsApp por semana, por tipo de página, com o total da mesma semana no ano anterior"></canvas></div>
         <details class="tabela-semanas">
           <summary>Ver os números por semana</summary>
-          <table class="numeros-semanas"><thead><tr><th>Semana</th>${GRUPOS.map((g) => `<th>${g.rotulo}</th>`).join("")}<th>Total</th></tr></thead><tbody>${linhasTabela}</tbody></table>
+          <table class="numeros-semanas"><thead><tr><th>Semana</th>${GRUPOS.map((g) => `<th>${g.rotulo}</th>`).join("")}<th>Total</th><th>Ano anterior</th></tr></thead><tbody>${linhasTabela}</tbody></table>
         </details>
       </div>
     </div>`;
@@ -814,31 +883,51 @@
     const estilo = getComputedStyle(document.documentElement);
     const cor = (nome) => estilo.getPropertyValue(nome).trim();
     const superficie = cor("--cartao");
+    const ehBarra = (k, chart) => chart.data.datasets[k].type !== "line";
     // Só o segmento de cima de cada coluna tem as pontas arredondadas.
     const noTopo = (ctx) => {
       const { chart, dataIndex, datasetIndex } = ctx;
       for (let k = chart.data.datasets.length - 1; k >= 0; k--) {
-        if (chart.isDatasetVisible(k) && chart.data.datasets[k].data[dataIndex] > 0) return k === datasetIndex;
+        if (ehBarra(k, chart) && chart.isDatasetVisible(k) && chart.data.datasets[k].data[dataIndex] > 0) return k === datasetIndex;
       }
       return false;
+    };
+    const colunas = GRUPOS.map((g) => ({
+      type: "bar",
+      label: g.rotulo,
+      data: valores[g.id],
+      backgroundColor: cor(g.cor),
+      // a borda de cima, na cor do fundo, faz o respiro de 2px entre os segmentos
+      borderColor: superficie,
+      borderWidth: { top: 2, right: 0, bottom: 0, left: 0 },
+      borderSkipped: false,
+      borderRadius: (ctx) => (noTopo(ctx) ? { topLeft: 4, topRight: 4, bottomLeft: 0, bottomRight: 0 } : 0),
+      maxBarThickness: 24,
+      categoryPercentage: 0.8,
+      barPercentage: 0.9,
+      order: 1,
+    }));
+    const linhaAnoAnterior = {
+      type: "line",
+      label: "Mesma semana no ano anterior",
+      data: valores.anoAnterior,
+      borderColor: cor("--texto"),
+      backgroundColor: cor("--texto"),
+      borderWidth: 2,
+      pointRadius: 0,
+      pointHoverRadius: 5,
+      pointHoverBorderColor: superficie,
+      pointHoverBorderWidth: 2,
+      tension: 0.25,
+      spanGaps: false,
+      stack: "ano-anterior", // fora da pilha das colunas
+      order: 0, // desenhada por cima
     };
     graficoLeads = new Chart(canvas, {
       type: "bar",
       data: {
         labels: lista.map((s) => dataBr(s.ini, false)),
-        datasets: GRUPOS.map((g) => ({
-          label: g.rotulo,
-          data: valores[g.id],
-          backgroundColor: cor(g.cor),
-          // a borda de cima, na cor do fundo, faz o respiro de 2px entre os segmentos
-          borderColor: superficie,
-          borderWidth: { top: 2, right: 0, bottom: 0, left: 0 },
-          borderSkipped: false,
-          borderRadius: (ctx) => (noTopo(ctx) ? { topLeft: 4, topRight: 4, bottomLeft: 0, bottomRight: 0 } : 0),
-          maxBarThickness: 24,
-          categoryPercentage: 0.8,
-          barPercentage: 0.9,
-        })),
+        datasets: [...colunas, linhaAnoAnterior],
       },
       options: {
         maintainAspectRatio: false,
@@ -847,15 +936,25 @@
           legend: { display: false },
           tooltip: {
             usePointStyle: true,
+            filter: (item) => item.dataset.type !== "line",
             callbacks: {
               title: (itens) => {
                 const s = lista[itens[0].dataIndex];
-                return `${dataBr(s.ini, false)} a ${dataBr(s.fim, false)}`;
+                return `${dataBr(s.ini, false)} a ${dataBr(s.fim)}`;
               },
               label: (c) => ` ${fmt(c.parsed.y)}  ${c.dataset.label}`,
               labelPointStyle: () => ({ pointStyle: "line", rotation: 0 }),
               labelColor: (c) => ({ borderColor: c.dataset.backgroundColor, backgroundColor: c.dataset.backgroundColor, borderWidth: 3 }),
-              footer: (itens) => `Total: ${fmt(itens.reduce((t, i) => t + i.parsed.y, 0))}`,
+              footer: (itens) => {
+                const i = itens[0].dataIndex;
+                const s = lista[i];
+                const antes = valores.anoAnterior[i];
+                const deAntes = { ini: somarDias(s.ini, -UM_ANO_EM_SEMANAS), fim: somarDias(s.fim, -UM_ANO_EM_SEMANAS) };
+                return [
+                  `Total: ${fmt(itens.reduce((t, it) => t + it.parsed.y, 0))}`,
+                  antes === null ? "Ano anterior: sem dado" : `Ano anterior (${periodoBr(deAntes)}): ${fmt(antes)}`,
+                ];
+              },
             },
           },
         },
@@ -889,15 +988,33 @@
     </div>`;
   }
 
-  function barras(itens, total) {
+  /** Barras horizontais: [nome, cliques] com a parte do total e, se houver, uma explicação curta do item. */
+  function barras(itens, total, explicacoes = {}) {
     const maximo = Math.max(1, ...itens.map(([, v]) => v));
     return `<ul class="barras">${itens
-      .map(
-        ([nome, v]) =>
-          `<li><span class="nome" title="${esc(nome)}">${esc(nome)}</span><span class="trilho"><span class="barra" style="width:${Math.max(2, Math.round((v / maximo) * 100) * 0.7)}%"></span><span class="num">${fmt(v)}<small>${pct(v, total)}</small></span></span></li>`,
-      )
+      .map(([nome, v]) => {
+        const explicacao = explicacoes[nome];
+        return `<li><span class="nome" title="${esc(nome)}">${esc(nome)}</span><span class="trilho"><span class="barra" style="width:${Math.max(2, Math.round((v / maximo) * 100) * 0.62)}%"></span><span class="num">${fmt(v)}<small>(${pct(v, total)})</small></span></span>${explicacao ? `<small class="explicacao">${esc(explicacao)}</small>` : ""}</li>`;
+      })
       .join("")}</ul>`;
   }
+
+  const EXPLICA_FORMA = {
+    "Botão flutuante": "O ícone do WhatsApp que fica fixo no canto da tela, com a lista de setores.",
+    "Botão da página": "Os botões de WhatsApp dentro do conteúdo das páginas.",
+    "Link no conteúdo": "Números de WhatsApp escritos no texto, como na página de contato.",
+    "Banner do blog": "Os banners de chamada dentro dos posts do blog.",
+  };
+  const EXPLICA_CANAL = {
+    "Busca orgânica": "Veio do Google ou de outro buscador, sem anúncio.",
+    Direto: "Digitou o endereço, usou um favorito ou um link sem origem conhecida.",
+    "Outros sites": "Clicou num link em outro site.",
+    "Redes sociais": "Veio do Instagram, Facebook e parecidos.",
+    "Assistentes de IA": "Veio do ChatGPT, Gemini e parecidos.",
+    "Anúncio no Google": "Veio de um anúncio pago no Google.",
+    "E-mail": "Veio de um link num e-mail.",
+    "Não identificado": "O Google Analytics não conseguiu identificar a origem.",
+  };
 
   /** Junta o que passar de `limite` itens em "Outros". */
   function dobrar(itens, limite) {
@@ -906,18 +1023,20 @@
     return [...itens.slice(0, limite - 1), ["Outros", resto]];
   }
 
+  /** Três quadros que explicam os cliques do período: para qual setor foram, em qual botão e de onde veio a visita. */
   function leadsDestinos(j) {
     const total = somar(j);
     const setores = dobrar(agrupar(j, 3).map(([i, v]) => [leads.setores[i], v]), 8);
     const formas = agrupar(j, 4).map(([i, v]) => [FORMAS_ROTULO[leads.formas[i]] || leads.formas[i], v]);
     const canais = dobrar(agrupar(j, 2).map(([i, v]) => [CANAIS[leads.canais[i]] || leads.canais[i], v]), 6);
-    return `<div class="painel">
-      <div class="painel-topo"><h2>Para onde vão e de onde vêm</h2></div>
-      <div class="painel-corpo">
-        <div class="subtitulo">Setor do WhatsApp</div>${total ? barras(setores, total) : '<p class="sem-historico">Nenhum clique no período.</p>'}
-        <div class="subtitulo">Onde a pessoa clicou</div>${total ? barras(formas, total) : ""}
-        <div class="subtitulo">De onde veio a visita</div>${total ? barras(canais, total) : ""}
-      </div>
+    const quadro = (titulo, explicacao, corpo) => `<div class="painel">
+      <div class="painel-topo empilhado"><h2>${titulo}</h2><p>${explicacao}</p></div>
+      <div class="painel-corpo">${total ? corpo : '<p class="sem-historico">Nenhum clique no período.</p>'}</div>
+    </div>`;
+    return `<div class="quadros">
+      ${quadro("Qual setor recebeu o contato", "Cada setor da Aerotur atende por um número de WhatsApp. Aqui está para qual número foi cada clique.", barras(setores, total))}
+      ${quadro("Qual botão a pessoa usou", "O tipo de link de WhatsApp em que a pessoa clicou.", barras(formas, total, EXPLICA_FORMA))}
+      ${quadro("Como a pessoa chegou ao site", "A origem da visita em que aconteceu o clique.", barras(canais, total, EXPLICA_CANAL))}
     </div>`;
   }
 
