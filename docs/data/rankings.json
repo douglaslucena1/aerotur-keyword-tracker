@@ -1,7 +1,7 @@
 {
  "versao": 2,
  "dominio": "aerotur.com.br",
- "atualizadoEm": "2026-10-22T22:40:04.276Z",
+ "atualizadoEm": "2026-10-23T01:34:53.607Z",
  "keywords": [
   {
    "id": "corporativo-fortaleza",
@@ -1285,7 +1285,7 @@
     "corporativo-fortaleza": {
      "pos": null,
      "url": null,
-     "total": 39,
+     "total": 34,
      "aerotur": []
     },
     "lazer-fortaleza": {
@@ -1297,7 +1297,7 @@
     "corporativo-salvador": {
      "pos": null,
      "url": null,
-     "total": 49,
+     "total": 48,
      "aerotur": []
     },
     "lazer-salvador": {
@@ -1307,13 +1307,37 @@
      "aerotur": []
     },
     "corporativo-recife": {
-     "pos": 6,
-     "url": "https://aerotur.com.br/destinos/recife-pernambuco/",
+     "pos": 1,
+     "url": "https://aerotur.com.br/",
      "total": 99,
      "aerotur": [
       [
+       1,
+       "https://aerotur.com.br/"
+      ],
+      [
        6,
-       "https://aerotur.com.br/destinos/recife-pernambuco/"
+       "https://aerotur.com.br/agencia-de-viagens-corporativas/"
+      ],
+      [
+       14,
+       "https://aerotur.com.br/agencia-de-viagens-corporativas-em-recife/"
+      ],
+      [
+       44,
+       "https://aerotur.com.br/grupo-aerotur/corporativo/"
+      ],
+      [
+       57,
+       "https://aerotur.com.br/quem-somos/"
+      ],
+      [
+       79,
+       "https://aerotur.com.br/contato/"
+      ],
+      [
+       85,
+       "https://aerotur.com.br/viagens/"
       ]
      ]
     },
@@ -1324,12 +1348,16 @@
      "aerotur": []
     },
     "corporativo-natal": {
-     "pos": 27,
-     "url": "https://aerotur.com.br/eventos-corporativos-em-natal/",
+     "pos": 15,
+     "url": "https://aerotur.com.br/agencia-de-viagens-em-natal/",
      "total": 99,
      "aerotur": [
       [
-       27,
+       15,
+       "https://aerotur.com.br/agencia-de-viagens-em-natal/"
+      ],
+      [
+       45,
        "https://aerotur.com.br/eventos-corporativos-em-natal/"
       ]
      ]
@@ -1337,14 +1365,27 @@
     "lazer-natal": {
      "pos": null,
      "url": null,
-     "total": 98,
+     "total": 99,
      "aerotur": []
     },
     "corporativo-maceio": {
-     "pos": null,
-     "url": null,
-     "total": 38,
-     "aerotur": []
+     "pos": 6,
+     "url": "https://aerotur.com.br/agencia-de-viagens-corporativas-em-maceio/",
+     "total": 99,
+     "aerotur": [
+      [
+       6,
+       "https://aerotur.com.br/agencia-de-viagens-corporativas-em-maceio/"
+      ],
+      [
+       42,
+       "https://aerotur.com.br/destinos/maceio-alagoas/"
+      ],
+      [
+       77,
+       "https://aerotur.com.br/agencia-de-viagens-corporativas/"
+      ]
+     ]
     },
     "lazer-maceio": {
      "pos": null,
@@ -1367,7 +1408,7 @@
     "corporativo-aracaju": {
      "pos": null,
      "url": null,
-     "total": 38,
+     "total": 39,
      "aerotur": []
     },
     "lazer-aracaju": {
@@ -1379,32 +1420,42 @@
     "corporativo-teresina": {
      "pos": null,
      "url": null,
-     "total": 17,
+     "total": 18,
      "aerotur": []
     },
     "lazer-teresina": {
-     "pos": null,
-     "url": null,
-     "total": 99,
-     "aerotur": []
+     "pos": 9,
+     "url": "https://aerotur.com.br/agencia-de-viagens-corporativas-em-teresina/",
+     "total": 93,
+     "aerotur": [
+      [
+       9,
+       "https://aerotur.com.br/agencia-de-viagens-corporativas-em-teresina/"
+      ]
+     ]
     },
     "corporativo-sao-luis": {
      "pos": null,
      "url": null,
-     "total": 39,
+     "total": 38,
      "aerotur": []
     },
     "lazer-sao-luis": {
      "pos": null,
      "url": null,
-     "total": 98,
+     "total": 99,
      "aerotur": []
     },
     "corporativo-sao-paulo": {
-     "pos": null,
-     "url": null,
+     "pos": 7,
+     "url": "https://aerotur.com.br/agencia-de-viagens-corporativas/",
      "total": 99,
-     "aerotur": []
+     "aerotur": [
+      [
+       7,
+       "https://aerotur.com.br/agencia-de-viagens-corporativas/"
+      ]
+     ]
     },
     "lazer-sao-paulo": {
      "pos": null,
@@ -1413,19 +1464,10 @@
      "aerotur": []
     },
     "corporativo-rio-de-janeiro": {
-     "pos": 5,
-     "url": "https://aerotur.com.br/agencia-de-viagens-corporativas-no-rio-de-janeiro/",
+     "pos": null,
+     "url": null,
      "total": 99,
-     "aerotur": [
-      [
-       5,
-       "https://aerotur.com.br/agencia-de-viagens-corporativas-no-rio-de-janeiro/"
-      ],
-      [
-       35,
-       "https://aerotur.com.br/agencia-de-viagens-corporativas/"
-      ]
-     ]
+     "aerotur": []
     },
     "lazer-rio-de-janeiro": {
      "pos": null,
@@ -1434,15 +1476,10 @@
      "aerotur": []
     },
     "corporativo-belo-horizonte": {
-     "pos": 6,
-     "url": "https://aerotur.com.br/agencia-de-viagens-corporativas-em-belo-horizonte/",
+     "pos": null,
+     "url": null,
      "total": 99,
-     "aerotur": [
-      [
-       6,
-       "https://aerotur.com.br/agencia-de-viagens-corporativas-em-belo-horizonte/"
-      ]
-     ]
+     "aerotur": []
     },
     "lazer-belo-horizonte": {
      "pos": null,
@@ -1451,10 +1488,15 @@
      "aerotur": []
     },
     "corporativo-vitoria": {
-     "pos": null,
-     "url": null,
-     "total": 39,
-     "aerotur": []
+     "pos": 12,
+     "url": "https://aerotur.com.br/agencia-de-viagens-corporativas-em-vitoria/",
+     "total": 99,
+     "aerotur": [
+      [
+       12,
+       "https://aerotur.com.br/agencia-de-viagens-corporativas-em-vitoria/"
+      ]
+     ]
     },
     "lazer-vitoria": {
      "pos": null,
@@ -1477,7 +1519,7 @@
     "corporativo-porto-alegre": {
      "pos": null,
      "url": null,
-     "total": 99,
+     "total": 29,
      "aerotur": []
     },
     "lazer-porto-alegre": {
@@ -1487,15 +1529,10 @@
      "aerotur": []
     },
     "corporativo-florianopolis": {
-     "pos": 5,
-     "url": "https://aerotur.com.br/agencia-de-viagens-corporativas-em-florianopolis/",
+     "pos": null,
+     "url": null,
      "total": 99,
-     "aerotur": [
-      [
-       5,
-       "https://aerotur.com.br/agencia-de-viagens-corporativas-em-florianopolis/"
-      ]
-     ]
+     "aerotur": []
     },
     "lazer-florianopolis": {
      "pos": null,
@@ -1504,12 +1541,12 @@
      "aerotur": []
     },
     "corporativo-brasilia": {
-     "pos": 5,
+     "pos": 12,
      "url": "https://aerotur.com.br/agencia-de-viagens-corporativas-em-brasilia/",
-     "total": 38,
+     "total": 99,
      "aerotur": [
       [
-       5,
+       12,
        "https://aerotur.com.br/agencia-de-viagens-corporativas-em-brasilia/"
       ]
      ]
@@ -1523,7 +1560,7 @@
     "corporativo-goiania": {
      "pos": null,
      "url": null,
-     "total": 93,
+     "total": 24,
      "aerotur": []
     },
     "lazer-goiania": {
@@ -1535,7 +1572,7 @@
     "corporativo-cuiaba": {
      "pos": null,
      "url": null,
-     "total": 45,
+     "total": 99,
      "aerotur": []
     },
     "lazer-cuiaba": {
@@ -1545,26 +1582,21 @@
      "aerotur": []
     },
     "corporativo-campo-grande": {
-     "pos": 8,
-     "url": "https://aerotur.com.br/agencia-de-viagens-corporativas-em-campo-grande/",
+     "pos": null,
+     "url": null,
      "total": 99,
-     "aerotur": [
-      [
-       8,
-       "https://aerotur.com.br/agencia-de-viagens-corporativas-em-campo-grande/"
-      ]
-     ]
+     "aerotur": []
     },
     "lazer-campo-grande": {
      "pos": null,
      "url": null,
-     "total": 79,
+     "total": 99,
      "aerotur": []
     },
     "corporativo-manaus": {
      "pos": null,
      "url": null,
-     "total": 97,
+     "total": 99,
      "aerotur": []
     },
     "lazer-manaus": {
@@ -1574,10 +1606,15 @@
      "aerotur": []
     },
     "corporativo-belem": {
-     "pos": null,
-     "url": null,
-     "total": 28,
-     "aerotur": []
+     "pos": 8,
+     "url": "https://aerotur.com.br/agencia-de-viagens-corporativas-em-belem/",
+     "total": 99,
+     "aerotur": [
+      [
+       8,
+       "https://aerotur.com.br/agencia-de-viagens-corporativas-em-belem/"
+      ]
+     ]
     },
     "lazer-belem": {
      "pos": null,
@@ -1588,20 +1625,25 @@
     "corporativo-porto-velho": {
      "pos": null,
      "url": null,
-     "total": 99,
+     "total": 39,
      "aerotur": []
     },
     "lazer-porto-velho": {
      "pos": null,
      "url": null,
-     "total": 99,
+     "total": 98,
      "aerotur": []
     },
     "corporativo-rio-branco": {
-     "pos": null,
-     "url": null,
-     "total": 48,
-     "aerotur": []
+     "pos": 15,
+     "url": "https://aerotur.com.br/agencia-de-viagens-corporativas/",
+     "total": 99,
+     "aerotur": [
+      [
+       15,
+       "https://aerotur.com.br/agencia-de-viagens-corporativas/"
+      ]
+     ]
     },
     "lazer-rio-branco": {
      "pos": null,
@@ -1618,25 +1660,30 @@
     "lazer-boa-vista": {
      "pos": null,
      "url": null,
-     "total": 91,
+     "total": 92,
      "aerotur": []
     },
     "corporativo-macapa": {
-     "pos": null,
-     "url": null,
-     "total": 23,
-     "aerotur": []
+     "pos": 3,
+     "url": "https://aerotur.com.br/agencia-de-viagens-corporativas-em-macapa/",
+     "total": 99,
+     "aerotur": [
+      [
+       3,
+       "https://aerotur.com.br/agencia-de-viagens-corporativas-em-macapa/"
+      ]
+     ]
     },
     "lazer-macapa": {
      "pos": null,
      "url": null,
-     "total": 98,
+     "total": 99,
      "aerotur": []
     },
     "corporativo-palmas": {
      "pos": null,
      "url": null,
-     "total": 32,
+     "total": 33,
      "aerotur": []
     },
     "lazer-palmas": {
@@ -1645,7 +1692,8 @@
      "total": 99,
      "aerotur": []
     }
-   }
+   },
+   "local": "capital"
   }
  ],
  "serp": {
@@ -1654,63 +1702,63 @@
    "top10": [
     [
      1,
-     "jorlinesviagens.com",
-     "https://jorlinesviagens.com/",
-     "Jorlines Viagens - Passeios em Natal"
+     "www.instagram.com",
+     "https://www.instagram.com/michelletourrn/",
+     "Agência de Viagens em Natal/RN (@michelletourrn)"
     ],
     [
      2,
-     "www.instagram.com",
-     "https://www.instagram.com/natalsolpasseios/",
-     "Passeios em Natal e Região- RN (@natalsolpasseios)"
+     "natalviagens.com",
+     "https://natalviagens.com/",
+     "Agência de Turismo em Natal » Natal Viagens"
     ],
     [
      3,
-     "www.tripadvisor.com.br",
-     "https://www.tripadvisor.com.br/ShowUserReviews-g303518-d21176671-r782683167-Natal_Trip_Passeios-Natal_State_of_Rio_Grande_do_Norte.html",
-     "Natal Trip a melhor agência de Natal/RN 🤩 - Tripadvisor"
+     "www.cvc.com.br",
+     "https://www.cvc.com.br/destinos/natal-brasil",
+     "Guia de viagem para Natal - destinos"
     ],
     [
      4,
-     "www.wheltour.com.br",
-     "https://www.wheltour.com.br/",
-     "Whel Tour | Passeios em Natal | Traslados | Orgulho de ser ..."
+     "sunlinetur.com.br",
+     "https://sunlinetur.com.br/",
+     "SunLine Viagens - Agência de Viagens em Natal/RN"
     ],
     [
      5,
-     "www.umviajante.com.br",
-     "https://www.umviajante.com.br/tag/agencia-de-turismo-em-natal-rn",
-     "agência de turismo em natal rn"
+     "luckreceptivo.com.br",
+     "https://luckreceptivo.com.br/passeios/natal?srsltid=AYCX9vI-3exgWEMV-hNEa22nBgnyh3IIm03vgHe7BF3UHrWJeSql4LzK",
+     "Passeios em Natal"
     ],
     [
      6,
-     "www.tripadvisor.com.br",
-     "https://www.tripadvisor.com.br/Tourism-g303518-Natal_State_of_Rio_Grande_do_Norte-Vacations.html",
-     "Natal 2026 - O que saber antes de ir"
+     "www.tempodeaventura.com.br",
+     "https://www.tempodeaventura.com.br/",
+     "Tempo De Aventura l Receptivo em Natal l Agência de ..."
     ],
     [
      7,
-     "azulviagensnatal.com.br",
-     "https://azulviagensnatal.com.br/",
-     "Azul Viagens Natal - Sua próxima viagem começa aqui!"
+     "natalvans.com.br",
+     "https://natalvans.com.br/",
+     "Natal Vans: Passeios em Natal - Descubra os 3 Melhores"
     ],
     [
      8,
-     "fortur.com.br",
-     "https://fortur.com.br/",
-     "PAGINA INICIAL - Fortur.com.br"
+     "www.instagram.com",
+     "https://www.instagram.com/natalviagenscom_/",
+     "Natal Viagens (@natalviagenscom_)"
     ],
     [
      9,
-     "www.ohub.com.br",
-     "https://www.ohub.com.br/empresas/agencias-de-viagem/rn/natal",
-     "Melhores empresas de Agências de viagem em Natal - RN ..."
+     "expertturismo.com",
+     "https://expertturismo.com/",
+     "Agência de Viagens em Natal | Viagens Internacionais e Grupos"
     ],
     [
      10,
-     "www.natalturismo.com.br",
-     "http://www.natalturismo.com.br/pacotes-viagens",
-     "pacotes turísticos - Mogi das Cruzes"
+     "nataltrippasseios.com.br",
+     "https://nataltrippasseios.com.br/",
+     "Natal Trip Passeios"
     ]
    ]
   },
@@ -1738,7 +1786,7 @@
     [
      4,
      "luckreceptivo.com.br",
-     "https://luckreceptivo.com.br/passeios/natal?srsltid=AYCX9vIfrTNyQSlTqyHkIGdI5iEtQn3GRg_KJ9_8RyXsjgD0MXB9t-oI",
+     "https://luckreceptivo.com.br/passeios/natal?srsltid=AYCX9vLSZI3BvB0vB4PvOQ6t0T2Hgs99bDuduG-E9x-1bS-DE9RKWiA_",
      "Passeios em Natal"
     ],
     [
@@ -1749,21 +1797,21 @@
     ],
     [
      6,
+     "www.tempodeaventura.com.br",
+     "https://www.tempodeaventura.com.br/",
+     "Tempo De Aventura l Receptivo em Natal l Agência de ..."
+    ],
+    [
+     7,
      "www.instagram.com",
      "https://www.instagram.com/luguiturismo/",
      "Lugui Turismo | Agência de Viagens em Natal/RN (@ ..."
     ],
     [
-     7,
+     8,
      "www.cvc.com.br",
      "https://www.cvc.com.br/destinos/natal-brasil",
      "Guia de viagem para Natal - destinos"
-    ],
-    [
-     8,
-     "www.tempodeaventura.com.br",
-     "https://www.tempodeaventura.com.br/",
-     "Tempo De Aventura l Receptivo em Natal l Agência de ..."
     ],
     [
      9,
@@ -1784,63 +1832,63 @@
    "top10": [
     [
      1,
-     "supertur.com.br",
-     "https://supertur.com.br/turismo/fortaleza-ce/agencias",
-     "Agências de viagens e turismo em Fortaleza/CE - SuperTur"
-    ],
-    [
-     2,
      "www.instagram.com",
      "https://www.instagram.com/bioboardtravel/",
      "Bioboard Viagens (@bioboardtravel)"
     ],
     [
-     3,
-     "www.kingtravel.com.br",
-     "https://www.kingtravel.com.br/ktravel/package/viagem-fortaleza-e-jericoacoara/",
-     "Agência de Viagens Premium - King Travel"
-    ],
-    [
-     4,
-     "www.instagram.com",
-     "https://www.instagram.com/crateusturismo/",
-     "Crateús Turismo (@crateusturismo) · Fortaleza, CE"
-    ],
-    [
-     5,
-     "www.tripadvisor.com.br",
-     "https://www.tripadvisor.com.br/Attraction_Review-g303293-d17320738-Reviews-Fortal_Travel-Fortaleza_State_of_Ceara.html",
-     "Fortal Travel - O que saber antes de ir (ATUALIZADO ..."
-    ],
-    [
-     6,
+     2,
      "www.instagram.com",
      "https://www.instagram.com/popular/agencias-de-viagens-em-fortaleza/",
      "Agencias De Viagens Em Fortaleza"
     ],
     [
-     7,
+     3,
      "www.aventureiros.tur.br",
      "https://www.aventureiros.tur.br/pacotes_individuais/pacote-para-fortaleza-2/",
      "Pacote para Fortaleza"
     ],
     [
-     8,
-     "www.econodata.com.br",
-     "https://www.econodata.com.br/maiores-empresas/ce-fortaleza/busca-agencia-de-turismo",
-     "Maiores Empresas de Agencia de Turismo em Fortaleza ..."
+     4,
+     "www.tripadvisor.com.br",
+     "https://www.tripadvisor.com.br/Attraction_Review-g303293-d17320738-Reviews-Fortal_Travel-Fortaleza_State_of_Ceara.html",
+     "Fortal Travel - O que saber antes de ir (ATUALIZADO ..."
     ],
     [
-     9,
+     5,
      "www.instagram.com",
      "https://www.instagram.com/consultourviagens/",
      "Consultour Viagens e Turismo ✈ (@consultourviagens)"
     ],
     [
+     6,
+     "www.tripadvisor.com.br",
+     "https://www.tripadvisor.com.br/Attraction_Review-g303293-d16962521-Reviews-GS_Transporte_Executivo_e_Turismo-Fortaleza_State_of_Ceara.html",
+     "GS Transporte Executivo e Turismo - O que saber antes de ..."
+    ],
+    [
+     7,
+     "supertur.com.br",
+     "https://supertur.com.br/turismo/fortaleza-ce/transporte/pacote-de-viagem",
+     "Transporte turístico — Pacote de viagem em Fortaleza/CE"
+    ],
+    [
+     8,
+     "premiumturismo.tur.br",
+     "https://premiumturismo.tur.br/",
+     "Premium Turismo"
+    ],
+    [
+     9,
+     "ansviagenseturismo.com.br",
+     "https://ansviagenseturismo.com.br/",
+     "ANS Viagens & Turismo - HOME"
+    ],
+    [
      10,
-     "rvrtur.com.br",
-     "https://rvrtur.com.br/",
-     "RVR Turismo e Eventos"
+     "listamil2.webnode.com.br",
+     "https://listamil2.webnode.com.br/agencias-de-viagens-e-turismos-em-fortaleza/",
+     "Agências de Viagens e Turismo em Fortaleza - LISTAMIL"
     ]
    ]
   },
@@ -1849,63 +1897,63 @@
    "top10": [
     [
      1,
-     "www.instagram.com",
-     "https://www.instagram.com/cgxviagens.for/",
-     "Agência de Viagens em Fortaleza (@cgxviagens.for)"
+     "abavce.com.br",
+     "https://abavce.com.br/associados/",
+     "Associados - Seja Bem-Vindo - ABAV CE"
     ],
     [
      2,
-     "socialturismo.com.br",
-     "https://socialturismo.com.br/",
-     "Social Turismo – Agência de Viagens"
+     "www.instagram.com",
+     "https://www.instagram.com/sol.viagenseturismo/",
+     "Sol Viagens & Turismo ⛱️✈️ (@sol.viagenseturismo)"
     ],
     [
      3,
-     "www.najaturismo.com.br",
-     "http://www.najaturismo.com.br/",
-     "Naja Turismo: Agência de Turismo em Fortaleza"
+     "www.cvc.com.br",
+     "https://www.cvc.com.br/destinos/fortaleza-brasil",
+     "Guia de viagem para Fortaleza"
     ],
     [
      4,
-     "passeiosfortalezace.com.br",
-     "https://passeiosfortalezace.com.br/",
-     "Passeios Fortaleza Viagens e Turismo"
+     "terratur.tur.br",
+     "https://terratur.tur.br/",
+     "Terratur - O mundo é seu - Terratur"
     ],
     [
      5,
-     "www.instagram.com",
-     "https://www.instagram.com/fortalezatripturismo/",
-     "𝗔𝗴𝗲̂𝗻𝗰𝗶𝗮 𝗱𝗲 𝗩𝗶𝗮𝗴𝗲𝗻𝘀 ✈️ (@fortalezatripturismo)"
+     "www.ohub.com.br",
+     "https://www.ohub.com.br/empresas/agencias-de-viagem/ce/fortaleza",
+     "Melhores empresas de Agências de viagem em Fortaleza"
     ],
     [
      6,
-     "vmturismo.com.br",
-     "https://vmturismo.com.br/",
-     "VM Turismo Fortaleza"
+     "www.tripadvisor.com.br",
+     "https://www.tripadvisor.com.br/ShowUserReviews-g303293-d25412914-r940846965-Passeios_Fortaleza_Viagens_E_Turismo-Fortaleza_State_of_Ceara.html",
+     "Melhor agência - Passeios Fortaleza Viagens E Turismo"
     ],
     [
      7,
-     "www.instagram.com",
-     "https://www.instagram.com/reel/DL96JQexjdR/",
-     "Você está em Fortaleza ? A Planeta Tur Receptivo é o seu ..."
+     "www.allianceviagens.com",
+     "https://www.allianceviagens.com/",
+     "Alliance Viagens | Agência de Peregrinações e Turismo ..."
     ],
     [
      8,
-     "www.tripadvisor.com.br",
-     "https://www.tripadvisor.com.br/ShowUserReviews-g303293-d14188954-r718928641-Vitorino_Turismo-Fortaleza_State_of_Ceara.html",
-     "Melhor agência de turismo do Ceará"
+     "www.instagram.com",
+     "https://www.instagram.com/reel/DRc7YPfkYgW/",
+     "Passeios Fortaleza Viagens e Turismo - Agência de viagem ..."
     ],
     [
      9,
-     "www.europamundo.com",
-     "https://www.europamundo.com/br/adquirir.aspx?esID=40&ctID=2890",
-     "Buscar agências na cidade #2890"
+     "www.decolar.com",
+     "https://www.decolar.com/pacotes/for/pacotes-para-fortaleza",
+     "Pacotes de Viagens para Fortaleza desde R$1.119"
     ],
     [
      10,
-     "www.a3turismo.tur.br",
-     "https://www.a3turismo.tur.br/",
-     "Agência de Viagens Corporativa em Fortaleza"
+     "www.instagram.com",
+     "https://www.instagram.com/viaja_mais/",
+     "Viaja+ Passeios Turísticos🌍 (@viaja_mais)"
     ]
    ]
   },
@@ -1914,63 +1962,63 @@
    "top10": [
     [
      1,
-     "latur-travel-turismo.ueniweb.com",
-     "https://latur-travel-turismo.ueniweb.com/",
-     "Latur Travel Turismo - Agência de Turismo | Salvador"
-    ],
-    [
-     2,
-     "www.avisalaturismo.com.br",
-     "https://www.avisalaturismo.com.br/",
-     "Avisa Lá Tur | Passeios e Transfer na Bahia"
-    ],
-    [
-     3,
-     "www.facebook.com",
-     "https://www.facebook.com/colomboviagens/",
-     "Colombo Viagens | Salvador BA"
-    ],
-    [
-     4,
-     "turismonabahia.com.br",
-     "https://turismonabahia.com.br/contato/",
-     "Contato - Turismo Na Bahia"
-    ],
-    [
-     5,
-     "supertur.com.br",
-     "https://supertur.com.br/turismo/salvador-ba/agencias/agencia-de-viagens",
-     "Agência de viagens em Salvador/BA — 381 empresas"
-    ],
-    [
-     6,
      "www.facebook.com",
      "https://www.facebook.com/expressturismoereceptivo/",
      "Express Receptivo & Turismo | Salvador BA"
     ],
     [
-     7,
+     2,
+     "supertur.com.br",
+     "https://supertur.com.br/turismo/salvador-ba/agencias/agencia-de-viagens",
+     "Agência de viagens em Salvador/BA — 381 empresas"
+    ],
+    [
+     3,
      "www.tudodeturismo.com.br",
      "https://www.tudodeturismo.com.br/agencias-de-turismo-da-bahia/",
      "Agencias de turismo da Bahia"
     ],
     [
-     8,
+     4,
      "www.tripadvisor.com.br",
      "https://www.tripadvisor.com.br/Attraction_Review-g303272-d12840329-Reviews-As_Turismo_Executivo-Salvador_State_of_Bahia.html",
      "As Turismo Executivo - O que saber antes de ir ..."
     ],
     [
-     9,
+     5,
      "www.econodata.com.br",
      "https://www.econodata.com.br/maiores-empresas/ba-salvador/busca-turismo",
      "50 Maiores Empresas de Turismo em Salvador, BA em 2026"
     ],
     [
+     6,
+     "www.vansalvador.com.br",
+     "https://www.vansalvador.com.br/",
+     "Van Salvador - Locação de veículos, aluguel de van, City Tour ..."
+    ],
+    [
+     7,
+     "www.instagram.com",
+     "https://www.instagram.com/ms_tour_bahia/",
+     "Transfer Salvador | MS Tour (@ms_tour_bahia)"
+    ],
+    [
+     8,
+     "eveviagens.com.br",
+     "https://eveviagens.com.br/",
+     "Eve Viagens – Voe com a Eve – Agência de Turismo"
+    ],
+    [
+     9,
+     "www.instagram.com",
+     "https://www.instagram.com/p/DPv4mjEjfi8/",
+     "¡Descubre Salvador de una manera única con Alltour ..."
+    ],
+    [
      10,
      "www.instagram.com",
-     "https://www.instagram.com/toptourviagens/",
-     "Top Tour Viagens e Turismo (@toptourviagens)"
+     "https://www.instagram.com/p/DPv4mjEjfi8/",
+     "¡Descubre Salvador de una manera única con Alltour ..."
     ]
    ]
   },
@@ -1979,63 +2027,63 @@
    "top10": [
     [
      1,
-     "www.alltourreceptivo.com.br",
-     "https://www.alltourreceptivo.com.br/",
-     "Grupo Alltour | Transfers, Passeios e Receptivo em Salvador e ..."
+     "alltour.com.br",
+     "https://alltour.com.br/",
+     "Alltour: Home"
     ],
     [
      2,
-     "www.instagram.com",
-     "https://www.instagram.com/viajemais/",
-     "Agência Especializada em Cruzeiros (@viajemais)"
-    ],
-    [
-     3,
      "www.tripadvisor.com.br",
      "https://www.tripadvisor.com.br/Attractions-g303272-Activities-c42-Salvador_State_of_Bahia.html",
      "AS 15 MELHORES excursões em Salvador (desde R$ 25) ..."
     ],
     [
-     4,
-     "salvadoramerica.flytour.com.br",
-     "https://salvadoramerica.flytour.com.br/",
-     "Viagens a Negócio - Flytour - Salvador | América"
-    ],
-    [
-     5,
+     3,
      "www.instagram.com",
      "https://www.instagram.com/relativiagem/",
      "Agência de Viagens | Relativiagem"
     ],
     [
-     6,
+     4,
+     "www.instagram.com",
+     "https://www.instagram.com/voyage.br/",
+     "VOYAGE BRASIL (@voyage.br) · Salvador, BA"
+    ],
+    [
+     5,
      "agenciasdeviagens.org",
      "https://agenciasdeviagens.org/pt-br/z/agencias-de-viagens/123052-salvador/",
      "Descubra as melhores Agências de Viagem em Salvador"
     ],
     [
+     6,
+     "turismarviagens.com.br",
+     "https://turismarviagens.com.br/",
+     "Turismar Viagens - Salvador"
+    ],
+    [
      7,
-     "www.btrturismo.com.br",
-     "https://www.btrturismo.com.br/",
-     "BTR Turismo · Passeios e Transfer na Bahia"
-    ],
-    [
-     8,
-     "mkt.premiumturismo.com.br",
-     "https://mkt.premiumturismo.com.br/agencia-de-viagens-corporativas-em-bahia/agencia-de-viagens-corporativas-em-salvador/",
-     "Agência de Viagens Corporativas em Salvador"
-    ],
-    [
-     9,
      "www.rnbturismo.com.br",
      "http://www.rnbturismo.com.br/",
      "RNB Viagens e Turismo - Receptivo e Pacotes Turísticos ..."
     ],
     [
-     10,
+     8,
+     "www.correio24horas.com.br",
+     "https://www.correio24horas.com.br/colunistas/vanessa-brunt/passeios-diferentes-por-salvador-e-pela-bahia-conheca-agencias-de-viagens-0124",
+     "Passeios diferentes por Salvador e pela Bahia"
+    ],
+    [
+     9,
      "www.instagram.com",
-     "https://www.instagram.com/voyage.br/",
-     "VOYAGE BRASIL (@voyage.br) · Salvador, BA"
+     "https://www.instagram.com/globalviagens/",
+     "Agencia de Viagens & Turismo (@globalviagens)"
+    ],
+    [
+     10,
+     "turismarviagens.com.br",
+     "https://turismarviagens.com.br/",
+     "Turismar Viagens - Salvador"
     ]
    ]
   },
@@ -2044,63 +2092,63 @@
    "top10": [
     [
      1,
-     "www.instagram.com",
-     "https://www.instagram.com/aeroturcorporativo/",
-     "Aerotur Corporativo (@aeroturcorporativo) · Natal, RN"
+     "aerotur.com.br",
+     "https://aerotur.com.br/",
+     "Aerotur: Agência de Viagens e Intercâmbio"
     ],
     [
      2,
-     "www.instagram.com",
-     "https://www.instagram.com/reel/DOeSSbVCavl/",
-     "Já sabia dessa? Venha nos visitar na Aerotur em Recife ..."
+     "pontestur.com.br",
+     "https://pontestur.com.br/",
+     "PontesTur — Agência de Viagens Corporativas | Grupo Pontes"
     ],
     [
      3,
-     "recife.flytour.com.br",
-     "https://recife.flytour.com.br/rodoviario/",
-     "Rodoviário - Flytour - Recife | PE"
+     "r3viagens.com.br",
+     "https://r3viagens.com.br/r3-viagens-a-melhor-agencia-de-viagens-corporativas-em-recife/",
+     "Recife - A Melhor Agência de Viagens Corporativas"
     ],
     [
      4,
-     "www.tripadvisor.com.br",
-     "https://www.tripadvisor.com.br/Attractions-g304560-Activities-c59-Recife_State_of_Pernambuco.html",
-     "OS 15 MELHORES transportes na Recife (2026)"
+     "pontestur.com.br",
+     "https://pontestur.com.br/viagens-corporativas-recife/",
+     "Viagens Corporativas em Recife: Gestão para Empresas"
     ],
     [
      5,
-     "www.argoit.com.br",
-     "https://www.argoit.com.br/wtb/default.aspx?cliente=&culture=pt-BR",
-     "https://www.argoit.com.br/wtb/default.aspx?cliente..."
+     "www.instagram.com",
+     "https://www.instagram.com/pontestur/",
+     "Agência de Viagens (@pontestur) · Recife, PE"
     ],
     [
      6,
      "aerotur.com.br",
-     "https://aerotur.com.br/destinos/recife-pernambuco/",
-     "Descubra Recife: História e Praias com a Aerotur"
+     "https://aerotur.com.br/agencia-de-viagens-corporativas/",
+     "Agência de Viagens Corporativas no Brasil"
     ],
     [
      7,
-     "www.facebook.com",
-     "https://www.facebook.com/aerotur/videos/-loja-aerotur-recife-novo-endere%C3%A7o-a-aerotur-recife-est%C3%A1-de-cara-nova-agora-voc%C3%AA/3528756843859212/",
-     "Novo endereço A Aerotur Recife está de cara nova! Agora você ..."
+     "uniglobepro.com.br",
+     "https://uniglobepro.com.br/viagens-corporativas-recife",
+     "Agência de viagens corporativas em Recife PE"
     ],
     [
      8,
-     "www.aeroportorecife.net",
-     "https://www.aeroportorecife.net/agencias-turismo-aeroporto-recife",
-     "Agências de Turismo - Aeroporto Internacional de Recife"
+     "agenciasdeviagens.org",
+     "https://agenciasdeviagens.org/pt-br/z/agencias-de-viagens/122896-recife/",
+     "Descubra as melhores Agências de Viagem em Recife"
     ],
     [
      9,
-     "buscasim.com.br",
-     "https://buscasim.com.br/empresas/pe/recife/7911-2-00-agencias-de-viagens",
-     "87 empresas de agências de viagens em Recife/PE"
+     "recife.flytour.com.br",
+     "https://recife.flytour.com.br/",
+     "Viagens a Negócio - Flytour - Recife | PE"
     ],
     [
      10,
-     "www.instagram.com",
-     "https://www.instagram.com/p/DL7aiA7srUw/",
-     "Somos a Êxodo Tur, uma agência de viagens localizada ..."
+     "www.mercadoeeventos.com.br",
+     "https://www.mercadoeeventos.com.br/noticias/agencias-e-operadoras/flytour-inaugura-nova-franquia-em-recife-pe/",
+     "Flytour inaugura nova franquia em Recife (PE)"
     ]
    ]
   },
@@ -2127,9 +2175,9 @@
     ],
     [
      4,
-     "www.pontualreceptivo.com.br",
-     "https://www.pontualreceptivo.com.br/",
-     "LinkTravel - Experiencias incriveis"
+     "pontestur.com.br",
+     "https://pontestur.com.br/servicos/receptivo/",
+     "Receptivo em Recife: Traslados, Guias e Grupos"
     ],
     [
      5,
@@ -2145,27 +2193,27 @@
     ],
     [
      7,
-     "www.aeroportorecife.net",
-     "https://www.aeroportorecife.net/agencias-turismo-aeroporto-recife",
-     "Agências de Turismo - Aeroporto Internacional de Recife"
+     "www.instagram.com",
+     "https://www.instagram.com/p/DR0HX9jEjzB/",
+     "Recife Airs • Passagens e Pacotes de Viagens"
     ],
     [
      8,
-     "www.instagram.com",
-     "https://www.instagram.com/tavaresturismope/",
-     "TAVARES VIAGENS & TURISMO (@tavaresturismope)"
+     "www.econodata.com.br",
+     "https://www.econodata.com.br/maiores-empresas/pe-recife/busca-agencia-de-turismo",
+     "9 Maiores Empresas de Agencia de Turismo em Recife, PE ..."
     ],
     [
      9,
-     "recifeturismo.com",
-     "https://recifeturismo.com/",
-     "Recife Turismo - O Destino Você Escolhe"
+     "asabrancaturismo.com.br",
+     "https://asabrancaturismo.com.br/",
+     "Asa Branca Turismo - Recife"
     ],
     [
      10,
-     "guiarecifepe.com.br",
-     "https://guiarecifepe.com.br/agencia-de-viagens",
-     "Agência de Viagens - Guia Comercial de Recife"
+     "www.instagram.com",
+     "https://www.instagram.com/p/DR0HX9jEjzB/",
+     "Recife Airs • Passagens e Pacotes de Viagens"
     ]
    ]
   },
@@ -2175,62 +2223,62 @@
     [
      1,
      "www.instagram.com",
-     "https://www.instagram.com/p/DIeoGxCzYZM/",
-     "Conheça a capital mais procurada do Nordeste! Maceió"
+     "https://www.instagram.com/clubeturismomaceio/",
+     "Agência de Turismo em Maceió (@clubeturismomaceio)"
     ],
     [
      2,
-     "www.instagram.com",
-     "https://www.instagram.com/reel/DSAzMhdEkTB/",
-     "Estamos aqui para oferecer sempre o melhor a você.  Com a ..."
+     "uniglobepro.com.br",
+     "https://uniglobepro.com.br/viagens-corporativas-maceio",
+     "Agência de viagens corporativas em Maceió AL"
     ],
     [
      3,
-     "www.instagram.com",
-     "https://www.instagram.com/p/CGvS3TeL7Q5/",
-     "MARQUES TUR - TRANSPORTES, VIAGENS E TURISMO ..."
+     "www.jaraguaturismo.com",
+     "https://www.jaraguaturismo.com/agencia-jaragua-viagens-e-turismo-em-maceio/",
+     "Jaraguá Viagens e Turismo em Maceió - Alagoas"
     ],
     [
      4,
-     "agenciasdeviagens.tur.br",
-     "https://agenciasdeviagens.tur.br/sobre/salmar-turismo-maceio-al",
-     "SALMAR TURISMO em Maceió - AL | AgênciasdeViagens.tur.br"
+     "www.tripadvisor.com.br",
+     "https://www.tripadvisor.com.br/Attractions-g303216-Activities-c59-Maceio_State_of_Alagoas.html",
+     "OS 15 MELHORES transportes na Maceió (2026)"
     ],
     [
      5,
-     "agenciasdeviagens.tur.br",
-     "https://agenciasdeviagens.tur.br/sobre/massayo-transporte-e-turismo-maceio-al",
-     "MASSAYO TRANSPORTE E TURISMO em Maceió - AL"
+     "www.maresulturismo.com.br",
+     "https://www.maresulturismo.com.br/",
+     "Início - Maresul Turismo e Receptivo"
     ],
     [
      6,
-     "www.econodata.com.br",
-     "https://www.econodata.com.br/maiores-empresas/al/busca-agencia-de-turismo",
-     "13 Maiores Empresas de Agencia de Turismo em Alagoas ..."
+     "aerotur.com.br",
+     "https://aerotur.com.br/agencia-de-viagens-corporativas-em-maceio/",
+     "Agência de Viagens Corporativas em Maceió"
     ],
     [
      7,
-     "www.grandesmarcaspe.com.br",
-     "https://www.grandesmarcaspe.com.br/c/agencia-de-turismo/maceio/al?page=3",
-     "Agência de Turismo em Maceió - AL - Página 3"
+     "www.facebook.com",
+     "https://www.facebook.com/groups/697540047760783/posts/1777094759805301/",
+     "Qual empresa de turismo vcs mais me indica em Maceió?"
     ],
     [
      8,
-     "www.instagram.com",
-     "https://www.instagram.com/p/DX7yduHkf6y/",
-     "Mais um grupo embarcando e vivendo experiências ..."
+     "pordosolturismomaceio.com",
+     "https://pordosolturismomaceio.com/",
+     "Por do Sol Turismo Maceió - Realizando sonhos | Alagoas ..."
     ],
     [
      9,
      "www.instagram.com",
-     "https://www.instagram.com/p/DVwyWDzjSJz/",
-     "🚐🌴 Garanta já sua van exclusiva e aproveite os melhores ..."
+     "https://www.instagram.com/ibizaviagenseturismo/",
+     "Agencia de viagens em Maceió"
     ],
     [
      10,
-     "www.telelistas.net",
-     "https://www.telelistas.net/al/maceio/companhias+aereas",
-     "As melhores 5 empresas de Companhias Aéreas em Maceió"
+     "h3turismo.com",
+     "https://h3turismo.com/",
+     "H3 Turismo | Passeios em Alagoas e Transfers em Maceió"
     ]
    ]
   },
@@ -2240,32 +2288,32 @@
     [
      1,
      "www.instagram.com",
-     "https://www.instagram.com/maceioclickturismo/",
-     "Maceió Click Turismo (@maceioclickturismo)"
-    ],
-    [
-     2,
-     "wstur.com.br",
-     "https://wstur.com.br/",
-     "WS Receptivo"
-    ],
-    [
-     3,
-     "www.tripadvisor.com.br",
-     "https://www.tripadvisor.com.br/ShowUserReviews-g303216-d28230067-r979395771-E_De_Maceio_Turismo-Maceio_State_of_Alagoas.html",
-     "Melhor agência de turismo - Maceió"
-    ],
-    [
-     4,
-     "www.instagram.com",
      "https://www.instagram.com/jamesturismo/",
      "Jâmes Tur (@jamesturismo)"
     ],
     [
-     5,
+     2,
+     "www.tripadvisor.com.br",
+     "https://www.tripadvisor.com.br/Attraction_Review-g303216-d26616105-Reviews-Bloom_Viagens_Agencia_de_Viagens-Maceio_State_of_Alagoas.html",
+     "Bloom Viagens - Agência de Viagens - Maceió"
+    ],
+    [
+     3,
      "www.receptivomczal.com.br",
      "https://www.receptivomczal.com.br/",
      "Receptivo MCZAL - Agência de Turismo"
+    ],
+    [
+     4,
+     "www.instagram.com",
+     "https://www.instagram.com/mineirotoureceptivo/",
+     "mineirotoureceptivo"
+    ],
+    [
+     5,
+     "www.cvc.com.br",
+     "https://www.cvc.com.br/destinos/alagoas-brasil",
+     "Guia de viagem para Alagoas"
     ],
     [
      6,
@@ -2275,15 +2323,15 @@
     ],
     [
      7,
-     "www.cvc.com.br",
-     "https://www.cvc.com.br/destinos/alagoas-brasil",
-     "Guia de viagem para Alagoas"
+     "www.instagram.com",
+     "https://www.instagram.com/mangabeirasturismo/",
+     "Mangabeiras Turismo (@mangabeirasturismo) · Maceió, AL"
     ],
     [
      8,
-     "www.tripadvisor.com.br",
-     "https://www.tripadvisor.com.br/Attraction_Review-g303216-d26616105-Reviews-Bloom_Viagens_Agencia_de_Viagens-Maceio_State_of_Alagoas.html",
-     "Bloom Viagens - Agência de Viagens - Maceió"
+     "business.google.com",
+     "https://business.google.com/v/_/017775529246478929920/fc32/_",
+     "Jâmes Turismo"
     ],
     [
      9,
@@ -2293,9 +2341,9 @@
     ],
     [
      10,
-     "business.google.com",
-     "https://business.google.com/v/_/017775529246478929920/fc32/_",
-     "Jâmes Turismo"
+     "www.tripadvisor.com.br",
+     "https://www.tripadvisor.com.br/Attractions-g303216-Activities-c42-Maceio_State_of_Alagoas.html",
+     "AS 15 MELHORES excursões em Maceió (desde R$ 35) ..."
     ]
    ]
   },
@@ -2304,51 +2352,51 @@
    "top10": [
     [
      1,
-     "www.aventureiros.tur.br",
-     "https://www.aventureiros.tur.br/pacotes_individuais/pacote-para-joao-pessoa-4/",
-     "Pacote para João Pessoa"
-    ],
-    [
-     2,
-     "supertur.com.br",
-     "https://supertur.com.br/turismo/joao-pessoa-pb/agencias/operadora-de-turismo",
-     "Operadora de turismo em João Pessoa/PB — 132 empresas"
-    ],
-    [
-     3,
      "www.facebook.com",
      "https://www.facebook.com/extremotransportes/",
      "Extremo Viagens e Turismo | João Pessoa PB"
     ],
     [
+     2,
+     "www.aventureiros.tur.br",
+     "https://www.aventureiros.tur.br/pacotes_individuais/pacote-para-joao-pessoa-4/",
+     "Pacote para João Pessoa"
+    ],
+    [
+     3,
+     "supertur.com.br",
+     "https://supertur.com.br/turismo/joao-pessoa-pb/agencias/operadora-de-turismo",
+     "Operadora de turismo em João Pessoa/PB — 132 empresas"
+    ],
+    [
      4,
+     "agenciasdeviagens.tur.br",
+     "https://agenciasdeviagens.tur.br/sobre/classic-operadora-de-viagem-e-turismo-joao-pessoa-pb",
+     "Classic Operadora de Viagem e Turismo - Agências"
+    ],
+    [
+     5,
+     "www.instagram.com",
+     "https://www.instagram.com/manancialviagens/",
+     "Manancial Viagem e Transporte (@manancialviagens)"
+    ],
+    [
+     6,
      "www.turismodobrasil.com",
      "https://www.turismodobrasil.com/joao-pessoa/agencia-de-turismo-joao-pessoa/page/9",
      "Agência de Turismo em João Pessoa"
     ],
     [
-     5,
-     "www.instagram.com",
-     "https://www.instagram.com/jn.receptivo_e_turismo/",
-     "JN.Receptivo (@jn.receptivo_e_turismo) · João Pessoa, PB"
-    ],
-    [
-     6,
+     7,
      "www.telelistas.net",
      "https://www.telelistas.net/pb/joao+pessoa/companhias+aereas",
      "As melhores 5 empresas de Companhias Aéreas em João ..."
     ],
     [
-     7,
+     8,
      "agenciasdeviagens.tur.br",
      "https://agenciasdeviagens.tur.br/sobre/classic-viagens-e-turismoepitacio-pessoa-joao-pessoa-pb",
      "Classic Viagens e Turismo - Epitácio Pessoa - Agências"
-    ],
-    [
-     8,
-     "travelmanager.ai",
-     "https://travelmanager.ai/es/gestao-de-viagens-corporativas/joao-pessoa-pb",
-     "Gestión de Viajes Corporativos en João Pessoa (PB)"
     ],
     [
      9,
@@ -2359,8 +2407,8 @@
     [
      10,
      "www.instagram.com",
-     "https://www.instagram.com/manancialviagens/",
-     "Manancial Viagem e Transporte (@manancialviagens)"
+     "https://www.instagram.com/jn.receptivo_e_turismo/",
+     "JN.Receptivo (@jn.receptivo_e_turismo) · João Pessoa, PB"
     ]
    ]
   },
@@ -2370,20 +2418,20 @@
     [
      1,
      "www.civitatis.com",
-     "https://www.civitatis.com/br/joao-pessoa/?srsltid=AYCX9vJStxl_ZsoJGNhHQ4HFpNe65JB_63vACiSzDrpSoLhI81iO2cyG",
+     "https://www.civitatis.com/br/joao-pessoa/?srsltid=AYCX9vLFaxOKjrF9ATkZ9hrlZTferxZw8XmLfbsfcN5ehVk0nUt2kTBP",
      "As melhores excursões e visitas guiadas por João Pessoa"
     ],
     [
      2,
-     "www.tourbaraoviagens.com",
-     "https://www.tourbaraoviagens.com/",
-     "Tourbarão Viagens: Agência de Viagens em Recife"
-    ],
-    [
-     3,
      "www.instagram.com",
      "https://www.instagram.com/lnjoaopessoa/",
      "LN Passeios em João Pessoa | Turismo (@lnjoaopessoa)"
+    ],
+    [
+     3,
+     "www.agaxtur.com.br",
+     "https://www.agaxtur.com.br/Destinos/joao-pessoa",
+     "João Pessoa: natureza e acolhimento no Nordeste"
     ],
     [
      4,
@@ -2393,39 +2441,39 @@
     ],
     [
      5,
-     "www.instagram.com",
-     "https://www.instagram.com/simpleviagenspb/",
-     "Simple Viagens (@simpleviagenspb)"
-    ],
-    [
-     6,
      "damturpb.com.br",
      "https://damturpb.com.br/",
      "Damtur PB - Viva João Pessoa do Melhor Jeito"
     ],
     [
+     6,
+     "www.instagram.com",
+     "https://www.instagram.com/qualityreceptivo/",
+     "PASSEIOS EM JOÃO PESSOA (@qualityreceptivo)"
+    ],
+    [
      7,
-     "agenia-de-turismo.ueniweb.com",
-     "https://agenia-de-turismo.ueniweb.com/",
-     "MIXTOUR AGÊNCIA DE VIAGENS - | João Pessoa"
+     "www.tourbaraoviagens.com",
+     "https://www.tourbaraoviagens.com/",
+     "Tourbarão Viagens: Agência de Viagens em Recife"
     ],
     [
      8,
-     "www.instagram.com",
-     "https://www.instagram.com/essencialeviagens/",
-     "Essenciale Viagens (@essencialeviagens)"
+     "www.facebook.com",
+     "https://www.facebook.com/CriativaTurismoPB/?locale=pt_BR",
+     "Criativa Turismo | João Pessoa PB"
     ],
     [
      9,
-     "newit.com.br",
-     "https://newit.com.br/destinos/joao-pessoa/",
-     "João Pessoa | Pacotes de Viagem"
-    ],
-    [
-     10,
      "litoralturismoonline.com",
      "https://litoralturismoonline.com/",
      "Litoral Turismo Online"
+    ],
+    [
+     10,
+     "www.viajanet.com.br",
+     "https://www.viajanet.com.br/atracoes-turisticas/jpa/atracoes-joao+pessoa",
+     "Os 12 melhores passeios em João Pessoa (2023)"
     ]
    ]
   },
@@ -2435,14 +2483,14 @@
     [
      1,
      "www.instagram.com",
-     "https://www.instagram.com/egfturismo/",
-     "EGF Viagens e Turismo (@egfturismo) · Aracaju, SE"
+     "https://www.instagram.com/mmviagens2024/",
+     "MM Consultoria em Viagens e Eventos (@mmviagens2024)"
     ],
     [
      2,
      "www.instagram.com",
-     "https://www.instagram.com/rentvanroteiros/",
-     "𝙍𝙚𝙣𝙩 𝙑𝙖𝙣 | Aracaju SE (@rentvanroteiros)"
+     "https://www.instagram.com/egfturismo/",
+     "EGF Viagens e Turismo (@egfturismo) · Aracaju, SE"
     ],
     [
      3,
@@ -2459,8 +2507,8 @@
     [
      5,
      "www.instagram.com",
-     "https://www.instagram.com/p/DUohISAiVOR/",
-     "6ª EXCURSÃO RIO DE JANEIRO ☀️ Aéreo saindo de ..."
+     "https://www.instagram.com/aereoaju/",
+     "Viagens e Turismo (@aereoaju) · Aracaju, SE"
     ],
     [
      6,
@@ -2470,9 +2518,9 @@
     ],
     [
      7,
-     "www.facebook.com",
-     "https://www.facebook.com/cesarbemtevi/?locale=pt_BR",
-     "BEM TE VI TOUR | Aracaju SE"
+     "www.instagram.com",
+     "https://www.instagram.com/executivereceptivoaju/",
+     "Executive Receptivo Aju (@executivereceptivoaju)"
     ],
     [
      8,
@@ -2488,9 +2536,9 @@
     ],
     [
      10,
-     "www.instagram.com",
-     "https://www.instagram.com/easytour.aju/",
-     "Agência de Viagem e Serviços (@easytour.aju)"
+     "www.facebook.com",
+     "https://www.facebook.com/cesarbemtevi/?locale=pt_BR",
+     "BEM TE VI TOUR | Aracaju SE"
     ]
    ]
   },
@@ -2505,15 +2553,15 @@
     ],
     [
      2,
-     "aracaju13dejulho.beflytravel.com.br",
-     "https://aracaju13dejulho.beflytravel.com.br/",
-     "BeFly Travel - Loja Aracaju"
-    ],
-    [
-     3,
      "aracajuturismo.com.br",
      "https://aracajuturismo.com.br/",
      "Aracaju Turismo: Agência de Turismo"
+    ],
+    [
+     3,
+     "aracaju13dejulho.beflytravel.com.br",
+     "https://aracaju13dejulho.beflytravel.com.br/",
+     "BeFly Travel - Loja Aracaju"
     ],
     [
      4,
@@ -2535,27 +2583,27 @@
     ],
     [
      7,
+     "edsontur.com.br",
+     "https://edsontur.com.br/",
+     "EDSONTUR VIAGENS \"Viaje com conforto e segurança com ..."
+    ],
+    [
+     8,
      "www.valturaracaju.com.br",
      "https://www.valturaracaju.com.br/",
      "Valtur Aracaju | Passeio turístico em Aracaju"
     ],
     [
-     8,
-     "grou.com.br",
-     "https://grou.com.br/cidade/aracaju/",
-     "Aracaju | Sergipe"
-    ],
-    [
      9,
-     "www.instagram.com",
-     "https://www.instagram.com/topturaracaju/",
-     "Toptur Viagens e Turismo (@topturaracaju)"
+     "www.laniaviagens.com",
+     "https://www.laniaviagens.com/",
+     "Lania VIAGENS - Agência de Viagens em Aracaju"
     ],
     [
      10,
-     "realturismo.aju.br",
-     "https://realturismo.aju.br/",
-     "Real Turismo - Passeios em Aracaju | Agência de Turismo"
+     "grou.com.br",
+     "https://grou.com.br/cidade/aracaju/",
+     "Aracaju | Sergipe"
     ]
    ]
   },
@@ -2583,14 +2631,14 @@
     [
      4,
      "www.instagram.com",
-     "https://www.instagram.com/jorgeleitedoge/",
-     "GLOBAL TOUR Teresina (@jorgeleitedoge)"
+     "https://www.instagram.com/reel/DNObjcvPJiT/",
+     "Isso é Platinne Turismo 🇧🇷 . . . . . . ..."
     ],
     [
      5,
-     "almeidatur.excapy.com",
-     "https://almeidatur.excapy.com/tours?q.section=PRINCIPAL&q.sectionPosition=2&q.pageTitle=Mei&q.origem.id=237&q.resultsByPage=100&lang=pt-PT",
-     "ALMEIDA TUR Viagens e Turismo - Excapy"
+     "www.almeidaturviagens.com",
+     "https://www.almeidaturviagens.com/tours?q.text=romaria&lang=pt-PT",
+     "Encontre o seu Grupo de Viagens"
     ],
     [
      6,
@@ -2600,27 +2648,27 @@
     ],
     [
      7,
-     "www.instagram.com",
-     "https://www.instagram.com/reel/DNObjcvPJiT/",
-     "Isso é Platinne Turismo 🇧🇷 . . . . . . ..."
+     "www.almeidaturviagens.com",
+     "https://www.almeidaturviagens.com/tours?q.text=gennaio&lang=pt-BR",
+     "Encontre seu Grupo de Viagens"
     ],
     [
      8,
+     "www.facebook.com",
+     "https://www.facebook.com/vocetur/",
+     "Você Turismo | Teresina PI"
+    ],
+    [
+     9,
      "robertoviagenspiaui.webnode.page",
      "https://robertoviagenspiaui.webnode.page/viagens/",
      "Excursões Concursos - Roberto Viagens - Webnode"
     ],
     [
-     9,
-     "www.facebook.com",
-     "https://www.facebook.com/vocetur/",
-     "Você Turismo | Teresina PI"
-    ],
-    [
      10,
-     "www.facebook.com",
-     "https://www.facebook.com/vocetur/",
-     "Você Turismo | Teresina PI"
+     "www.almeidaturviagens.com",
+     "https://www.almeidaturviagens.com/tours?q.text=COLISEE&lang=pt-BR",
+     "Encontre seu Grupo de Viagens"
     ]
    ]
   },
@@ -2629,63 +2677,63 @@
    "top10": [
     [
      1,
-     "www.civitatis.com",
-     "https://www.civitatis.com/br/teresina/?srsltid=AYCX9vKsZEH_ELEo2QTpauAtxjvduUeHWokAY9nkdlU_Q4hKxIHjXdCP",
-     "Tours e atividades em Teresina"
+     "www.instagram.com",
+     "https://www.instagram.com/rwturismo.pi/",
+     "RW TURISMO.PI | Viagens (@rwturismo.pi)"
     ],
     [
      2,
      "www.instagram.com",
-     "https://www.instagram.com/shalom_turismo_/",
-     "Shalom Turismo Teresina (@shalom_turismo_)"
+     "https://www.instagram.com/blueteresinaviagens/",
+     "Blue Teresina Viagens (@blueteresinaviagens)"
     ],
     [
      3,
-     "www.shalom-tur.com.br",
-     "https://www.shalom-tur.com.br/",
-     "Shalom Turismo - Teresina"
+     "cesar-turismo-pi.ueniweb.com",
+     "https://cesar-turismo-pi.ueniweb.com/",
+     "César Turismo - Agência de Viagens | Teresina"
     ],
     [
      4,
-     "www.instagram.com",
-     "https://www.instagram.com/vidalevetrip/",
-     "Vida Leve Turismo THE (@vidalevetrip) · Teresina, PI"
+     "aerovipviagens.com.br",
+     "https://aerovipviagens.com.br/",
+     "AeroVIP Viagens e Turismo Teresina"
     ],
     [
      5,
-     "www.facebook.com",
-     "https://www.facebook.com/groups/1375353462567716/",
-     "Viagens e Turismo Teresina e Regiões"
+     "www.piauitour.com",
+     "https://www.piauitour.com/",
+     "Piauitour Agência de Turismo"
     ],
     [
      6,
-     "www.piauitour.com",
-     "https://www.piauitour.com/roteiros/",
-     "Roteiros - Piauitour Agência de Turismo"
+     "www.almeidaturviagens.com",
+     "https://www.almeidaturviagens.com/",
+     "ALMEIDA TUR Viagens e Turismo"
     ],
     [
      7,
-     "www.instagram.com",
-     "https://www.instagram.com/liderviagensturismo/",
-     "Líder Turismo (@liderviagensturismo)"
+     "www.facebook.com",
+     "https://www.facebook.com/almeidaturviagens/?locale=pt_BR",
+     "Almeida Tur Viagens e Turismo | Teresina PI"
     ],
     [
      8,
-     "www.econodata.com.br",
-     "https://www.econodata.com.br/maiores-empresas/pi-teresina/busca-turismo",
-     "50 Maiores Empresas de Turismo em Teresina, PI em 2026"
+     "agenciasdeviagens.org",
+     "https://agenciasdeviagens.org/pt-br/z/agencias-de-viagens/123713-teresina/",
+     "Descubra as melhores Agências de Viagem em Teresina"
     ],
     [
      9,
-     "www.tripadvisor.com.br",
-     "https://www.tripadvisor.com.br/Attractions-g303483-Activities-c42-Teresina_State_of_Piaui.html",
-     "AS 5 MELHORES excursões em Teresina (2026)"
+     "aerotur.com.br",
+     "https://aerotur.com.br/agencia-de-viagens-corporativas-em-teresina/",
+     "Agência de Viagens Corporativas em Teresina"
     ],
     [
      10,
-     "www.facebook.com",
-     "https://www.facebook.com/almeidaturviagens/posts/-pague-1-viaje-2-destino-canoa-quebrada-data-da-viagem-23-a-25-de-abril-25-a-27-/1641848074612234/",
-     "PAGUE 1, VIAJE 2 💚💜 📍 Destino: Canoa Quebrada 📅 Data ..."
+     "www.instagram.com",
+     "https://www.instagram.com/r10viagens/",
+     "R10VIAGENS E TURISMO (@r10viagens)"
     ]
    ]
   },
@@ -2694,63 +2742,63 @@
    "top10": [
     [
      1,
-     "www.bigtravel.com.br",
-     "https://www.bigtravel.com.br/",
-     "Agência De Turismo São Paulo | Big Travel Viagens e ..."
-    ],
-    [
-     2,
-     "www.instagram.com",
-     "https://www.instagram.com/mmturismoo_/",
-     "MM T U R I S M O (@mmturismoo_)"
-    ],
-    [
-     3,
-     "supertur.com.br",
-     "https://supertur.com.br/turismo/sao-luis-ma/especializados",
-     "Prestadores especializados em São Luís/MA — 10 empresas"
-    ],
-    [
-     4,
-     "www.instagram.com",
-     "https://www.instagram.com/ravalturismo/",
-     "Raval - Locação e Turismo 🚐 (@ravalturismo) · São Luís, MA"
-    ],
-    [
-     5,
      "supertur.com.br",
      "https://supertur.com.br/turismo/sao-luis-ma/transporte",
      "Transfer e transporte turístico em São Luís/MA — 43 empresas"
     ],
     [
-     6,
+     2,
      "www.telelistas.net",
      "https://www.telelistas.net/ma/sao+luis/excursoes",
      "As melhores 5 empresas de Excursões em São Luís - MA"
     ],
     [
-     7,
-     "cnpja.com",
-     "https://cnpja.com/office/40857299000110",
-     "SONHOS VIAGENS TURISMO E SERVICOS LTDA"
+     3,
+     "www.instagram.com",
+     "https://www.instagram.com/popular/agencia-de-viagem-sao-luis/",
+     "Agencia De Viagem Sao Luis"
     ],
     [
-     8,
+     4,
      "www.transferslz.com.br",
      "https://www.transferslz.com.br/reservar",
      "Transfer SLZ — Transporte Executivo em São Luís"
     ],
     [
-     9,
+     5,
      "www.instagram.com",
-     "https://www.instagram.com/gruposbtravel/p/C4-nZfFhokL/?__d=11%252F",
-     "Grupo SB Travel | Muito Mais Para Você! ..."
+     "https://www.instagram.com/mmturismoo_/",
+     "MM T U R I S M O (@mmturismoo_)"
+    ],
+    [
+     6,
+     "www.tripadvisor.es",
+     "https://www.tripadvisor.es/Attraction_Review-g673267-d34654097-Reviews-Alltour_Viagens-Sao_Luis_State_of_Maranhao.html",
+     "ALLTOUR VIAGENS (Sao Luis) - Qué SABER antes de ir ..."
+    ],
+    [
+     7,
+     "sao-luis.infoisinfo-br.com",
+     "https://sao-luis.infoisinfo-br.com/busca/agencia-de-viagem/b/sao-francisco",
+     "Agência de viagem em São Francisco (São Luís)"
+    ],
+    [
+     8,
+     "www.solutudo.com.br",
+     "https://www.solutudo.com.br/empresas/ma/s-luis/agencias-de-turismo/classic-viagens-e-turismo-ltda-4504429",
+     "Classic Viagens E Turismo Ltda em São Luís, MA"
+    ],
+    [
+     9,
+     "www.telelistas.net",
+     "https://www.telelistas.net/ma/sao+luis/clubes+de+turismo",
+     "As melhores 5 empresas de Clubes de Turismo em São Luís"
     ],
     [
      10,
-     "www.instagram.com",
-     "https://www.instagram.com/popular/agencia-de-viagem-sao-luis/",
-     "Agencia De Viagem Sao Luis"
+     "zizatur.com.br",
+     "https://zizatur.com.br/",
+     "Zizatur: Home"
     ]
    ]
   },
@@ -2760,14 +2808,14 @@
     [
      1,
      "www.instagram.com",
-     "https://www.instagram.com/caravelasturismo/",
-     "Caravelas Turismo (@caravelasturismo)"
+     "https://www.instagram.com/cvc.maranhao/",
+     "CVC Maranhão (@cvc.maranhao)"
     ],
     [
      2,
-     "www.instagram.com",
-     "https://www.instagram.com/reel/DF5GR67xmyJ/",
-     "VIAGENS DISPONÍVEIS 😍"
+     "donnaviagemslz.com.br",
+     "https://donnaviagemslz.com.br/",
+     "Dona Viagem SLZ | Passeios e transfers no Maranhão"
     ],
     [
      3,
@@ -2777,9 +2825,9 @@
     ],
     [
      4,
-     "donnaviagemslz.com.br",
-     "https://donnaviagemslz.com.br/",
-     "Dona Viagem SLZ | Passeios e transfers no Maranhão"
+     "www.instagram.com",
+     "https://www.instagram.com/viajantes_slz/",
+     "VIAJANTES SLZ | TURISMO 🛣 (@viajantes_slz)"
     ],
     [
      5,
@@ -2789,9 +2837,9 @@
     ],
     [
      6,
-     "www.instagram.com",
-     "https://www.instagram.com/viajantes_slz/",
-     "VIAJANTES SLZ | TURISMO 🛣 (@viajantes_slz)"
+     "caetesexpedicoes.com.br",
+     "https://caetesexpedicoes.com.br/sao-luis-e-barreirinhas/",
+     "São Luís e Barreirinhas"
     ],
     [
      7,
@@ -2807,15 +2855,15 @@
     ],
     [
      9,
-     "www.tangol.com",
-     "https://www.tangol.com/pt/passeios/sao-luis/d-104",
-     "Excursões em São Luís: viva o melhor do destino - Passeios"
+     "www.instagram.com",
+     "https://www.instagram.com/daluzturismo/",
+     "Daluz Turismo | Agência em São Luís | Lençóis"
     ],
     [
      10,
-     "www.tripadvisor.com.br",
-     "https://www.tripadvisor.com.br/Attractions-g673267-Activities-Sao_Luis_State_of_Maranhao.html",
-     "AS 15 MELHORES coisas para fazer em São Luís (2026)"
+     "www.instagram.com",
+     "https://www.instagram.com/destinosturismo/",
+     "Destinos Turismo (@destinosturismo)"
     ]
    ]
   },
@@ -2824,63 +2872,63 @@
    "top10": [
     [
      1,
-     "voeturviagens.com.br",
-     "https://voeturviagens.com.br/a-agencia-de-viagem-corporativa-como-sua-parceira/",
-     "Agência de viagem corporativa: soluções da Voetur"
+     "www.toptravel.com.br",
+     "https://www.toptravel.com.br/",
+     "Top Travel Viagens – Agência de Viagens em São Paulo"
     ],
     [
      2,
-     "dynamictravel.com.br",
-     "https://dynamictravel.com.br/",
-     "Dynamic Travel | Agência de Viagens Corporativas"
-    ],
-    [
-     3,
-     "premiatoviagens.com.br",
-     "https://premiatoviagens.com.br/corporativo/",
-     "Viagens de Incentivo e Gestão Corporativa"
-    ],
-    [
-     4,
-     "www.instagram.com",
-     "https://www.instagram.com/p/C6trVlCLD4O/",
-     "A Flytour é a maior agência de viagens corporativas do ..."
-    ],
-    [
-     5,
      "www.glassdoor.com.br",
      "https://www.glassdoor.com.br/Vaga/sp-consultor-de-viagens-corporativas-vagas-SRCH_IL.0,2_IS3937_KO3,36.htm",
      "322 vagas de consultor de viagens corporativas – São Paulo"
     ],
     [
-     6,
+     3,
      "www.agaxtur.com.br",
      "https://www.agaxtur.com.br/",
      "Agaxtur | Viva a melhor experiência de viagens"
     ],
     [
-     7,
+     4,
      "cidadedesaopaulo.com",
      "https://cidadedesaopaulo.com/contrate-uma-agencia/",
      "Contrate uma agência - Cidade de São Paulo"
     ],
     [
-     8,
+     5,
      "4travelitaim.com.br",
      "https://4travelitaim.com.br/conteudo/seo-geografico/agencia-de-viagens-em-sao-paulo-agencia-de-turismo-corporativo-sao-paulo-2/",
      "A agência de turismo corporativo São Paulo ..."
     ],
     [
-     9,
-     "opentrips.com.br",
-     "https://opentrips.com.br/agencia-de-viagens-corporativas/",
-     "Agência de viagens corporativas: por que e como contratar?"
+     6,
+     "voeturviagens.com.br",
+     "https://voeturviagens.com.br/a-agencia-de-viagem-corporativa-como-sua-parceira/",
+     "Agência de viagem corporativa: soluções da Voetur"
     ],
     [
-     10,
+     7,
+     "aerotur.com.br",
+     "https://aerotur.com.br/agencia-de-viagens-corporativas/",
+     "Agência de Viagens Corporativas no Brasil"
+    ],
+    [
+     8,
+     "dulie.com.br",
+     "https://dulie.com.br/",
+     "dulie: Aplicações para Turismo e Viagens a Feiras"
+    ],
+    [
+     9,
      "www.ohub.com.br",
      "https://www.ohub.com.br/empresas/agencias-de-viagem/sp/sao-paulo/centro",
      "Melhores empresas de Agências de viagem em Centro ..."
+    ],
+    [
+     10,
+     "www.tudodeturismo.com.br",
+     "https://www.tudodeturismo.com.br/agencias-de-turismo-sao-paulo/",
+     "Agencias de Turismo São Paulo"
     ]
    ]
   },
@@ -2895,57 +2943,57 @@
     ],
     [
      2,
-     "his-brasil.com.br",
-     "https://his-brasil.com.br/",
-     "Home - HIS BRASIL TURISMO"
+     "cvc.com.br",
+     "https://cvc.com.br/pacotes-de-viagem/nacional/sao-paulo",
+     "Pacotes de Viagem para São Paulo"
     ],
     [
      3,
-     "guiadesaopaulo.com.br",
-     "https://guiadesaopaulo.com.br/empresas-de-agencias-de-viagem-e-turismo-em-sao-paulo/",
-     "Empresas de Agências de Viagem e Turismo em São Paulo"
-    ],
-    [
-     4,
      "www.agaxtur.com.br",
      "https://www.agaxtur.com.br/lojas/agaxtur-paulista",
      "Agaxtur Paulista"
     ],
     [
+     4,
+     "guiadesaopaulo.com.br",
+     "https://guiadesaopaulo.com.br/empresas-de-agencias-de-viagem-e-turismo-em-sao-paulo/",
+     "Empresas de Agências de Viagem e Turismo em São Paulo"
+    ],
+    [
      5,
-     "www.instagram.com",
-     "https://www.instagram.com/tripturviagens/?hl=pt",
-     "trip tur viagens | excursões sp (@tripturviagens)"
-    ],
-    [
-     6,
-     "www.conciergedeviagem.com",
-     "https://www.conciergedeviagem.com/",
-     "Concierge DeViagem | Agencia de Viagem | São Paulo"
-    ],
-    [
-     7,
      "4travelitaim.com.br",
      "https://4travelitaim.com.br/conteudo/seo-geografico/agencia-de-viagens-em-sao-paulo-viagem-para-familia-sao-paulo-4/",
      "Agência de viagens em São Paulo. Viagem para família ..."
     ],
     [
-     8,
+     6,
+     "visitesaopaulo.com",
+     "https://visitesaopaulo.com/",
+     "Visite São Paulo: Home"
+    ],
+    [
+     7,
      "pt.scribd.com",
      "https://pt.scribd.com/document/47240632/Agencia-de-Viagens",
      "Agências de Viagens em São Paulo | PDF"
     ],
     [
-     9,
+     8,
      "www.civitatis.com",
-     "https://www.civitatis.com/br/sao-paulo/?srsltid=AYCX9vI5B8Cduht0Unw7uQOc9tpHKqM1vC_zpR-m-zeucBmVrCH3aPky",
+     "https://www.civitatis.com/br/sao-paulo/?srsltid=AYCX9vJEvYzS-OK_E_EPWXDIaWLi9FgNwMbh2Hed7ez4ZFROswhB9anL",
      "68 excursões e atividades em São Paulo"
     ],
     [
+     9,
+     "www.facebook.com",
+     "https://www.facebook.com/AVAndreaViagens/?locale=pt_BR",
+     "Andréa Viagens | São Paulo SP"
+    ],
+    [
      10,
-     "relaxturismo.com.br",
-     "https://relaxturismo.com.br/",
-     "Relax Viagens e Turismo"
+     "pt.scribd.com",
+     "https://pt.scribd.com/document/47240632/Agencia-de-Viagens",
+     "Agências de Viagens em São Paulo | PDF"
     ]
    ]
   },
@@ -2954,63 +3002,63 @@
    "top10": [
     [
      1,
-     "www.ohub.com.br",
-     "https://www.ohub.com.br/empresas/viagens-corporativas/rj/rio-de-janeiro",
-     "Melhores empresas de Viagens Corporativas em Rio ..."
+     "www.klas.com.br",
+     "https://www.klas.com.br/agencia-viagens-rio-de-janeiro",
+     "Agência viagens Rio de Janeiro"
     ],
     [
      2,
-     "www.copastur.com.br",
-     "https://www.copastur.com.br/",
-     "Agência de viagens corporativas com soluções completas"
+     "riomaximo.com",
+     "https://riomaximo.com/",
+     "Agência Nº 1 em Turismo Receptivo no Rio I Rio Maximo Tour"
     ],
     [
      3,
-     "travelcorp.com.br",
-     "https://travelcorp.com.br/blog/turismo-corporativo-no-rio-de-janeiro",
-     "Turismo Corporativo no Rio de Janeiro - TravelCorp"
+     "www.facebook.com",
+     "https://www.facebook.com/nztravelturismo/",
+     "NZ Travel | Rio de Janeiro RJ"
     ],
     [
      4,
-     "www.riotravel.com.br",
-     "https://www.riotravel.com.br/",
-     "RioTravel Turismo | Agência de Viagem Corporativa, Gestão ..."
+     "www.abalonne.com.br",
+     "https://www.abalonne.com.br/",
+     "Abalonne Turismo"
     ],
     [
      5,
-     "aerotur.com.br",
-     "https://aerotur.com.br/agencia-de-viagens-corporativas-no-rio-de-janeiro/",
-     "Agência de Viagens Corporativas no Rio de Janeiro"
+     "toprioturismo.com.br",
+     "https://toprioturismo.com.br/",
+     "TOP RIO - Viagens e Turismo"
     ],
     [
      6,
-     "br.linkedin.com",
-     "https://br.linkedin.com/jobs/viagens-corporativas-vagas-rio-de-janeiro",
-     "18 vagas de Viagens Corporativas em: Rio de Janeiro ..."
+     "www.copastur.com.br",
+     "https://www.copastur.com.br/blog/solucoes-para-viagens-corporativas/",
+     "Soluções para Viagens Corporativas e Conforto do viajante"
     ],
     [
      7,
-     "www.instagram.com",
-     "https://www.instagram.com/copastur/?hl=pt",
-     "Copastur Viagens e Turismo (@copastur)"
+     "www.sbsrj.com.br",
+     "https://www.sbsrj.com.br/",
+     "SBS"
     ],
     [
      8,
-     "r3viagens.com.br",
-     "https://r3viagens.com.br/r3-viagens-a-melhor-agencia-de-viagens-corporativas-no-rio-de-janeiro/",
-     "Rio de Janeiro - A Melhor Agência de Viagens Corp."
+     "www.klas.com.br",
+     "https://www.klas.com.br/agencias-de-viagens-rio-de-janeiro",
+     "Agências de viagens Rio de Janeiro"
     ],
     [
      9,
-     "paytrack.com.br",
-     "https://paytrack.com.br/blog/agencia-de-viagens-corporativas-como-escolher/",
-     "Qual a melhor agência de viagens corporativas 2026"
+     "www.instagram.com",
+     "https://www.instagram.com/p/DdHq-GhGgmV/",
+     "Uma viagem corporativa não é apenas sair de um ponto e ..."
     ],
     [
      10,
-     "www.rbwtravel.com.br",
-     "https://www.rbwtravel.com.br/",
-     "RBW Travel Virtuoso | Agência de Turismo e Eventos | Rio de ..."
+     "c2rio.travel",
+     "https://c2rio.travel/",
+     "C2Rio Tours & Travel - Sua operadora de Turismo nº1 do Rio ..."
     ]
    ]
   },
@@ -3019,63 +3067,63 @@
    "top10": [
     [
      1,
-     "www.instagram.com",
-     "https://www.instagram.com/fortesviagens/",
-     "Agência de Viagens Rio de Janeiro (@fortesviagens)"
+     "www.viajanet.com.br",
+     "https://www.viajanet.com.br/pacotes/viagens-baratas/pacotes-para-rio+de+janeiro",
+     "Pacote de viagem para Rio de Janeiro"
     ],
     [
      2,
-     "marthario.com.br",
-     "https://marthario.com.br/",
-     "Mar-Tha Rio Viagens: Agência de Viagens | Eleita a melhor ..."
+     "www.tripadvisor.com.br",
+     "https://www.tripadvisor.com.br/Attractions-g303506-Activities-c42-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html",
+     "Excursões em Rio de Janeiro"
     ],
     [
      3,
-     "www.tripadvisor.com.br",
-     "https://www.tripadvisor.com.br/ShowUserReviews-g303506-d12236111-r467962194-Leve_Viagens-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html",
-     "Melhor agência de Turismo do RJ - Leve Viagens"
+     "www.instagram.com",
+     "https://www.instagram.com/tourinrj/",
+     "TOUR IN RIO (@tourinrj)"
     ],
     [
      4,
-     "www.smartriotour.com.br",
-     "https://www.smartriotour.com.br/",
-     "Passeios Rio de Janeiro → Os Melhores passeios no Rio de ..."
+     "www.tripadvisor.com.br",
+     "https://www.tripadvisor.com.br/ShowTopic-g303506-i1199-k10741350-Qual_a_melhor_agencia_de_passeios_no_rio-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html",
+     "Qual a melhor agência de passeios no rio?"
     ],
     [
      5,
-     "www.agenciadeviagensrj.com.br",
-     "https://www.agenciadeviagensrj.com.br/",
-     "7 Destinos Turismo: Agência de Viagens Rio"
+     "www.ohub.com.br",
+     "https://www.ohub.com.br/empresas/agencias-de-viagem/rj",
+     "Melhores empresas de Agências de viagem em RJ 2026"
     ],
     [
      6,
-     "www.brasilshowturismo.com",
-     "https://www.brasilshowturismo.com/",
-     "Brasil Show Turismo: Agência de Turismo no Rio de Janeiro"
+     "city.rio.br",
+     "https://city.rio.br/agencia",
+     "City Tour no Rio de Janeiro | Passeios Inesquecíveis com ..."
     ],
     [
      7,
-     "www.cvc.com.br",
-     "https://www.cvc.com.br/destinos/rio-de-janeiro-brasil",
-     "Guia de Viagem para o Rio de Janeiro"
+     "www.tripadvisor.com.br",
+     "https://www.tripadvisor.com.br/Attraction_Review-g303506-d27432445-Reviews-BrazilTurism_Agencia_de_Viagens_e_Turismo-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html",
+     "BrazilTurism Agencia de Viagens e Turismo - Rio de Janeiro"
     ],
     [
      8,
-     "www.instagram.com",
-     "https://www.instagram.com/martharioviagens/",
-     "Mar-Tha Rio Viagens (@martharioviagens)"
+     "www.agaxtur.com.br",
+     "https://www.agaxtur.com.br/Destinos/rio-de-janeiro",
+     "Rio de Janeiro: um dos destinos turísticos mais famosos do ..."
     ],
     [
      9,
-     "city.rio.br",
-     "https://city.rio.br/",
-     "Home - Passeios no Rio de Janeiro | City Rio Turismo ..."
+     "citytourrj.com.br",
+     "https://citytourrj.com.br/",
+     "City Tour Premium no Rio de Janeiro privativo ou em grupo"
     ],
     [
      10,
-     "tijuca.flytour.com.br",
-     "https://tijuca.flytour.com.br/",
-     "Viagens a Lazer - Flytour - Tijuca | Rio de Janeiro"
+     "copacabana.com",
+     "https://copacabana.com/agencias-de-turismo",
+     "Agências de Viagens e Turismo"
     ]
    ]
   },
@@ -3084,63 +3132,63 @@
    "top10": [
     [
      1,
-     "maactravel.com.br",
-     "https://maactravel.com.br/",
-     "MAAC Travel - Agência de Viagens Corporativas"
+     "www.instagram.com",
+     "https://www.instagram.com/bhturismoleandra/",
+     "BH Turismo (@bhturismoleandra)"
     ],
     [
      2,
-     "r3viagens.com.br",
-     "https://r3viagens.com.br/melhor-agencia-de-viagens-corporativas-belo-horizonte/",
-     "Melhor agência de viagens corporativas em Belo Horizonte"
+     "viajarturismo.com.br",
+     "https://viajarturismo.com.br/",
+     "Viajar Turismo - Sua Agencia de Viagens em Belo Horizonte"
     ],
     [
      3,
-     "alagev.org",
-     "https://alagev.org/comunidades/comunidade-de-gestores-de-viagens-corporativas-minas-gerais/",
-     "GVMG :: Gestores de Viagens Corporativas de Minas Gerais"
+     "portalbelohorizonte.com.br",
+     "https://portalbelohorizonte.com.br/creativecity/quero-conhecer/agencia-de-receptivo-turistico",
+     "Agências de viagem"
     ],
     [
      4,
-     "www.gemmatur.com.br",
-     "https://www.gemmatur.com.br/",
-     "Gemma Viagens"
+     "destaquetur.com.br",
+     "https://destaquetur.com.br/",
+     "Destaque Turismo – Agência de viagens e turismo em BH"
     ],
     [
      5,
-     "travelcorp.com.br",
-     "https://travelcorp.com.br/blog/turismo-corporativo-em-minas-gerais",
-     "Turismo Corporativo em Minas Gerais - TravelCorp"
+     "www.ohub.com.br",
+     "https://www.ohub.com.br/empresas/agencias-de-viagem/mg/belo-horizonte",
+     "Agências de Viagem em Belo Horizonte - MG"
     ],
     [
      6,
-     "aerotur.com.br",
-     "https://aerotur.com.br/agencia-de-viagens-corporativas-em-belo-horizonte/",
-     "Agência de Viagens Corporativas em Belo Horizonte"
+     "belvitur.com.br",
+     "https://belvitur.com.br/quem-somos/",
+     "Somos líder no mercado de turismo em Minas há 60 anos."
     ],
     [
      7,
-     "br.linkedin.com",
-     "https://br.linkedin.com/jobs/viagens-corporativas-vagas-belo-horizonte-e-regi%C3%A3o",
-     "33 Viagens Corporativas vagas em Belo Horizonte e Região"
+     "www.gemmatur.com.br",
+     "https://www.gemmatur.com.br/blog/",
+     "Blog"
     ],
     [
      8,
      "www.instagram.com",
-     "https://www.instagram.com/liveviagens/",
-     "Live Viagens Corporativas (@liveviagens)"
+     "https://www.instagram.com/flytourbelohorizonte/",
+     "Viagens Corporativas e Lazer (@flytourbelohorizonte)"
     ],
     [
      9,
      "viajarturismo.com.br",
-     "https://viajarturismo.com.br/viajar-turismo/agencia-de-turismo-e-viagens-bh-belo-horizonte/",
-     "Agência de Turismo e Viagens BH"
+     "https://viajarturismo.com.br/viajar-turismo/agencia-de-viagens-savassi-belo-horizonte/",
+     "Agência de Viagens Savassi Belo Horizonte - Viajar Turismo"
     ],
     [
      10,
-     "gvbtravel.com.br",
-     "https://gvbtravel.com.br/",
-     "GVB Travel"
+     "www.liveviagens.com.br",
+     "https://www.liveviagens.com.br/servicos/",
+     "Serviços - Live Viagens - Viagens Corporativas em BH"
     ]
    ]
   },
@@ -3150,62 +3198,62 @@
     [
      1,
      "www.instagram.com",
-     "https://www.instagram.com/ibizaturismo/",
-     "IBIZA TURISMO | Viagens ✈️💙🧡 (@ibizaturismo)"
+     "https://www.instagram.com/realizarviagens/?hl=pt-br",
+     "Realizar Viagens - Belo Horizonte-MG (@realizarviagens)"
     ],
     [
      2,
-     "site.saojoseviagens.com.br",
-     "https://site.saojoseviagens.com.br/",
-     "São José Viagens - Agência de viagens"
+     "www.primotur.com.br",
+     "https://www.primotur.com.br/",
+     "Primotur Receptivo"
     ],
     [
      3,
-     "munditravel.com.br",
-     "https://munditravel.com.br/",
-     "Mundi Travel – Agência de Viagens em BH"
+     "www.cvc.com.br",
+     "https://www.cvc.com.br/pacotes-de-viagem/nacional/belo-horizonte",
+     "Pacotes de Viagem para Belo Horizonte"
     ],
     [
      4,
-     "oitoturismo.com.br",
-     "https://oitoturismo.com.br/",
-     "Agência de Viagens em BH | Oito Turismo no BH Shopping"
+     "www.lagoadapampulha.com.br",
+     "https://www.lagoadapampulha.com.br/melhores-agencias-de-turismo-em-bh/",
+     "Melhores Agências de Turismo em BH! - Lagoa da Pampulha"
     ],
     [
      5,
-     "belvitur.com.br",
-     "https://belvitur.com.br/",
-     "BELVITUR | Sua próxima viagem está aqui!"
+     "nascentetour.com.br",
+     "https://nascentetour.com.br/",
+     "Nascente Turismo | Home - Nascente Turismo"
     ],
     [
      6,
-     "viajarturismo.com.br",
-     "https://viajarturismo.com.br/viajar-turismo/agencia-de-turismo-e-viagens-bh-belo-horizonte/",
-     "Agência de Turismo e Viagens BH"
+     "www.instagram.com",
+     "https://www.instagram.com/amigastour/",
+     "Amigas Tour BH (@amigastour) · Belo Horizonte, MG"
     ],
     [
      7,
-     "bhecoturismo.com.br",
-     "https://bhecoturismo.com.br/",
-     "BH Ecoturismo - Mais de 400 viagens já realizadas, em mais ..."
+     "viajarturismo.com.br",
+     "https://viajarturismo.com.br/turismo/explorando-o-mundo-com-a-viajar-turismo-uma-agencia-renomada-em-belo-horizonte/",
+     "Uma Agência Renomada em Belo Horizonte - Viajar Turismo"
     ],
     [
      8,
-     "portalbelohorizonte.com.br",
-     "https://portalbelohorizonte.com.br/creativecity/quero-conhecer/agencia-de-receptivo-turistico",
-     "Agências de viagem"
+     "www.brauna.com.br",
+     "https://www.brauna.com.br/",
+     "Braúna - Viagens e Turismo - Caldas Novas, Angra dos Reis ..."
     ],
     [
      9,
-     "www.instagram.com",
-     "https://www.instagram.com/sergioturbh/",
-     "Sergio Tur BH | Viagem (@sergioturbh)"
+     "www.ohub.com.br",
+     "https://www.ohub.com.br/empresas/agencias-de-viagem/mg/belo-horizonte",
+     "Agências de Viagem em Belo Horizonte - MG"
     ],
     [
      10,
-     "bheventos.com.br",
-     "https://bheventos.com.br/fornecedores/agencia-de-turismo",
-     "Agência de Turismo em BH veja lista com as 10 melhores!"
+     "www.lcntur.com.br",
+     "https://www.lcntur.com.br/",
+     "LCN AGENCIA DE VIAGENS LTDA - EPP"
     ]
    ]
   },
@@ -3214,63 +3262,63 @@
    "top10": [
     [
      1,
-     "zortur.com.br",
-     "https://zortur.com.br/",
-     "ZORTUR - Agência de Turismo - HOME"
+     "vitoria.flytour.com.br",
+     "https://vitoria.flytour.com.br/",
+     "Viagens a Lazer - Flytour - Vitória | ES"
     ],
     [
      2,
-     "www.instagram.com",
-     "https://www.instagram.com/reel/DCUgUf7vJIC/",
-     "#turismo #espiritosanto #budagigante #capixaba #viagem # ..."
+     "www.ohub.com.br",
+     "https://www.ohub.com.br/empresas/agencias-de-viagem/es/vitoria",
+     "Agências de Viagem em Vitória - ES"
     ],
     [
      3,
-     "www.instagram.com",
-     "https://www.instagram.com/p/Ddt-C4_gydx/",
-     "✨ Seu compromisso merece uma ..."
+     "uniglobepro.com.br",
+     "https://uniglobepro.com.br/viagens-corporativas-vitoria",
+     "Agência de viagens corporativas em Vitória ES"
     ],
     [
      4,
-     "www.tripadvisor.com.br",
-     "https://www.tripadvisor.com.br/Attraction_Review-g303320-d15656910-Reviews-AC_EXECUTIVE_TRAVEL-Vitoria_State_of_Espirito_Santo.html",
-     "AC EXECUTIVE TRAVEL - O que saber antes de ir (2026)"
+     "www.instagram.com",
+     "https://www.instagram.com/voudeviamundo/",
+     "VIA MUNDO TRAVEL - Vitoria/ES (@voudeviamundo)"
     ],
     [
      5,
-     "www.turismodobrasil.com",
-     "https://www.turismodobrasil.com/vitoria/agencia-de-turismo-vitoria/page/6",
-     "Agência de Turismo em Vitória"
+     "paylesstur.com.br",
+     "https://paylesstur.com.br/",
+     "PayLess Viagens E Turismo - Pay Less - Agência De Viagem ..."
     ],
     [
      6,
-     "www.instagram.com",
-     "https://www.instagram.com/p/DRqTFQyjk0E/",
-     "Dias incríveis em Vitória com preço *imperdível* no aéreo ..."
+     "capixabaturismo.com.br",
+     "https://capixabaturismo.com.br/",
+     "Capixaba Turismo Receptivo"
     ],
     [
      7,
-     "www.instagram.com",
-     "https://www.instagram.com/vitoria_viagens/",
-     "vitoria_viagens"
+     "agenciasdeviagens.org",
+     "https://agenciasdeviagens.org/pt-br/z/agencias-de-viagens/123971-vitoria/",
+     "Descubra as melhores Agências de Viagem em Vitória"
     ],
     [
      8,
-     "www.listamais.com.br",
-     "https://www.listamais.com.br/local/cad_idfD509D/vvp-turismo-agencias-de-viagens-e-turismo-em-vitoria-es",
-     "Vvp Turismo em Vitória ES - Centro | Agências de Viagens ..."
+     "www.esconvention.com.br",
+     "http://www.esconvention.com.br/site/associado_escolhido.asp?Pag_Nome=associado_escolhido.asp&Cod_Pessoa=2167",
+     "Tourlines Viagens e Turismo Ltda"
     ],
     [
      9,
-     "feirasecongressos.com.br",
-     "https://feirasecongressos.com.br/?_sp=4e53b634-07cf-4be7-9d15-9b3e8250cc16",
-     "https://feirasecongressos.com.br/?_sp=4e53b634-07c..."
+     "www.l7viagens.com.br",
+     "https://www.l7viagens.com.br/",
+     "L7 Viagens"
     ],
     [
      10,
-     "turismo.vitoria.net.br",
-     "https://turismo.vitoria.net.br/hospedagem-corporativa/",
-     "Hospedagem Corporativa - Turismo Vitória"
+     "www.instagram.com",
+     "https://www.instagram.com/dhiturismo/",
+     "Agência de Viagens no Espírito Santo (@dhiturismo)"
     ]
    ]
   },
@@ -3280,62 +3328,62 @@
     [
      1,
      "www.instagram.com",
-     "https://www.instagram.com/voudeviamundo/",
-     "VIA MUNDO TRAVEL - Vitoria/ES (@voudeviamundo)"
+     "https://www.instagram.com/flytour.vitoria/",
+     "Flytour Vitória (@flytour.vitoria)"
     ],
     [
      2,
-     "vitoria.flytour.com.br",
-     "https://vitoria.flytour.com.br/",
-     "Viagens a Lazer - Flytour - Vitória | ES"
+     "www.viajenaviagem.com",
+     "https://www.viajenaviagem.com/destino/vitoria/",
+     "Dicas e posts sobre Vitória"
     ],
     [
      3,
-     "agenciasdeviagens.org",
-     "https://agenciasdeviagens.org/pt-br/z/agencias-de-viagens/123971-vitoria/",
-     "Descubra as melhores Agências de Viagem em Vitória"
+     "www.turismocity.com.br",
+     "https://www.turismocity.com.br/atividades-em-Vitoria_Brasil",
+     "Atividades em Vitória, Brasil"
     ],
     [
      4,
-     "capixabaturismo.com.br",
-     "https://capixabaturismo.com.br/",
-     "Capixaba Turismo Receptivo"
+     "www.alla1viagens.com.br",
+     "https://www.alla1viagens.com.br/",
+     "Alla1 Viagens | Agência de Viagens em Vitória - ES | Alla1 ..."
     ],
     [
      5,
-     "www.tiapenha.com.br",
-     "https://www.tiapenha.com.br/",
-     "Tia Penha Turismo - Agência de Viagens Disney em Vitória - ES"
+     "turismo.vilavelha.es.gov.br",
+     "https://turismo.vilavelha.es.gov.br/servicos/agencias-de-turismo/ss-tour-viagens-e-turismo-1300",
+     "SS Tour Viagens e Turismo"
     ],
     [
      6,
-     "www.instagram.com",
-     "https://www.instagram.com/dhiturismo/",
-     "Agência de Viagens no Espírito Santo (@dhiturismo)"
+     "www.facebook.com",
+     "https://www.facebook.com/azturismoeviagens/?locale=pt_BR",
+     "AZ Turismo e Viagens | Vitória ES"
     ],
     [
      7,
-     "www.civitatis.com",
-     "https://www.civitatis.com/br/vitoria-brasil/?srsltid=AYCX9vLlUiEGosJ7LO6IfedlWYjczNXVnzQqB2rRoaHamtBr7c1EujcG",
-     "9 excursões e atividades em Vitória"
+     "turismo.vitoria.net.br",
+     "https://turismo.vitoria.net.br/servicos-e-lojas/agencias-de-turismo/",
+     "Agências de Turismo"
     ],
     [
      8,
-     "semprevix.com.br",
-     "https://semprevix.com.br/",
-     "Semprevix Viagens – Experiências Incríveis para Você !"
+     "www.tripadvisor.com.br",
+     "https://www.tripadvisor.com.br/Attractions-g303320-Activities-c42-Vitoria_State_of_Espirito_Santo.html",
+     "AS 5 MELHORES excursões em Vitória (desde R$ 26) 2026"
     ],
     [
      9,
-     "paylesstur.com.br",
-     "https://paylesstur.com.br/",
-     "PayLess Viagens E Turismo - Pay Less - Agência De Viagem ..."
+     "www.expertexecutivo.com",
+     "https://www.expertexecutivo.com/",
+     "Expert Turismo Receptivo"
     ],
     [
      10,
-     "www.ohub.com.br",
-     "https://www.ohub.com.br/empresas/agencias-de-viagem/es/vitoria",
-     "Agências de Viagem em Vitória - ES"
+     "www.expertexecutivo.com",
+     "https://www.expertexecutivo.com/",
+     "Expert Turismo Receptivo"
     ]
    ]
   },
@@ -3356,51 +3404,51 @@
     ],
     [
      3,
-     "premierturismo.com.br",
-     "https://premierturismo.com.br/corporativoblog/page/5/",
-     "Corporativo - Página 5 de 9"
-    ],
-    [
-     4,
-     "www.vojitourgroup.com",
-     "https://www.vojitourgroup.com/",
-     "Vojitour Group - Grupo Empresarial de Viagens"
-    ],
-    [
-     5,
-     "motiontur.com.br",
-     "https://motiontur.com.br/",
-     "Motion Turismo: Agência de Passeios em Curitiba"
-    ],
-    [
-     6,
-     "mocellinturismo.com.br",
-     "https://mocellinturismo.com.br/",
-     "Mocellin Turismo: Agência de turismo receptivo em Curitiba"
-    ],
-    [
-     7,
-     "www.ohub.com.br",
-     "https://www.ohub.com.br/empresas/viagens-corporativas/pr/curitiba",
-     "Viagens Corporativas em Curitiba - PR"
-    ],
-    [
-     8,
-     "turismo.curitiba.pr.gov.br",
-     "https://turismo.curitiba.pr.gov.br/en/contents/agencies/39",
-     "Agencies - Curitiba Turismo"
-    ],
-    [
-     9,
      "r3viagens.com.br",
      "https://r3viagens.com.br/tag/melhor-agencia-de-viagens-corporativas-em-curitiba-viagens-corporativas-curitiba-agencia-de-viagens-corporativas-curitiba-gestao-de-viagens-corporativas-curitiba-tmc-curitiba/",
      "melhor agência de viagens corporativas em Curitiba ..."
     ],
     [
+     4,
+     "motiontur.com.br",
+     "https://motiontur.com.br/",
+     "Motion Turismo: Agência de Passeios em Curitiba"
+    ],
+    [
+     5,
+     "www.ohub.com.br",
+     "https://www.ohub.com.br/empresas/viagens-corporativas/pr/curitiba",
+     "Viagens Corporativas em Curitiba - PR"
+    ],
+    [
+     6,
+     "www.starover.com.br",
+     "https://www.starover.com.br/",
+     "StarOver Turismo - Curitiba"
+    ],
+    [
+     7,
+     "mocellinturismo.com.br",
+     "https://mocellinturismo.com.br/",
+     "Mocellin Turismo: Agência de turismo receptivo em Curitiba"
+    ],
+    [
+     8,
+     "www.vojitourgroup.com",
+     "https://www.vojitourgroup.com/",
+     "Vojitour Group - Grupo Empresarial de Viagens"
+    ],
+    [
+     9,
+     "turismo.curitiba.pr.gov.br",
+     "https://turismo.curitiba.pr.gov.br/en/contents/agencies/39",
+     "Agencies - Curitiba Turismo"
+    ],
+    [
      10,
-     "www.ncturismo.com.br",
-     "https://www.ncturismo.com.br/",
-     "NC Turismo | Gestão Inteligente de Viagens Corporativas"
+     "premierturismo.com.br",
+     "https://premierturismo.com.br/corporativoblog/page/2/",
+     "Corporativo - Página 2 de 9"
     ]
    ]
   },
@@ -3416,20 +3464,20 @@
     [
      2,
      "www.instagram.com",
-     "https://www.instagram.com/specialparana/",
-     "Special Paraná Turismo Receptivo (@specialparana)"
+     "https://www.instagram.com/positive_viagens/",
+     "Positive Viagens e Turismo (@positive_viagens)"
     ],
     [
      3,
-     "agenciasdeviagens.org",
-     "https://agenciasdeviagens.org/pt-br/z/agencias-de-viagens/120900-curitiba/",
-     "Descubra as melhores Agências de Viagem em Curitiba"
+     "www.ohub.com.br",
+     "https://www.ohub.com.br/empresas/agencias-de-viagem/pr/curitiba",
+     "Agências de Viagem em Curitiba - PR"
     ],
     [
      4,
-     "www.avturismo.tur.br",
-     "https://www.avturismo.tur.br/",
-     "AV Turismo | Agência de Turismo | Av. Sete de Setembro ..."
+     "turismo.curitiba.pr.gov.br",
+     "https://turismo.curitiba.pr.gov.br/es/contenidos/agencias/39/3",
+     "Agências - Curitiba Turismo"
     ],
     [
      5,
@@ -3439,33 +3487,33 @@
     ],
     [
      6,
-     "www.klas.com.br",
-     "https://www.klas.com.br/agencias-de-viagens-curitiba",
-     "Agências de viagens curitiba | Klas"
+     "www.instagram.com",
+     "https://www.instagram.com/specialparana/",
+     "Special Paraná Turismo Receptivo (@specialparana)"
     ],
     [
      7,
-     "galatastur.com.br",
-     "https://galatastur.com.br/",
-     "Gálatas Tur | Turismo Receptivo em Curitiba"
+     "www.klas.com.br",
+     "https://www.klas.com.br/agencia-turismo-em-curitiba",
+     "Agência Turismo em Curitiba"
     ],
     [
      8,
-     "www.swistur.com.br",
-     "https://www.swistur.com.br/viagens-brasil",
-     "Viagens Brasil | Agência de Viagens | Curitiba - PR"
+     "agenciasdeviagens.org",
+     "https://agenciasdeviagens.org/pt-br/z/agencias-de-viagens/120900-curitiba/",
+     "Descubra as melhores Agências de Viagem em Curitiba"
     ],
     [
      9,
-     "americatourcuritiba.com.br",
-     "https://americatourcuritiba.com.br/category/melhor-preco-pacote-de-turismo-em-curitiba/",
-     "melhor preço pacote de turismo em Curitiba"
+     "www.avturismo.tur.br",
+     "https://www.avturismo.tur.br/",
+     "AV Turismo | Agência de Turismo | Av. Sete de Setembro ..."
     ],
     [
      10,
-     "turismo.curitiba.pr.gov.br",
-     "https://turismo.curitiba.pr.gov.br/es/contenidos/agencias/39/3",
-     "Agências - Curitiba Turismo"
+     "www.tr1ps.com.br",
+     "https://www.tr1ps.com.br/agencia-de-turismo-em-curitiba/",
+     "Agência de turismo em Curitiba: O mundo espera por você"
     ]
    ]
   },
@@ -3474,63 +3522,63 @@
    "top10": [
     [
      1,
-     "www.ohub.com.br",
-     "https://www.ohub.com.br/empresas/agencias-de-viagem/rs/porto-alegre",
-     "Agências de Viagem em Porto Alegre - RS"
+     "www.365brasil.com",
+     "https://www.365brasil.com/porto_alegre/agencias-de-viajes-y-turismo_ca.html",
+     "Agencias de viajes y turismo en Porto Alegre - 365 Brasil"
     ],
     [
      2,
-     "www.nexttrip.com.br",
-     "https://www.nexttrip.com.br/",
-     "Next Trip Agência de Viagens | Agência de viagens | Porto ..."
+     "www.365brasil.com",
+     "https://www.365brasil.com/bra/porto_alegre/agencias-de-viagens_cs.html",
+     "Agências de viagens en Porto Alegre - 365 Brasil"
     ],
     [
      3,
-     "cbmturismo.com.br",
-     "https://cbmturismo.com.br/servicos/?id=19&/consultoria-em-viagens",
-     "Consultoria em viagens"
+     "www.facebook.com",
+     "https://www.facebook.com/planodeviagempoa/",
+     "Plano de Viagem | Porto Alegre RS"
     ],
     [
      4,
-     "www.mercaturcorporate.com.br",
-     "https://www.mercaturcorporate.com.br/",
-     "Mercatur Corporate"
+     "www.facebook.com",
+     "https://www.facebook.com/aidaturismo/",
+     "Aidatur | Porto Alegre RS"
     ],
     [
      5,
-     "www.instagram.com",
-     "https://www.instagram.com/vipturismo.poa/",
-     "Vip Turismo - Porto Alegre (@vipturismo.poa)"
+     "www.ciatourtransporte.com.br",
+     "http://www.ciatourtransporte.com.br/",
+     ":: CiaTour - Tansporte Profissional de Pessoas :: Transporte ..."
     ],
     [
      6,
-     "www.bmtravel.com.br",
-     "https://www.bmtravel.com.br/",
-     "BM Travel Viagens Corporativas"
+     "supertur.com.br",
+     "https://supertur.com.br/turismo/porto-alegre-rs/agencias",
+     "Agências de viagens e turismo em Porto Alegre/RS - SuperTur"
     ],
     [
      7,
-     "agenciasdeviagens.org",
-     "https://agenciasdeviagens.org/pt-br/z/agencias-de-viagens/122744-porto-alegre/",
-     "Descubra as melhores Agências de Viagem em Porto Alegre"
+     "www.telelistas.net",
+     "https://www.telelistas.net/rs/porto+alegre/agencias+de+turismo",
+     "As melhores 5 empresas de Agências de Turismo"
     ],
     [
      8,
-     "uniglobepro.com.br",
-     "https://uniglobepro.com.br/viagens-corporativas-porto-alegre",
-     "Agência de viagens corporativas em Porto Alegre RS"
+     "www.gaiaturismo.tur.br",
+     "http://www.gaiaturismo.tur.br/quem-somos",
+     "- Quem Somos - Gaia Turismo"
     ],
     [
      9,
-     "catiaerea.com",
-     "https://catiaerea.com/",
-     "CatiAérea: Agência de Viagens Corporativas em Porto Alegre"
+     "www.instagram.com",
+     "https://www.instagram.com/turisporto/",
+     "TURISPORTO AGÊNCIA E EVENTOS (@turisporto)"
     ],
     [
      10,
-     "www.planetaviagem.net",
-     "https://www.planetaviagem.net/",
-     "Planeta Viagem - A emoção de descobrir o mundo"
+     "www.econodata.com.br",
+     "https://www.econodata.com.br/maiores-empresas/rs-porto-alegre/viagem-de-lazer",
+     "Maiores Empresas de Viagem de Lazer em Porto Alegre, ..."
     ]
    ]
   },
@@ -3539,63 +3587,63 @@
    "top10": [
     [
      1,
-     "www.linhaturismo.com.br",
-     "https://www.linhaturismo.com.br/",
-     "A Linha Turismo é um roteiro turístico de Porto Alegre, com ..."
+     "www.instagram.com",
+     "https://www.instagram.com/vipturismo.poa/",
+     "Vip Turismo - Porto Alegre (@vipturismo.poa)"
     ],
     [
      2,
-     "primetour.com.br",
-     "https://primetour.com.br/",
-     "PrimeTour | Agência de Viagens, Resorts e Experiências ..."
+     "portosulturismo.com.br",
+     "http://portosulturismo.com.br/",
+     "Portosul Turismo – Há 3 décadas realizando sonhos ao redor ..."
     ],
     [
      3,
-     "agenciamontealegre.com.br",
-     "https://agenciamontealegre.com.br/",
-     "Monte Alegre Agência de Viagens"
+     "www.ohub.com.br",
+     "https://www.ohub.com.br/empresas/agencias-de-viagem/rs/porto-alegre",
+     "Melhores empresas de Agências de viagem em Porto Alegre"
     ],
     [
      4,
-     "www.facebook.com",
-     "https://www.facebook.com/nossagenciaviagens/?locale=pt_BR",
-     "Nossagência Viagens e Turismo | Porto Alegre RS"
+     "www.girotrip.com.br",
+     "https://www.girotrip.com.br/",
+     "Girotrip Turismo | Agência de Turismo"
     ],
     [
      5,
-     "www.planetaviagem.net",
-     "https://www.planetaviagem.net/",
-     "Planeta Viagem - A emoção de descobrir o mundo"
+     "agenciasdeviagens.org",
+     "https://agenciasdeviagens.org/pt-br/z/agencias-de-viagens/122744-porto-alegre/",
+     "Descubra as melhores Agências de Viagem em Porto Alegre"
     ],
     [
      6,
-     "agenciasdeviagens.org",
-     "https://agenciasdeviagens.org/pt-br/z/agencias-de-viagens/119195-estado-rio-grande-do-sul/",
-     "Top 99 agências de viagens em Estado do Rio Grande do Sul ..."
+     "exclusivaviagens.com.br",
+     "https://exclusivaviagens.com.br/",
+     "Exclusiva Viagens | Sua Agência de Viagens em Porto Alegre"
     ],
     [
      7,
-     "www.facebook.com",
-     "https://www.facebook.com/groups/viajanteki/",
-     "Turismo e Excursão - Embarque em Porto Alegre e Região"
+     "www.atenasturismo.com.br",
+     "https://www.atenasturismo.com.br/",
+     "Atenas Turismo | Agência de Viagens Zona Sul Porto Alegre"
     ],
     [
      8,
-     "www.365brasil.com",
-     "https://www.365brasil.com/porto_alegre/agencias-de-viajes-y-turismo_ca.html",
-     "Agencias de viajes y turismo en Porto Alegre - 365 Brasil"
+     "nextviagem.wixsite.com",
+     "https://nextviagem.wixsite.com/turismors/agencias-de-porto-alegre",
+     "Agências de Turismo no Estado do Rio Grande do Sul"
     ],
     [
      9,
-     "www.facebook.com",
-     "https://www.facebook.com/groups/609921155757562/?locale=pt_BR",
-     "Excursões e Viagens de Porto Alegre"
+     "www.instagram.com",
+     "https://www.instagram.com/turispoa/",
+     "TURISPOA | Agência de Viagens e Turismo ..."
     ],
     [
      10,
-     "www.instagram.com",
-     "https://www.instagram.com/betravel.turismo/",
-     "Agência de viagens | Porto Alegre (@betravel.turismo)"
+     "www.unitur.com.br",
+     "https://www.unitur.com.br/",
+     "Unitur | Agência de Viagens e Turismo"
     ]
    ]
   },
@@ -3604,80 +3652,15 @@
    "top10": [
     [
      1,
-     "globaltravelcorporate.com.br",
-     "https://globaltravelcorporate.com.br/",
-     "Home - Global Travel & Corporate | Agência de viagens em ..."
+     "localtour.com.br",
+     "https://localtour.com.br/",
+     "LOCAL TOUR Passeios, Receptivo e Transporte em ..."
     ],
     [
      2,
-     "www.ohub.com.br",
-     "https://www.ohub.com.br/empresas/agencias-de-viagem/sc/florianopolis",
-     "Melhores empresas de Agências de viagem em Florianópolis"
-    ],
-    [
-     3,
-     "uniglobepro.com.br",
-     "https://uniglobepro.com.br/viagens-corporativas-florianopolis",
-     "Agência de viagens corporativas em Florianópolis SC"
-    ],
-    [
-     4,
      "www.instagram.com",
-     "https://www.instagram.com/lageturfloripa/",
-     "Agência de Viagens | 29 anos de histórias (@lageturfloripa)"
-    ],
-    [
-     5,
-     "aerotur.com.br",
-     "https://aerotur.com.br/agencia-de-viagens-corporativas-em-florianopolis/",
-     "Agência de Viagens Corporativas em Florianópolis"
-    ],
-    [
-     6,
-     "sambatur.com.br",
-     "https://sambatur.com.br/",
-     "Sambatur: Agência de viagens e turismo em Florianópolis"
-    ],
-    [
-     7,
-     "guiafloripa.com.br",
-     "https://guiafloripa.com.br/servicos/turismo/agencias-de-turismo-viagens",
-     "Agências de Turismo e Viagens - Florianópolis"
-    ],
-    [
-     8,
-     "www.fibratur.com.br",
-     "https://www.fibratur.com.br/",
-     "Fibratur - Agência de Viagens"
-    ],
-    [
-     9,
-     "topturismosc.com.br",
-     "https://topturismosc.com.br/",
-     "Top Turismo: Agência de Turismo em Florianópolis"
-    ],
-    [
-     10,
-     "faveni.edu.br",
-     "https://faveni.edu.br/curso/financas-corporativas-e-matematica/",
-     "FINANÇAS CORPORATIVAS E MATEMÁTICA"
-    ]
-   ]
-  },
-  "lazer-florianopolis": {
-   "data": "2026-10-22",
-   "top10": [
-    [
-     1,
-     "www.instagram.com",
-     "https://www.instagram.com/itaguasulturismo/",
-     "Passeios Florianópolis (@itaguasulturismo)"
-    ],
-    [
-     2,
-     "www.acoriana.com.br",
-     "https://www.acoriana.com.br/",
-     "Açoriana Turismo - 40 Anos"
+     "https://www.instagram.com/graceturismo/",
+     "Grace Turismo (@graceturismo) · Florianópolis, SC"
     ],
     [
      3,
@@ -3687,39 +3670,39 @@
     ],
     [
      4,
-     "www.instagram.com",
-     "https://www.instagram.com/reel/DRwVkyoEUQT/",
-     "🏝✨ Pacote Florianópolis – SC ✈️ 👥 2 Adultos 📌 Inclui: ✔ ..."
+     "empresas.serasaexperian.com.br",
+     "https://empresas.serasaexperian.com.br/consulta-gratis/FLORIPA-AGENCIA-DE-VIAGEM-E-TURISMO-LTDA-ME-76367069000110",
+     "FLORIPA AGENCIA DE VIAGEM E TURISMO LTDA - ME"
     ],
     [
      5,
+     "www.instagram.com",
+     "https://www.instagram.com/alexturfloripa/",
+     "Alextur Floripa (@alexturfloripa) · Florianópolis, SC"
+    ],
+    [
+     6,
      "topsitebr.com.br",
      "https://topsitebr.com.br/site-para/agencia-de-viagens/florianopolis",
      "Site para Agência de Viagens em Florianópolis - TopSite"
     ],
     [
-     6,
-     "miamitur.com",
-     "https://miamitur.com/destino/florianopolis",
-     "Florianópolis - Miami Tur - Agência de Viagens"
-    ],
-    [
      7,
-     "www.instagram.com",
-     "https://www.instagram.com/acorianaturismo/",
-     "Açoriana Turismo (@acorianaturismo) · Florianópolis, SC"
+     "globaltravelcorporate.com.br",
+     "https://globaltravelcorporate.com.br/corporate/",
+     "Agência de viagens em Florianópolis"
     ],
     [
      8,
-     "www.viajenaviagem.com",
-     "https://www.viajenaviagem.com/destino/florianopolis/",
-     "Florianópolis: as dicas do Viaje na Viagem"
-    ],
-    [
-     9,
      "graceturismo.com.br",
      "https://graceturismo.com.br/",
      "Grace Turismo – Viagens inesquecíveis com a Grace Turismo"
+    ],
+    [
+     9,
+     "www.tripadvisor.com.br",
+     "https://www.tripadvisor.com.br/Attraction_Review-g303576-d17652980-Reviews-Floripa_Travel_Tour_Viagens_e_Eventos-Florianopolis_State_of_Santa_Catarina.html",
+     "Floripa Travel Tour Viagens e Eventos - Florianópolis"
     ],
     [
      10,
@@ -3729,68 +3712,133 @@
     ]
    ]
   },
+  "lazer-florianopolis": {
+   "data": "2026-10-22",
+   "top10": [
+    [
+     1,
+     "www.instagram.com",
+     "https://www.instagram.com/lageturfloripa/",
+     "Agência de Viagens | 29 anos de histórias (@lageturfloripa)"
+    ],
+    [
+     2,
+     "descubrafloripa.com",
+     "https://descubrafloripa.com/",
+     "Descubra Floripa: Agência de Viagens em Florianópolis"
+    ],
+    [
+     3,
+     "www.lituaniaturismosc.com.br",
+     "https://www.lituaniaturismosc.com.br/",
+     "Lituania Turismo ::.. Uma Agencia de turismo em Florianópolis ..."
+    ],
+    [
+     4,
+     "globaltravelcorporate.com.br",
+     "https://globaltravelcorporate.com.br/",
+     "Home - Global Travel & Corporate | Agência de viagens em ..."
+    ],
+    [
+     5,
+     "www.instagram.com",
+     "https://www.instagram.com/meiembipeturismo/",
+     "Meiembipe Agência de Turismo (@meiembipeturismo)"
+    ],
+    [
+     6,
+     "sambatur.com.br",
+     "https://sambatur.com.br/",
+     "Sambatur: Agência de viagens e turismo em Florianópolis"
+    ],
+    [
+     7,
+     "www.ohub.com.br",
+     "https://www.ohub.com.br/empresas/agencias-de-viagem/sc/florianopolis",
+     "Melhores empresas de Agências de viagem em Florianópolis"
+    ],
+    [
+     8,
+     "topturismosc.com.br",
+     "https://topturismosc.com.br/",
+     "Top Turismo: Agência de Turismo em Florianópolis"
+    ],
+    [
+     9,
+     "viasol.tur.br",
+     "https://viasol.tur.br/",
+     "Agência de Turismo em Florianópolis para passeios e eventos"
+    ],
+    [
+     10,
+     "guiafloripa.com.br",
+     "https://guiafloripa.com.br/servicos/turismo/agencias-de-turismo-viagens",
+     "Agências de Turismo e Viagens - Florianópolis"
+    ]
+   ]
+  },
   "corporativo-brasilia": {
    "data": "2026-10-22",
    "top10": [
     [
      1,
-     "voeturviagens.com.br",
-     "https://voeturviagens.com.br/",
-     "Viagens Corporativas, Gestão de despesas, Eventos e ..."
+     "www.tripadvisor.com.br",
+     "https://www.tripadvisor.com.br/Attraction_Review-g303322-d26865064-Reviews-Executivo_Brasilia_Transporte_e_Turismo-Brasilia_Federal_District.html",
+     "Executivo Brasilia Transporte e Turismo - Brasília"
     ],
     [
      2,
-     "r3viagens.com.br",
-     "https://r3viagens.com.br/r3-viagens-melhor-agencia-viagens-corporativas-brasilia/",
-     "Brasília: Por que a R3 Viagens é a Melhor Agência de ..."
+     "www.instagram.com",
+     "https://www.instagram.com/brasiliaturismoeviagens1992/",
+     "BSB Turismo (@brasiliaturismoeviagens1992) · Brasília, DF"
     ],
     [
      3,
-     "www.brasiliaconvention.com.br",
-     "https://www.brasiliaconvention.com.br/ag%C3%AAncias-de-turismo",
-     "Agências de Turismo"
+     "www.365brasil.com",
+     "https://www.365brasil.com/brasilia/agencias-de-viajes-y-turismo_ca.html",
+     "Agencias de viajes y turismo en Brasília - 365 Brasil"
     ],
     [
      4,
-     "www.instagram.com",
-     "https://www.instagram.com/casadeviagensbrasilia/",
-     "Casa de Viagens Brasília (@casadeviagensbrasilia)"
+     "supertur.com.br",
+     "https://supertur.com.br/turismo/brasilia-df/agencias/agencia-de-viagens",
+     "Agência de viagens em Brasília/DF — 680 empresas - SuperTur"
     ],
     [
      5,
-     "aerotur.com.br",
-     "https://aerotur.com.br/agencia-de-viagens-corporativas-em-brasilia/",
-     "Agência de Viagens Corporativas em Brasília"
+     "libertytours.com.br",
+     "https://libertytours.com.br/txt/agencia-viagem-internacional-brasilia-rio-janeiro-sao-paulo.php",
+     "https://libertytours.com.br/txt/agencia-viagem-int..."
     ],
     [
      6,
-     "www.ohub.com.br",
-     "https://www.ohub.com.br/empresas/viagens-corporativas/df/brasilia",
-     "Melhores empresas de Viagens Corporativas em Brasília"
+     "www.instagram.com",
+     "https://www.instagram.com/playturismobrasilia/p/DdjxSYmxvFg/?hl=cs",
+     "O que a sua empresa deseja? Na Play Turismo, temos as ..."
     ],
     [
      7,
-     "uniglobepro.com.br",
-     "https://uniglobepro.com.br/viagens-corporativas-brasilia",
-     "Agência de viagens corporativas em Brasília DF"
+     "turismo.guia.bsb.br",
+     "https://turismo.guia.bsb.br/servicos-e-lojas/empresas-de-passeios/",
+     "Empresas de Passeios - Turísmo Brasília"
     ],
     [
      8,
-     "flytour.com.br",
-     "https://flytour.com.br/",
-     "FLYTOUR | Líder em Soluções de Viagens para empresas e ..."
+     "m.yelp.com",
+     "https://m.yelp.com/search?find_desc=Travel+Services&find_loc=Bras%C3%ADlia%2C+DF",
+     "TOP 10 BEST Travel Services in Brasília - DF, Brazil"
     ],
     [
      9,
-     "www.instagram.com",
-     "https://www.instagram.com/prismaturismoeeventos/",
-     "Agência de Viagens, Turismo e Eventos ..."
+     "www.facebook.com",
+     "https://www.facebook.com/eventessebrasilia/?locale=pt_BR",
+     "Eventesse Brasília | Brasília DF"
     ],
     [
      10,
-     "travelmanager.ai",
-     "https://travelmanager.ai/es/gestao-de-viagens-corporativas/brasilia-df",
-     "Gestión de viajes corporativos y gastos en Brasília (DF)"
+     "r3viagens.com.br",
+     "https://r3viagens.com.br/r3-viagens-a-melhor-agencia-de-viagens-corporativas-em-brasilia/",
+     "Brasília - A Melhor Agência de Viagens Corporativas"
     ]
    ]
   },
@@ -3806,56 +3854,56 @@
     [
      2,
      "www.instagram.com",
-     "https://www.instagram.com/p/C4Y8rq0pl2d/",
-     "Você acaba de encontrar a melhor agência de viagens ..."
-    ],
-    [
-     3,
-     "www.instagram.com",
-     "https://www.instagram.com/brasiliareceptivo/",
-     "Turismo e Transfer em Brasília (@brasiliareceptivo)"
-    ],
-    [
-     4,
-     "irmatur.com.br",
-     "https://irmatur.com.br/",
-     "Irmatur – City tour diário em Brasília! Personalizamos o roteiro ..."
-    ],
-    [
-     5,
-     "www.instagram.com",
      "https://www.instagram.com/agenciabrasiliadeviagens/",
      "Agencia Brasília de Viagens (@agenciabrasiliadeviagens)"
     ],
     [
-     6,
+     3,
      "dfviagens.com.br",
      "https://dfviagens.com.br/agencia-de-turismo-sudoeste/",
      "Agência de Turismo Sudoeste"
     ],
     [
+     4,
+     "www.instagram.com",
+     "https://www.instagram.com/brasiliareceptivo/",
+     "Turismo e Transfer em Brasília (@brasiliareceptivo)"
+    ],
+    [
+     5,
+     "www.citytourbrasiliairmatur.com.br",
+     "https://www.citytourbrasiliairmatur.com.br/",
+     "City Tour Brasília Irmatur | Passeios turísticos em Brasília"
+    ],
+    [
+     6,
+     "www.instagram.com",
+     "https://www.instagram.com/p/C4Y8rq0pl2d/",
+     "Você acaba de encontrar a melhor agência de viagens ..."
+    ],
+    [
      7,
-     "libertytours.com.br",
-     "https://libertytours.com.br/txt/agencia-viagem-internacional-brasilia-rio-janeiro-sao-paulo.php",
-     "https://libertytours.com.br/txt/agencia-viagem-int..."
+     "www.instagram.com",
+     "https://www.instagram.com/itiquiratur/",
+     "Itiquira Turismo (@itiquiratur) · Brasília, DF"
     ],
     [
      8,
-     "tackturismo.com.br",
-     "https://tackturismo.com.br/corporativo/brasilia/",
-     "Brasília"
+     "www.tudodeturismo.com.br",
+     "https://www.tudodeturismo.com.br/agencias-de-turismo-distrito-federal/",
+     "Agencias de Turismo Distrito Federal"
     ],
     [
      9,
-     "www.econodata.com.br",
-     "https://www.econodata.com.br/empresas/df-brasilia/agencias-de-viagens-n-7911200",
-     "Lista de Empresas de Agências de Viagens (N-7911-2/00) ..."
-    ],
-    [
-     10,
      "tackturismo.com.br",
      "https://tackturismo.com.br/corporativo/brasilia/",
      "Brasília"
+    ],
+    [
+     10,
+     "www.viajenaviagem.com",
+     "https://www.viajenaviagem.com/destino/brasilia/",
+     "Brasília: onde ficar e o que fazer"
     ]
    ]
   },
@@ -3864,63 +3912,63 @@
    "top10": [
     [
      1,
-     "www.instagram.com",
-     "https://www.instagram.com/fluirviagenseturismo/",
-     "Fluir Viagens | Agência de turismo (@fluirviagenseturismo)"
+     "supertur.com.br",
+     "https://supertur.com.br/agencia/viaje-365-dias-ltda-goiania-go",
+     "VIAJE 365 DIAS — agência — Goiânia/GO - SuperTur"
     ],
     [
      2,
-     "ararauna.tur.br",
-     "https://ararauna.tur.br/",
-     "Araraúna Receptivo - Agência de Viagem Receptiva em Goiás"
+     "www.turismodobrasil.com",
+     "https://www.turismodobrasil.com/goiania/agencia-de-turismo-goiania/page/7",
+     "Agência de Turismo em Goiânia"
     ],
     [
      3,
-     "www.argoit.com.br",
-     "https://www.argoit.com.br/wtb/default.aspx?cliente=&culture=es-MX",
-     "https://www.argoit.com.br/wtb/default.aspx?cliente..."
+     "uniglobegoiania.com.br",
+     "https://uniglobegoiania.com.br/usuario/grupo-joao-domingos/",
+     "Grupo João Domingos"
     ],
     [
      4,
      "www.instagram.com",
-     "https://www.instagram.com/atlantisviagens/",
-     "Atlântis Viagens e Turismo (@atlantisviagens) · Goiânia, GO"
+     "https://www.instagram.com/mbbragatur/?hl=pt",
+     "Agência de Turismo em Goiânia, Goiás (@mbbragatur)"
     ],
     [
      5,
-     "goianiasetoroeste.flytour.com.br",
-     "https://goianiasetoroeste.flytour.com.br/viagens-a-lazer/",
-     "Viagens a Lazer - Flytour - Goiânia | Setor Oeste"
+     "uniglobegoiania.com.br",
+     "https://uniglobegoiania.com.br/pacotes-nacionais/",
+     "Pacotes Nacionais – Uni Goiânia Travel Travel"
     ],
     [
      6,
-     "www.instagram.com",
-     "https://www.instagram.com/kuryalaviagens/",
-     "Kuryala ✈️ (@kuryalaviagens) · Goiânia, GO"
+     "agenciasdeviagens.tur.br",
+     "https://agenciasdeviagens.tur.br/sobre/leal-agencia-de-viagens-e-turismo-goiania-go",
+     "LEAL AGÊNCIA DE VIAGENS E TURISMO em Goiânia - GO"
     ],
     [
      7,
-     "guiagoianiago.com.br",
-     "https://guiagoianiago.com.br/setor-oeste/flytour-goiania-setor-oeste",
-     "Flytour Goiânia Setor Oeste | Agência de Viagens GO"
+     "www.econodata.com.br",
+     "https://www.econodata.com.br/empresas/go-goiania/busca-turismo",
+     "Lista de Empresas de Turismo em Goiânia, GO em 2026"
     ],
     [
      8,
-     "www.tripadvisor.com.br",
-     "https://www.tripadvisor.com.br/ShowUserReviews-g303324-d14135982-r629398391-Goias_Adentro_Viagens-Goiania_State_of_Goias.html",
-     "Melhor agência de Goiânia para excursão"
+     "www.versatilturismo.tur.br",
+     "https://www.versatilturismo.tur.br/contato",
+     "Contato"
     ],
     [
      9,
-     "agenciasdeviagensbr.com",
-     "https://agenciasdeviagensbr.com/agencias-de-viagem-em_setor-oeste_goiania-go/5/",
-     "Agências de Viagens em Setor Oeste【74 empresas】, Goiânia"
+     "www.solutudo.com.br",
+     "https://www.solutudo.com.br/empresas/go/aparecida-goiania/agencias+de+turismo",
+     "Agências de Turismo em Aparecida de Goiânia, GO"
     ],
     [
      10,
-     "www.instagram.com",
-     "https://www.instagram.com/atanviagens/",
-     "ATAN-Agência de Viagens em Goiânia (@atanviagens)"
+     "uniglobegoiania.com.br",
+     "https://uniglobegoiania.com.br/pacotes-nacionais/",
+     "Pacotes Nacionais – Uni Goiânia Travel Travel"
     ]
    ]
   },
@@ -3929,57 +3977,57 @@
    "top10": [
     [
      1,
-     "www.goyazesturismo.com.br",
-     "https://www.goyazesturismo.com.br/",
-     "goyazes turismo goiás"
-    ],
-    [
-     2,
-     "www.instagram.com",
-     "https://www.instagram.com/rotadoturismoagencia/",
-     "Rota do Turismo 🌎✈️ (@rotadoturismoagencia)"
-    ],
-    [
-     3,
-     "agenciasdeviagens.org",
-     "https://agenciasdeviagens.org/pt-br/z/agencias-de-viagens/119201-estado-goias/",
-     "Top 52 agências de viagens em Estado do Goias (2026)"
-    ],
-    [
-     4,
-     "www.instagram.com",
-     "https://www.instagram.com/imperioviagensturismo/",
-     "Imperio Turismo (@imperioviagensturismo) · Goiânia, GO"
-    ],
-    [
-     5,
-     "broperadora.com",
-     "http://broperadora.com/",
-     "Alflags - Agencia de Turismo em Goiânia | Agencia de ..."
-    ],
-    [
-     6,
-     "guiagoianiago.com.br",
-     "https://guiagoianiago.com.br/agencia-de-viagens",
-     "Agência de Viagens | Guia Goiânia"
-    ],
-    [
-     7,
      "www.instagram.com",
      "https://www.instagram.com/brasilairlines/",
      "Agência de viagens Goiânia (@brasilairlines)"
     ],
     [
-     8,
+     2,
+     "broperadora.com",
+     "http://broperadora.com/",
+     "Alflags - Agencia de Turismo em Goiânia | Agencia de ..."
+    ],
+    [
+     3,
+     "guiagoianiago.com.br",
+     "https://guiagoianiago.com.br/agencia-de-viagens",
+     "Agência de Viagens | Guia Goiânia"
+    ],
+    [
+     4,
+     "www.instagram.com",
+     "https://www.instagram.com/letsgotravelgyn/",
+     "Agência de viagens em Goiânia (@letsgotravelgyn)"
+    ],
+    [
+     5,
      "agenciasdeviagensbr.com",
-     "https://agenciasdeviagensbr.com/agencias-de-viagem-em_setor-oeste_goiania-go/5/",
-     "Agências de Viagens em Setor Oeste【74 empresas】, Goiânia"
+     "https://agenciasdeviagensbr.com/agencias-de-viagem-em_goiania-go/",
+     "Agências de Viagens em Goiânia 【954 empresas】 - Goiás ..."
+    ],
+    [
+     6,
+     "www.instagram.com",
+     "https://www.instagram.com/flytour_goiania/",
+     "Flytour Goiânia (@flytour_goiania)"
+    ],
+    [
+     7,
+     "www.tripadvisor.com.br",
+     "https://www.tripadvisor.com.br/Attractions-g303324-Activities-c42-Goiania_State_of_Goias.html",
+     "AS 10 MELHORES excursões em Goiânia (2026)"
+    ],
+    [
+     8,
+     "guiagoianiago.com.br",
+     "https://guiagoianiago.com.br/setor-oeste/flytour-goiania-setor-oeste",
+     "Flytour Goiânia Setor Oeste | Agência de Viagens GO"
     ],
     [
      9,
-     "www.facebook.com",
-     "https://www.facebook.com/MaisViagensTurismo22/",
-     "Mais Viagens Turismo | Goiânia GO"
+     "agenciasdeviagensbr.com",
+     "https://agenciasdeviagensbr.com/agencias-de-viagem-em_setor-oeste_goiania-go/5/",
+     "Agências de Viagens em Setor Oeste【74 empresas】, Goiânia"
     ],
     [
      10,
@@ -3995,62 +4043,62 @@
     [
      1,
      "www.instagram.com",
-     "https://www.instagram.com/viagenstripnovorumo/",
-     "VIAGENS TRIP NOVO RUMO ✈️ AGÊNCIA EM CUIABÁ ..."
+     "https://www.instagram.com/proximaparadaviagenss/",
+     "Agência de viagens (@proximaparadaviagenss)"
     ],
     [
      2,
-     "www.argoit.com.br",
-     "https://www.argoit.com.br/wtb/default.aspx?cliente=&culture=pt-PT",
-     "https://www.argoit.com.br/wtb/default.aspx?cliente..."
+     "www.ohub.com.br",
+     "https://www.ohub.com.br/empresas/agencias-de-viagem/mt/cuiaba",
+     "Melhores empresas de Agências de viagem em Cuiabá"
     ],
     [
      3,
-     "www.instagram.com",
-     "https://www.instagram.com/p/DRNbKXaiUxp/",
-     "✨🌴 Tem pacote imperdível para Maceió na Deltur! 🌴✨ As ..."
+     "cuiaba.flytour.com.br",
+     "https://cuiaba.flytour.com.br/",
+     "Viagens a Lazer - Flytour - Cuiabá | MT"
     ],
     [
      4,
-     "www.telelistas.net",
-     "https://www.telelistas.net/mt/cuiaba/agencias+de+turismo",
-     "As melhores 5 empresas de Agências de Turismo em Cuiabá"
+     "uniglobepro.com.br",
+     "https://uniglobepro.com.br/viagens-corporativas-cuiaba",
+     "Agência de viagens corporativas em Cuiabá MT"
     ],
     [
      5,
-     "www.instagram.com",
-     "https://www.instagram.com/sbviagens_vaivoando/",
-     "SB viagens e turismo | Vai voando (@sbviagens_vaivoando)"
+     "www.facebook.com",
+     "https://www.facebook.com/azulviagenscuiaba/",
+     "Azul Viagens Cuiabá | Cuiabá MT"
     ],
     [
      6,
-     "www.guia-se.com.br",
-     "https://www.guia-se.com.br/mt/cuiaba/pocao/universal-turismo",
-     "Universal Turismo - Cuiabá - Guia-se Site Expresso"
+     "www.interativapantanal.com.br",
+     "https://www.interativapantanal.com.br/unidades/unidades_detalhes.asp?codUnidade=1",
+     "INTERATIVA AGÊNCIA DE VIAGENS"
     ],
     [
      7,
-     "www.facebook.com",
-     "https://www.facebook.com/p/Good-Viagens-61563480077513/",
-     "Good Viagens | Cuiabá MT"
+     "ecotouradventure.com.br",
+     "https://ecotouradventure.com.br/passeios-em-cuiaba/",
+     "Passeios em Cuiabá é com a Ecotour | Chapada, Pantanal e ..."
     ],
     [
      8,
-     "www.ohub.com.br",
-     "https://www.ohub.com.br/empresas/transporte-de-passageiros/mt/cuiaba",
-     "Melhores empresas de Transporte de Passageiros em ..."
+     "descubramatogrosso.com.br",
+     "https://descubramatogrosso.com.br/agencias/aventuramt/",
+     "AventuraMT | Agência de Turismo Credenciada"
     ],
     [
      9,
-     "www.365brasil.com",
-     "https://www.365brasil.com/cuiaba/agencias-de-viajes-y-turismo_ca.html",
-     "Agencias de viajes y turismo en Cuiabá - 365 Brasil"
+     "www.tripadvisor.com.br",
+     "https://www.tripadvisor.com.br/ShowUserReviews-g488170-d17818260-r919211211-AventuraMT-Cuiaba_State_of_Mato_Grosso.html",
+     "Melhor agência de turismo do MT - Avaliações de viajantes"
     ],
     [
      10,
      "www.instagram.com",
-     "https://www.instagram.com/azulviagenscuiaba/",
-     "Azul Viagens Cuiabá (@azulviagenscuiaba)"
+     "https://www.instagram.com/confiancamt/",
+     "Confiança Turismo - Receptivo MT (@confiancamt)"
     ]
    ]
   },
@@ -4059,57 +4107,57 @@
    "top10": [
     [
      1,
-     "www.confiancaagencia.com.br",
-     "https://www.confiancaagencia.com.br/",
-     "Tour Regular | Confiança Turismo | Brasil"
+     "www.instagram.com",
+     "https://www.instagram.com/confiancamt/",
+     "Confiança Turismo - Receptivo MT (@confiancamt)"
     ],
     [
      2,
-     "www.instagram.com",
-     "https://www.instagram.com/p/DRNbKXaiUxp/",
-     "✨🌴 Tem pacote imperdível para Maceió na Deltur! 🌴✨ As ..."
+     "www.cuiabatravel.com.br",
+     "https://www.cuiabatravel.com.br/",
+     "Cuiabá Travel Viagens e Turismo"
     ],
     [
      3,
-     "www.araraunaturismo.com.br",
-     "https://www.araraunaturismo.com.br/",
-     "Ararauna Turismo » Agência de Turismo"
+     "www.ohub.com.br",
+     "https://www.ohub.com.br/empresas/agencias-de-viagem/mt/cuiaba",
+     "Melhores empresas de Agências de viagem em Cuiabá"
     ],
     [
      4,
-     "www.instagram.com",
-     "https://www.instagram.com/viagenstripnovorumo/",
-     "VIAGENS TRIP NOVO RUMO ✈️ AGÊNCIA EM CUIABÁ ..."
+     "www.facebook.com",
+     "https://www.facebook.com/azulviagenscuiaba/",
+     "Azul Viagens Cuiabá | Cuiabá MT"
     ],
     [
      5,
-     "turismo.guia.cuiaba.br",
-     "https://turismo.guia.cuiaba.br/melhores-agencias-de-turismo-em-cuiaba-18-opcoes-recomendadas/",
-     "Melhores agências de turismo em Cuiabá: 18 opções ..."
+     "www.interativapantanal.com.br",
+     "https://www.interativapantanal.com.br/unidades/unidades_detalhes.asp?codUnidade=1",
+     "INTERATIVA AGÊNCIA DE VIAGENS"
     ],
     [
      6,
-     "www.empresaqui.com.br",
-     "https://www.empresaqui.com.br/empresas/viagem/mt/cuiaba",
-     "Empresas de Viagem em Cuiaba (MT) | Dados estratégicos"
+     "agenciasdeviagens.org",
+     "https://agenciasdeviagens.org/pt-br/z/agencias-de-viagens/120885-cuiaba/",
+     "Descubra as melhores Agências de Viagem em Cuiabá"
     ],
     [
      7,
-     "viajemterapia.ueniweb.com",
-     "https://viajemterapia.ueniweb.com/",
-     "Viagem Terapia - Agência de Viagens | Cuiabá"
+     "descubramatogrosso.com.br",
+     "https://descubramatogrosso.com.br/agencias/aventuramt/",
+     "AventuraMT | Agência de Turismo Credenciada"
     ],
     [
      8,
-     "conasce.com",
-     "http://conasce.com/userfiles/files/42840142590.pdf",
-     "Agencias de viagens em cuiabá"
+     "ecotouradventure.com.br",
+     "https://ecotouradventure.com.br/passeios-em-cuiaba/",
+     "Passeios em Cuiabá - Ecotour Adventure"
     ],
     [
      9,
-     "www.civitatis.com",
-     "https://www.civitatis.com/br/cuiaba/?srsltid=AYCX9vInt5MBOB1kcWOhfTvhivcjapWF4j5UtPO9dyFCZXlnPSt4bNj9",
-     "Passeios em Cuiabá: tours, ingressos e atividades"
+     "www.instagram.com",
+     "https://www.instagram.com/voemaistour/",
+     "Cuiabá (@voemaistour) • Instagram photos and videos"
     ],
     [
      10,
@@ -4125,62 +4173,62 @@
     [
      1,
      "www.instagram.com",
-     "https://www.instagram.com/veromundoviagens/",
-     "Agência de Viagens Campo Grande (@veromundoviagens)"
+     "https://www.instagram.com/popular/agencia-de-viagem-campo-grande-ms/",
+     "Agencia De Viagem Campo Grande Ms"
     ],
     [
      2,
-     "uniglobepro.com.br",
-     "https://uniglobepro.com.br/viagens-corporativas-campo-grande",
-     "Agência de viagens corporativas em Campo Grande MS"
+     "www.econodata.com.br",
+     "https://www.econodata.com.br/maiores-empresas/ms-campo-grande/busca-turismo",
+     "50 Maiores Empresas de Turismo em Campo Grande, MS ..."
     ],
     [
      3,
-     "www.agaxtur.com.br",
-     "https://www.agaxtur.com.br/lojas-campo-grande",
-     "Agaxtur Campo Grande"
+     "www.palaciolocacaodeonibus.com.br",
+     "https://www.palaciolocacaodeonibus.com.br/locacao-de-onibus-para-viagens-em-campo-grande",
+     "Locação de Ônibus para Viagens em Campo Grande SP"
     ],
     [
      4,
-     "ecoadventures.com.br",
-     "https://ecoadventures.com.br/operadora-de-turismo/",
-     "Operadora de Turismo"
+     "www.facebook.com",
+     "https://www.facebook.com/www.massatotur.com.br/?locale=pt_BR",
+     "Agencia De Viagens Massato Tur | Campo Grande MS"
     ],
     [
      5,
-     "www.campograndenews.com.br",
-     "https://www.campograndenews.com.br/conteudo-patrocinado/flytour-amplia-presenca-em-campo-grande-com-solucoes-completas-em-viagens",
-     "Flytour amplia presença em Campo Grande com soluções ..."
+     "www.facebook.com",
+     "https://www.facebook.com/p/Campo-Grande-Turismo-100063534852136/",
+     "Campo Grande Turismo"
     ],
     [
      6,
-     "roteirocertoviagens.com.br",
-     "https://roteirocertoviagens.com.br/",
-     "Roteiro Certo | Viagens e Turismo Campo Grande/MS ..."
+     "www.telelistas.net",
+     "https://www.telelistas.net/ms/campo+grande/agencias+de+turismo",
+     "As melhores 5 empresas de Agências de Turismo"
     ],
     [
      7,
-     "www.europamundo.com",
-     "https://www.europamundo.com/br/adquirir.aspx?esID=46&ctID=6286",
-     "Buscar agências na cidade #6286"
+     "www.instagram.com",
+     "https://www.instagram.com/mrf.viagens/",
+     "Turismo (@mrf.viagens) · Campo Grande, AL"
     ],
     [
      8,
-     "aerotur.com.br",
-     "https://aerotur.com.br/agencia-de-viagens-corporativas-em-campo-grande/",
-     "Agência de Viagens Corporativas em Campo Grande"
+     "agenciasdeviagensbr.com",
+     "https://agenciasdeviagensbr.com/agencias-de-viagem-em_campo-grande-ms/8/",
+     "Agências de Viagens em Campo Grande 【497 empresas】"
     ],
     [
      9,
-     "terraemarturismo.com.br",
-     "https://terraemarturismo.com.br/",
-     "Terra & Mar | Viagens e Turismo | Agência em Campo Grande ..."
+     "campo-grande.infoisinfo-br.com",
+     "https://campo-grande.infoisinfo-br.com/busca/agencia-de-turismo/5",
+     "Agência de turismo em Campo Grande. Página 5"
     ],
     [
      10,
-     "www.youtube.com",
-     "https://www.youtube.com/@SonheAltoViagens",
-     "Sonhe Alto Viagens"
+     "www.puc-campinas.edu.br",
+     "https://www.puc-campinas.edu.br/graduacao/administracao-financas-corporativas-e-mercado-de-capitais/",
+     "Finanças Corporativas e Mercado de Capitais"
     ]
    ]
   },
@@ -4189,63 +4237,63 @@
    "top10": [
     [
      1,
-     "campogrande.flytour.com.br",
-     "https://campogrande.flytour.com.br/",
-     "Viagens a Lazer - Flytour - Campo Grande | MS"
+     "www.instagram.com",
+     "https://www.instagram.com/reservafeita/",
+     "Reserva Feita Viagens® (@reservafeita)"
     ],
     [
      2,
-     "www.instagram.com",
-     "https://www.instagram.com/rotamundoviagens/",
-     "Rota Mundo Viagens l Descubra,Explore e Viaje (@ ..."
+     "www.agaxtur.com.br",
+     "https://www.agaxtur.com.br/lojas-campo-grande",
+     "Agaxtur Campo Grande"
     ],
     [
      3,
-     "www.agaxtur.com.br",
-     "https://www.agaxtur.com.br/",
-     "Agaxtur | Viva a melhor experiência de viagens"
+     "reservafeita.com.br",
+     "https://reservafeita.com.br/",
+     "Reserva Feita Viagens | Agência de Viagens em Campo ..."
     ],
     [
      4,
      "www.instagram.com",
-     "https://www.instagram.com/splendidatour/",
-     "Splendida Tour (@splendidatour) · Campo Grande, AL"
+     "https://www.instagram.com/veromundoviagens/",
+     "Agência de Viagens Campo Grande (@veromundoviagens)"
     ],
     [
      5,
-     "agenciabonitodemais.com.br",
-     "https://agenciabonitodemais.com.br/transportes/bonito-campo-grande/",
-     "Bonito - Campo Grande"
+     "www.europamundo.com",
+     "https://www.europamundo.com/br/adquirir.aspx?esID=46&ctID=6286",
+     "Buscar agências na cidade #6286"
     ],
     [
      6,
-     "www.viaturms.com.br",
-     "https://www.viaturms.com.br/",
-     "Viatur | Transporte e Turismo"
+     "terraemarturismo.com.br",
+     "https://terraemarturismo.com.br/",
+     "Terra & Mar | Viagens e Turismo | Agência em Campo Grande ..."
     ],
     [
      7,
-     "www.instagram.com",
-     "https://www.instagram.com/dmturcgr/",
-     "Dm Tur | Campo Grande (@dmturcgr)"
+     "roteirocertoviagens.com.br",
+     "https://roteirocertoviagens.com.br/",
+     "Roteiro Certo | Viagens e Turismo Campo Grande/MS ..."
     ],
     [
      8,
-     "www.tudodeturismo.com.br",
-     "https://www.tudodeturismo.com.br/agencias-de-turismo-mato-grosso-do-sul/",
-     "Agencias de Turismo Mato Grosso do Sul"
+     "www.clubeturismo.com.br",
+     "https://www.clubeturismo.com.br/clube-turismo-campo-grandems",
+     "Clube Turismo Campo Grande/MS - Pacotes de Viagem ..."
     ],
     [
      9,
-     "www.viajenaviagem.com",
-     "https://www.viajenaviagem.com/destino/campo-grande/",
-     "Dicas e posts sobre Campo Grande"
+     "www.ohub.com.br",
+     "https://www.ohub.com.br/empresas/agencias-de-viagem/ms/campo-grande",
+     "Melhores empresas de Agências de viagem em Campo ..."
     ],
     [
      10,
-     "www.instagram.com",
-     "https://www.instagram.com/agaxtur.campogrande.santafe/",
-     "agaxtur.campogrande.santafe"
+     "www.ohub.com.br",
+     "https://www.ohub.com.br/empresas/agencias-de-viagem/ms/campo-grande",
+     "Melhores empresas de Agências de viagem em Campo ..."
     ]
    ]
   },
@@ -4254,63 +4302,63 @@
    "top10": [
     [
      1,
-     "amazonexplorers.tur.br",
-     "https://amazonexplorers.tur.br/",
-     "Amazon Explorers: Início"
+     "www.instagram.com",
+     "https://www.instagram.com/passagens_programadas/",
+     "PASSAGENS PROGRAMADAS | AGÊNCIA DE VIAGEM ..."
     ],
     [
      2,
-     "www.instagram.com",
-     "https://www.instagram.com/aracatur.viagens/",
-     "Araçá Tur Viagens 🌎 (@aracatur.viagens) · Manaus, AM"
+     "uniglobepro.com.br",
+     "https://uniglobepro.com.br/viagens-corporativas-manaus",
+     "Agência de viagens corporativas em Manaus AM"
     ],
     [
      3,
-     "www.tripadvisor.com.br",
-     "https://www.tripadvisor.com.br/Attraction_Review-g303235-d19114210-Reviews-Viamanaus_Turismo-Manaus_Amazon_River_State_of_Amazonas.html",
-     "Viamanaus Turismo - O que saber antes de ir (com ..."
+     "acramturismo.com.br",
+     "https://acramturismo.com.br/servicos/?id=19&/consultoria-em-viagens",
+     "Consultoria em viagens"
     ],
     [
      4,
-     "www.cvc.com.br",
-     "https://www.cvc.com.br/destinos/manaus",
-     "Manaus: Guia e ofertas de viagens"
+     "guiatur.manaus.am.gov.br",
+     "https://guiatur.manaus.am.gov.br/agencias-de-turismo/",
+     "Agências de Turismo"
     ],
     [
      5,
-     "www.instagram.com",
-     "https://www.instagram.com/duartetravels.manaus/",
-     "Duarte Travels - Manaus (@duartetravels.manaus)"
+     "www.maladeaventuras.com",
+     "https://www.maladeaventuras.com/agencias-de-viagem-na-amazonia/",
+     "Melhores agências de viagem em Manaus 2026"
     ],
     [
      6,
-     "viamanaus.com.br",
-     "https://viamanaus.com.br/",
-     "Viamanaus Turismo – Manaus Amazonas Brasil"
+     "manausjungletours.com",
+     "https://manausjungletours.com/",
+     "Manaus Amazing Tours: Agência de Turismo e Passeios em ..."
     ],
     [
      7,
-     "www.365brasil.com",
-     "https://www.365brasil.com/bra/manaus/agencias-de-viagens-e-turismo_ca.html",
-     "Agências de Viagens e Turismo en Manaus - 365 Brasil"
+     "mabtourviagens.com.br",
+     "https://mabtourviagens.com.br/blog/agencia-de-viagens-corporativas-em-manaus/",
+     "Agência de viagens corporativas em Manaus"
     ],
     [
      8,
-     "www.instagram.com",
-     "https://www.instagram.com/mb_viagens/",
-     "M͜͡B͜͡ V͜͡I͜͡A͜͡G͜͡E͜͡N͜͡S͜͡ (@mb_viagens)"
+     "www.marujoturismo.com",
+     "https://www.marujoturismo.com/",
+     "Marujo Turismo | Passeios e Excursões na Amazônia saindo ..."
     ],
     [
      9,
-     "www.tripadvisor.com.br",
-     "https://www.tripadvisor.com.br/Attraction_Review-g303235-d26323054-Reviews-1000son_Viagens_e_Turismo-Manaus_Amazon_River_State_of_Amazonas.html",
-     "1000son Viagens e Turismo - O que saber antes de ir (2026)"
+     "agenciasdeviagens.org",
+     "https://agenciasdeviagens.org/pt-br/z/agencias-de-viagens/121965-manaus/",
+     "Descubra as melhores Agências de Viagem em Manaus"
     ],
     [
      10,
-     "www.instagram.com",
-     "https://www.instagram.com/rionorteviagens/",
-     "Manaus & Todo Norte 🛩️ (@rionorteviagens)"
+     "www.altaestacaoturismo.com.br",
+     "http://www.altaestacaoturismo.com.br/",
+     "Alta Estação Turismo - Manaus/Amazonas"
     ]
    ]
   },
@@ -4325,57 +4373,57 @@
     ],
     [
      2,
-     "www.decolar.com",
-     "https://www.decolar.com/pacotes/mao/pacotes-para-manaus",
-     "Pacotes de Viagens para Manaus desde R$2.493"
-    ],
-    [
-     3,
-     "www.tripadvisor.com.br",
-     "https://www.tripadvisor.com.br/Attraction_Review-g303235-d19114210-Reviews-Viamanaus_Turismo-Manaus_Amazon_River_State_of_Amazonas.html",
-     "Viamanaus Turismo - O que saber antes de ir (com ..."
-    ],
-    [
-     4,
      "www.viajenaviagem.com",
      "https://www.viajenaviagem.com/destino/manaus/",
      "Manaus: as dicas práticas do Viaje ..."
     ],
     [
-     5,
-     "www.instagram.com",
-     "https://www.instagram.com/saveviagens/",
-     "Save Viagens e Turismo ✈️ (@saveviagens) · Manaus, AM"
-    ],
-    [
-     6,
+     3,
      "a-c-viagens.ueniweb.com",
      "https://a-c-viagens.ueniweb.com/",
      "A.C.Viagens - Agência de Viagens | Manaus"
     ],
     [
-     7,
-     "www.365brasil.com",
-     "https://www.365brasil.com/bra/manaus/agencias-de-viagens-e-turismo_ca.html",
-     "Agências de Viagens e Turismo en Manaus - 365 Brasil"
-    ],
-    [
-     8,
+     4,
      "www.instagram.com",
-     "https://www.instagram.com/manaus_excursoes/",
-     "Manaus Excursões ✈️ Viagens & Turismo ..."
+     "https://www.instagram.com/saveviagens/",
+     "Save Viagens e Turismo ✈️ (@saveviagens) · Manaus, AM"
     ],
     [
-     9,
+     5,
      "www.duartetravels.com.br",
      "https://www.duartetravels.com.br/manaus/",
      "MANAUS"
     ],
     [
+     6,
+     "www.365brasil.com",
+     "https://www.365brasil.com/bra/manaus/agencias-de-viagens-e-turismo_ca.html",
+     "Agências de Viagens e Turismo en Manaus - 365 Brasil"
+    ],
+    [
+     7,
+     "www.tripadvisor.com.br",
+     "https://www.tripadvisor.com.br/Attraction_Review-g303235-d26323054-Reviews-1000son_Viagens_e_Turismo-Manaus_Amazon_River_State_of_Amazonas.html",
+     "1000son Viagens e Turismo - O que saber antes de ir (2026)"
+    ],
+    [
+     8,
+     "www.instagram.com",
+     "https://www.instagram.com/mozanturismo/",
+     "Mozan Turismo (@mozanturismo) · Manaus, AM"
+    ],
+    [
+     9,
+     "poranduba-amazonia.com",
+     "https://poranduba-amazonia.com/",
+     "Viagem para a Amazônia | Poranduba Amazônia"
+    ],
+    [
      10,
-     "www.comprarviagem.com.br",
-     "https://www.comprarviagem.com.br/vivaviagensmanaus/home",
-     "VIVA VIAGENS MANAUS"
+     "desviantes.com.br",
+     "https://desviantes.com.br/pacote/AM/amazonia/",
+     "Pacotes em Amazônia – Amazonas"
     ]
    ]
   },
@@ -4384,63 +4432,63 @@
    "top10": [
     [
      1,
-     "voucherviagemsim.orinter.com.br",
-     "https://voucherviagemsim.orinter.com.br/home/para/belem",
-     "Belem"
+     "www.ohub.com.br",
+     "https://www.ohub.com.br/empresas/agencias-de-viagem/pa/belem",
+     "Melhores empresas de Agências de viagem em Belém"
     ],
     [
      2,
-     "www.facebook.com",
-     "https://www.facebook.com/100070130657779?locale=fa_IR",
-     "Grupo de Turismo | Belem do Pará PA"
+     "www.instagram.com",
+     "https://www.instagram.com/startourbelem/",
+     "STARTOUR — Viagens e Turismo (@startourbelem)"
     ],
     [
      3,
-     "www.365brasil.com",
-     "https://www.365brasil.com/belem/agencias-de-viaje-y-turismo_cs.html",
-     "Agencias de viaje y turismo en Belém - 365 Brasil"
+     "startour.com.br",
+     "https://startour.com.br/sobre/",
+     "STARTOUR – Viagens e Turismo"
     ],
     [
      4,
-     "www.turismodobrasil.com",
-     "https://www.turismodobrasil.com/belem/agencia-de-turismo-belem/page/7",
-     "Agência de Turismo em Belém"
+     "belem.flytour.com.br",
+     "https://belem.flytour.com.br/viagens-a-negocio/",
+     "Viagens a Negócio - Flytour - Belém | Pará"
     ],
     [
      5,
-     "www.instagram.com",
-     "https://www.instagram.com/bw_turismo/",
-     "BW Viagens &Turismo (@bw_turismo) · Belém, PA"
+     "uniglobepro.com.br",
+     "https://uniglobepro.com.br/viagens-corporativas-belem",
+     "Agência de viagens corporativas em Belém PA"
     ],
     [
      6,
-     "www.facebook.com",
-     "https://www.facebook.com/100070130657779/?locale=ms_MY",
-     "Grupo de Turismo | Belem do Pará PA"
+     "www.tripadvisor.com.br",
+     "https://www.tripadvisor.com.br/Attractions-g303404-Activities-c42-Belem_State_of_Para.html",
+     "AS 15 MELHORES excursões em Belém (2026)"
     ],
     [
      7,
-     "hw.tur.br",
-     "https://hw.tur.br/passeios",
-     "Serviços H W NEGOCIOS E TURISMO"
+     "www.instagram.com",
+     "https://www.instagram.com/danielsannviagensincriveis/",
+     "Daniel Sann | Agência de viagens | Turismo"
     ],
     [
      8,
-     "www.instagram.com",
-     "https://www.instagram.com/tribusturismo/",
-     "Agência de turismo Belém (@tribusturismo)"
+     "aerotur.com.br",
+     "https://aerotur.com.br/agencia-de-viagens-corporativas-em-belem/",
+     "Agência de Viagens Corporativas em Belém"
     ],
     [
      9,
-     "www.hw.tur.br",
-     "https://www.hw.tur.br/hwnegocioseturismo",
-     "(91) 3212-9199 / (91)3349-1969 - HW Negócio e Turismo"
+     "www.samistur.com.br",
+     "https://www.samistur.com.br/",
+     "Página Inicial | Samistur Turismo"
     ],
     [
      10,
-     "www.instagram.com",
-     "https://www.instagram.com/encontresuaviagemananideua/",
-     "encontresuaviagemananideua"
+     "www.dhagesturismo.com.br",
+     "https://www.dhagesturismo.com.br/",
+     "D' Hages Turismo | Agência de Viagens em Belém - Pacotes e ..."
     ]
    ]
   },
@@ -4485,15 +4533,15 @@
     ],
     [
      7,
-     "talismaturismopa.com.br",
-     "https://talismaturismopa.com.br/",
-     "Talismã Turismo - Excursões - Agência de Turismo em Belém"
-    ],
-    [
-     8,
      "startour.com.br",
      "https://startour.com.br/",
      "STARTOUR — Viagens e Turismo"
+    ],
+    [
+     8,
+     "talismaturismopa.com.br",
+     "https://talismaturismopa.com.br/",
+     "Talismã Turismo - Excursões - Agência de Turismo em Belém"
     ],
     [
      9,
@@ -4520,27 +4568,27 @@
     ],
     [
      2,
+     "www.tudodeturismo.com.br",
+     "https://www.tudodeturismo.com.br/agencias-de-turismo-rondonia/",
+     "Agencias de Turismo Rondônia"
+    ],
+    [
+     3,
      "larisonhoteis.com.br",
      "https://larisonhoteis.com.br/blog/viagem-negocios-porto-velho/",
      "Hotel para viagem de negócios em Porto Velho: localização ..."
     ],
     [
-     3,
+     4,
      "www.turismodobrasil.com",
      "https://www.turismodobrasil.com/porto-velho/globe-tur-30298139000124",
      "Globe Tur (Agência de Turismo em Porto Velho)"
     ],
     [
-     4,
+     5,
      "www.facebook.com",
      "https://www.facebook.com/euroturismoecambio/",
      "Euro Turismo e Câmbio | Pôrto Velho RO"
-    ],
-    [
-     5,
-     "cnpj.info",
-     "http://cnpj.info/M-A-Viagens-e-Turismo-Porto-Velho",
-     "MA Viagens e Turismo LTDA | M & A Viagens"
     ],
     [
      6,
@@ -4550,27 +4598,27 @@
     ],
     [
      7,
+     "cnpj.info",
+     "http://cnpj.info/M-A-Viagens-e-Turismo-Porto-Velho",
+     "MA Viagens e Turismo LTDA | M & A Viagens"
+    ],
+    [
+     8,
      "www.facebook.com",
      "https://www.facebook.com/VipsTravelViagenseTurismo/",
      "Vip's Travel Viagens e Turismo | Pôrto Velho RO"
     ],
     [
-     8,
-     "www.aiyellow.com",
-     "https://www.aiyellow.com/portorealviagenseturismo/",
-     "PORTO REAL VIAGENS E TURISMO - Porto Velho"
-    ],
-    [
      9,
-     "www.turismodobrasil.com",
-     "https://www.turismodobrasil.com/porto-velho/voa-brasil-07671791000120",
-     "Voa Brasil (Agência de Turismo em Porto Velho)"
+     "www.encontraportovelho.com.br",
+     "https://www.encontraportovelho.com.br/a/agencias-de-turismo-em-porto-velho.shtml",
+     "Agências de Turismo em Porto Velho - RO"
     ],
     [
      10,
-     "www.youtube.com",
-     "https://www.youtube.com/watch?v=CC_7239rTGQ",
-     "O VELHO E A FLOR - Toquinho and Vinicius de Moraes ..."
+     "www.turismodobrasil.com",
+     "https://www.turismodobrasil.com/porto-velho/voa-brasil-07671791000120",
+     "Voa Brasil (Agência de Turismo em Porto Velho)"
     ]
    ]
   },
@@ -4580,62 +4628,62 @@
     [
      1,
      "www.instagram.com",
-     "https://www.instagram.com/maviagenstur/",
-     "M&A Viagens e Turismo - Agência de ..."
+     "https://www.instagram.com/cvc.ro.portovelho/",
+     "Porto Velho (@cvc.ro.portovelho)"
     ],
     [
      2,
-     "www.pvshopping.com.br",
-     "https://www.pvshopping.com.br/lojas/cvc-viagens",
-     "CVC VIAGENS"
+     "rondoniatemturismo.ro.gov.br",
+     "https://rondoniatemturismo.ro.gov.br/AtrativoTuristico/Detalhar/1231",
+     "Globe Tur - Porto Velho"
     ],
     [
      3,
-     "expertturismo.com",
-     "https://expertturismo.com/agencia-de-viagens/agencia-de-viagens-em-porto-velho-ro/",
-     "Agência de Viagens em Porto Velho RO"
+     "topsitebr.com.br",
+     "https://topsitebr.com.br/site-para/agencia-de-viagens/porto-velho",
+     "Site para Agência de Viagens em Porto Velho por R$ 165"
     ],
     [
      4,
-     "www.instagram.com",
-     "https://www.instagram.com/vouvoandoviagens/",
-     "Vou Voando Viagens e Turismo (@vouvoandoviagens)"
+     "www.facebook.com",
+     "https://www.facebook.com/vouvoandoviagenseturismo/?locale=pt_BR",
+     "Vou Voando Viagens e Turismo Filial 1 | Pôrto Velho RO"
     ],
     [
      5,
-     "www.facebook.com",
-     "https://www.facebook.com/Globeturviagens/?locale=pt_BR",
-     "Globetur - Porto Velho | Pôrto Velho RO"
+     "www.kayak.com.br",
+     "https://www.kayak.com.br/Porto-Velho.15469.guide",
+     "Guia de viagem de Porto Velho"
     ],
     [
      6,
-     "www.portovelho.ro.gov.br",
-     "https://www.portovelho.ro.gov.br/artigo/1477/agencias-de-viagem",
-     "PMPV - Agências de Viagem"
+     "www.instagram.com",
+     "https://www.instagram.com/rc_turismo/",
+     "RC Turismo (@rc_turismo) · Pôrto Velho, RO"
     ],
     [
      7,
-     "www.decolar.com",
-     "https://www.decolar.com/pacotes/pvh/pacotes-para-porto+velho",
-     "Pacotes de Viagens para Porto Velho"
+     "rondoniatemturismo.ro.gov.br",
+     "https://rondoniatemturismo.ro.gov.br/Agencia?categorias=Excurs%C3%B5es",
+     "Rondônia Tem Turismo - Setur"
     ],
     [
      8,
-     "portovelho.portaldacidade.com",
-     "https://portovelho.portaldacidade.com/guia-comercial/agencias-de-viagens-e-turismo",
-     "Agências de Viagens e Turismo em Porto Velho / RO"
+     "agenciasdeviagensbr.com",
+     "https://agenciasdeviagensbr.com/agencias-de-viagem-em_aeroporto_porto-velho-ro/",
+     "Agências de Viagens em Aeroporto, Porto Velho - Rondônia ..."
     ],
     [
      9,
-     "www.tripadvisor.com.br",
-     "https://www.tripadvisor.com.br/Attractions-g737097-Activities-c42-Porto_Velho_State_of_Rondonia.html",
-     "AS 5 MELHORES excursões em Porto Velho (2026)"
+     "www.turismodobrasil.com",
+     "https://www.turismodobrasil.com/porto-velho/plenitude-viagens-27116253000181",
+     "Plenitude Viagens (Agência de Turismo em Porto Velho)"
     ],
     [
      10,
-     "pvtur.com.br",
-     "https://pvtur.com.br/",
-     "Pvtur | BEM-VINDO À PORTO VELHO TURISMO , EVENTOS ..."
+     "www.tangol.com",
+     "https://www.tangol.com/pt/porto-velho/d-20490",
+     "» Guia turística em Porto Velho [Recomendado em Brasil]"
     ]
    ]
   },
@@ -4644,63 +4692,63 @@
    "top10": [
     [
      1,
-     "www.gruposdeviagem.com",
-     "https://www.gruposdeviagem.com/tour",
-     "Tours | gruposdeviagem"
+     "www.ohub.com.br",
+     "https://www.ohub.com.br/empresas/agencias-de-viagem/ac/rio-branco",
+     "Melhores empresas de Agências de viagem em Rio Branco"
     ],
     [
      2,
-     "www.instagram.com",
-     "https://www.instagram.com/p/C1sWOldRDBR/",
-     "Hora de viajar, vamos! (68) 99229-7125 Faça sua cotação!"
+     "uniglobepro.com.br",
+     "https://uniglobepro.com.br/viagens-corporativas-rio-branco",
+     "Agência de viagens corporativas em Rio Branco AC"
     ],
     [
      3,
-     "www.turismodobrasil.com",
-     "https://www.turismodobrasil.com/rio-branco/destino-acre-47503380000140",
-     "Destino Acre (Agência de Turismo em Rio Branco)"
+     "www.facebook.com",
+     "https://www.facebook.com/rabel.viagens/?locale=pt_BR",
+     "Rabel Viagens & Turismo - Rio Branco"
     ],
     [
      4,
-     "www.facebook.com",
-     "https://www.facebook.com/p/Aquiri-Viagens-e-Turismo-61580232789371/",
-     "Aquiri Viagens e Turismo | Rio Branco AC"
+     "www.instagram.com",
+     "https://www.instagram.com/voemaisbaratoviagens/",
+     "Voe Mais Barato | Agência de Viagens Rio Branco, Acre ..."
     ],
     [
      5,
+     "www.decolar.com",
+     "https://www.decolar.com/pacotes/rbr/pacotes-para-rio+branco",
+     "Pacotes de Viagens para Rio Branco"
+    ],
+    [
+     6,
+     "www.tripadvisor.com.br",
+     "https://www.tripadvisor.com.br/Attractions-g1076245-Activities-c42-Rio_Branco_State_of_Acre.html",
+     "AS MELHORES excursões em Rio Branco (2026)"
+    ],
+    [
+     7,
+     "www.tudodeturismo.com.br",
+     "https://www.tudodeturismo.com.br/agencias-de-turismo-no-acre/",
+     "Agencias de Turismo no Acre"
+    ],
+    [
+     8,
+     "www.ohub.com.br",
+     "https://www.ohub.com.br/empresas/viagens-corporativas/ac/rio-branco",
+     "Melhores empresas de Viagens Corporativas em Rio Branco"
+    ],
+    [
+     9,
      "datapj.com.br",
      "https://datapj.com.br/empresas/ac/rio-branco/agencias-de-viagem",
      "Agências de viagem em Rio Branco (AC) - DataPJ"
     ],
     [
-     6,
-     "www.turismodobrasil.com",
-     "https://www.turismodobrasil.com/rio-branco/acre-tour-trips-42012515000151",
-     "Acre Tour Trips (Agência de Turismo em Rio Branco)"
-    ],
-    [
-     7,
-     "encontraac.com.br",
-     "https://encontraac.com.br/agencias-de-turismo-em-rio-branco-ac",
-     "Agências de Turismo em Rio Branco - Guia Acre - encontraAC"
-    ],
-    [
-     8,
-     "agenciasdeviagens.tur.br",
-     "https://agenciasdeviagens.tur.br/sobre/floret-turismo-rio-branco-ac",
-     "FLORET TURISMO em Rio Branco - AC - Agências"
-    ],
-    [
-     9,
-     "www.facebook.com",
-     "https://www.facebook.com/rboviagens/",
-     "R.B.O VIAGENS | Rio Branco AC"
-    ],
-    [
      10,
-     "ameac.com.br",
-     "https://ameac.com.br/convenio/cvc-viagens/",
-     "CVC VIAGENS - Ameac"
+     "www.instagram.com",
+     "https://www.instagram.com/agenciavaipraonde/",
+     "Agência de Viagems Vai Pra Onde RB ..."
     ]
    ]
   },
@@ -4716,8 +4764,8 @@
     [
      2,
      "www.facebook.com",
-     "https://www.facebook.com/p/Rio-Branco-Viagens-100040490663102/",
-     "Rio Branco Viagens | Sobradinho RS"
+     "https://www.facebook.com/rabel.viagens/?locale=pt_BR",
+     "Rabel Viagens & Turismo - Rio Branco"
     ],
     [
      3,
@@ -4733,21 +4781,21 @@
     ],
     [
      5,
-     "www.instagram.com",
-     "https://www.instagram.com/agenciavaipraonde/",
-     "Agência de Viagems Vai Pra Onde RB ..."
-    ],
-    [
-     6,
      "www.tripadvisor.com.br",
      "https://www.tripadvisor.com.br/Attractions-g1076245-Activities-c42-Rio_Branco_State_of_Acre.html",
      "AS MELHORES excursões em Rio Branco (2026)"
     ],
     [
+     6,
+     "www.instagram.com",
+     "https://www.instagram.com/agenciavaipraonde/",
+     "Agência de Viagems Vai Pra Onde RB ..."
+    ],
+    [
      7,
-     "www.comprarviagem.com.br",
-     "https://www.comprarviagem.com.br/janturismo",
-     "Jan Turismo"
+     "acretur.com.br",
+     "https://acretur.com.br/",
+     "Acretur | O Turismo comeca aqui"
     ],
     [
      8,
@@ -4758,14 +4806,14 @@
     [
      9,
      "www.facebook.com",
-     "https://www.facebook.com/rabel.viagens/?locale=pt_BR",
-     "Rabel Viagens & Turismo - Rio Branco"
+     "https://www.facebook.com/p/Rio-Branco-Viagens-100040490663102/",
+     "Rio Branco Viagens | Sobradinho RS"
     ],
     [
      10,
-     "acretur.com.br",
-     "https://acretur.com.br/",
-     "Acretur | O Turismo comeca aqui"
+     "www.cvc.com.br",
+     "https://www.cvc.com.br/venda-assistida/lojas/cvc-rio-branco",
+     "CVC RIO BRANCO"
     ]
    ]
   },
@@ -4780,21 +4828,21 @@
     ],
     [
      2,
-     "www.instagram.com",
-     "https://www.instagram.com/tripviagensbv/",
-     "TripViagensBv"
-    ],
-    [
-     3,
      "www.turismodobrasil.com",
      "https://www.turismodobrasil.com/boa-vista/agencia-de-turismo-boa-vista",
      "Agência de Turismo em Boa Vista"
     ],
     [
-     4,
+     3,
      "www.instagram.com",
      "https://www.instagram.com/cbturismoboavista/",
      "Clube Turismo Boa Vista (@cbturismoboavista)"
+    ],
+    [
+     4,
+     "www.instagram.com",
+     "https://www.instagram.com/latitudeturismo/",
+     "Latitude Turismo (@latitudeturismo) · Boa Vista, RR"
     ],
     [
      5,
@@ -4804,9 +4852,9 @@
     ],
     [
      6,
-     "www.instagram.com",
-     "https://www.instagram.com/latitudeturismo/",
-     "Latitude Turismo (@latitudeturismo) · Boa Vista, RR"
+     "www.facebook.com",
+     "https://www.facebook.com/TripViagensBv/",
+     "Trip Viagens Bv | Boa Vista RR"
     ],
     [
      7,
@@ -4822,15 +4870,15 @@
     ],
     [
      9,
-     "www.instagram.com",
-     "https://www.instagram.com/felintour/",
-     "PASSAGENS AÉREAS✈️ (@felintour) · Boa Vista, RR"
-    ],
-    [
-     10,
      "encontraroraima.com.br",
      "https://encontraroraima.com.br/sobre/agencia-de-viagens-e-turismo-novo-mundo-boa-vista-rr",
      "Agência De Viagens E Turismo Novo Mundo em Boa Vista - RR"
+    ],
+    [
+     10,
+     "www.encontraboavistarr.com.br",
+     "https://www.encontraboavistarr.com.br/a/agencias-de-turismo-em-boa-vista.shtml",
+     "Agências de Turismo em Boa Vista - RR"
     ]
    ]
   },
@@ -4839,63 +4887,63 @@
    "top10": [
     [
      1,
+     "www.macuxiviajante.com.br",
+     "https://www.macuxiviajante.com.br/",
+     "Macuxi Viajante - Agência de viagens e turismo | viagens"
+    ],
+    [
+     2,
      "www.instagram.com",
      "https://www.instagram.com/calice_viagens/",
      "CALICE VIAGENS - BOA VISTA | RR (@calice_viagens)"
     ],
     [
-     2,
+     3,
      "agenciasdeviagens.org",
      "https://agenciasdeviagens.org/pt-br/i/146496-fly-viagens-tur/",
      "Fly Viagens Tur, Boa Vista: Opiniões e contato"
     ],
     [
-     3,
-     "hlvet.com",
-     "https://hlvet.com/",
-     "Book Your Dream Trip Today: Inicio"
-    ],
-    [
      4,
-     "www.instagram.com",
-     "https://www.instagram.com/futuraadventure/",
-     "Futura Adventure | Agência de Turismo (@futuraadventure)"
-    ],
-    [
-     5,
      "www.facebook.com",
      "https://www.facebook.com/aereoturaereotur/?locale=pt_BR",
      "Aereotur Viagens | Boa Vista RR"
     ],
     [
+     5,
+     "www.facebook.com",
+     "https://www.facebook.com/IMagenciadeviagens/",
+     "Vai Voando / I.M Agências | Boa Vista RR"
+    ],
+    [
      6,
-     "www.starofservice.com.br",
-     "https://www.starofservice.com.br/dir/sao-paulo/sao-joao-da-boa-vista/sao-joao-da-boa-vista/servicos-de-agencia-de-viagem",
-     "10 melhores agentes de viagem para São João da Boa Vista"
-    ],
-    [
-     7,
-     "www.instagram.com",
-     "https://www.instagram.com/basilioviagensoficial/",
-     "Basilio Viagens RR - AM (@basilioviagensoficial)"
-    ],
-    [
-     8,
-     "www.kayak.com.br",
-     "https://www.kayak.com.br/packagetours/boa-vista",
-     "Pacotes de viagem para Boa Vista"
-    ],
-    [
-     9,
      "www.econodata.com.br",
      "https://www.econodata.com.br/empresas/rr-boa-vista/agencias-de-viagens-n-7911200",
      "Lista de Empresas de Agências de Viagens (N-7911-2/00) ..."
     ],
     [
-     10,
+     7,
+     "www.turismodobrasil.com",
+     "https://www.turismodobrasil.com/boa-vista/agencia-de-turismo-boa-vista",
+     "Agência de Turismo em Boa Vista"
+    ],
+    [
+     8,
      "www.instagram.com",
      "https://www.instagram.com/makunaimaturismo/",
      "Makunaima Soluções em Turismo (@makunaimaturismo)"
+    ],
+    [
+     9,
+     "www.365brasil.com",
+     "https://www.365brasil.com/boa_vista/agencias-de-viaje-y-turismo_cs.html",
+     "Agencias de viaje y turismo en Boa Vista - 365 Brasil"
+    ],
+    [
+     10,
+     "agenciasdeviagens.tur.br",
+     "https://agenciasdeviagens.tur.br/sobre/madu-turismo",
+     "MADU TURISMO em Boa Vista - RR | AgênciasdeViagens.tur.br"
     ]
    ]
   },
@@ -4904,63 +4952,63 @@
    "top10": [
     [
      1,
-     "www.instagram.com",
-     "https://www.instagram.com/atitudeturismomcp/",
-     "Agência de Turismo (@atitudeturismomcp)"
+     "uniglobepro.com.br",
+     "https://uniglobepro.com.br/viagens-corporativas-macapa",
+     "Agência de viagens corporativas em Macapá AP"
     ],
     [
      2,
-     "procuracnpj.com.br",
-     "https://procuracnpj.com.br/empresas/ap/macapa/agencias-de-viagens-7911200",
-     "Agências de viagens em Macapá - AP: 169 empresas"
+     "www.instagram.com",
+     "https://www.instagram.com/fabturismo01/",
+     "Fab Turismo (@fabturismo01) · Macapá, AP"
     ],
     [
      3,
-     "www.facebook.com",
-     "https://www.facebook.com/primeturismo123/",
-     "Prime Turismo | Macapá AP"
+     "aerotur.com.br",
+     "https://aerotur.com.br/agencia-de-viagens-corporativas-em-macapa/",
+     "Agência de Viagens Corporativas em Macapá"
     ],
     [
      4,
-     "www.empresaqui.com.br",
-     "https://www.empresaqui.com.br/empresas/viagem/ap",
-     "Empresas de Viagem em Amapá | Dados estratégicos"
+     "www.facebook.com",
+     "https://www.facebook.com/daviagenciadeviagens/?locale=pt_BR",
+     "Davi Agência de Viagens e Turismo | Macapá AP"
     ],
     [
      5,
-     "www.facebook.com",
-     "https://www.facebook.com/100087438583388?locale=ka_GE",
-     "Baggage & Travel | Macapá AP"
+     "macapa.flytour.com.br",
+     "https://macapa.flytour.com.br/quem-somos/",
+     "Quem Somos - Flytour - Macapá | AP"
     ],
     [
      6,
-     "supertur.com.br",
-     "https://supertur.com.br/turismo/macapa-ap/agencias",
-     "Agências de viagens e turismo em Macapá/AP — 102 empresas"
+     "macapa.infoisinfo-br.com",
+     "https://macapa.infoisinfo-br.com/busca/agencia-de-turismo",
+     "Agência de turismo em Macapá"
     ],
     [
      7,
-     "turismo.guia.macapa.br",
-     "https://turismo.guia.macapa.br/descubra-a-agencia-macapaba/",
-     "Descubra a Agência Macapaba - Macapá"
+     "www.europamundo.com",
+     "https://www.europamundo.com/br/adquirir.aspx?esID=37&ctID=1155&agID=28257",
+     "Buscar uma agência #28257"
     ],
     [
      8,
-     "www.instagram.com",
-     "https://www.instagram.com/digitalviagem/",
-     "Digital Viagem ✈️ (@digitalviagem) · Macapá, AP"
+     "www.facebook.com",
+     "https://www.facebook.com/portaltur.br/?locale=pt_BR",
+     "Portal Turismo - Agência de Viagens e Turismo | Macapá AP"
     ],
     [
      9,
-     "www.365brasil.com",
-     "https://www.365brasil.com/macapa/agencias-de-viajes-y-turismo_ca.html",
-     "Agencias de viajes y turismo en Macapá - 365 Brasil"
+     "www.guaraturismo.com.br",
+     "https://www.guaraturismo.com.br/",
+     "Guaratur — Agência de Viagens | Descubra o Amapá em cores"
     ],
     [
      10,
-     "guia.macapa.br",
-     "https://guia.macapa.br/sobre/claratur-viagens-macapa-ap-19335480",
-     "Claratur Viagens em Macapá - AP"
+     "www.instagram.com",
+     "https://www.instagram.com/porocturismo/",
+     "Agencia de Viagens - Amazônia (@porocturismo)"
     ]
    ]
   },
@@ -4969,39 +5017,39 @@
    "top10": [
     [
      1,
-     "www.facebook.com",
-     "https://www.facebook.com/fabturismo/",
-     "FAB Turismo (@fabturismo)"
-    ],
-    [
-     2,
-     "eticaturismo.tur.br",
-     "https://eticaturismo.tur.br/unidades/",
-     "Unidades, endereços e ... - Etica Turismo Viagens e Receptivos"
-    ],
-    [
-     3,
-     "sentinela.ai",
-     "https://sentinela.ai/cnae/7911-2-00-agencias-de-viagens/ap/0605-macapa",
-     "Agências de viagens em Macapá, AP: 158 empresas - Sentinela"
-    ],
-    [
-     4,
      "www.instagram.com",
      "https://www.instagram.com/agenciadeviagemequadorturismo/",
      "Equador Turismo (@agenciadeviagemequadorturismo)"
     ],
     [
-     5,
+     2,
      "www.portalparaviagens.com.br",
      "https://www.portalparaviagens.com.br/",
      "PORTAL TURISMO | AGÊNCIA DE VIAGENS, TURISMO E ..."
     ],
     [
-     6,
+     3,
+     "agencia.macapa.ap.gov.br",
+     "https://agencia.macapa.ap.gov.br/city-tour-panoramico-viva-macapa-saiba-como-vai-funcionar-o-passeio-e-as-rotas-do-onibus-turistico/",
+     "City Tour Panorâmico Viva Macapá: saiba como vai ..."
+    ],
+    [
+     4,
+     "sentinela.ai",
+     "https://sentinela.ai/cnae/7911-2-00-agencias-de-viagens/ap/0605-macapa",
+     "Agências de viagens em Macapá, AP: 158 empresas - Sentinela"
+    ],
+    [
+     5,
      "www.instagram.com",
-     "https://www.instagram.com/macamazonviagens/",
-     "Macamazon Turismo (@macamazonviagens)"
+     "https://www.instagram.com/flytourmacapa/",
+     "Flytour Macapá (@flytourmacapa)"
+    ],
+    [
+     6,
+     "porocturismo.com.br",
+     "https://porocturismo.com.br/",
+     "Poroc Turismo"
     ],
     [
      7,
@@ -5011,21 +5059,21 @@
     ],
     [
      8,
-     "www.turismodobrasil.com",
-     "https://www.turismodobrasil.com/macapa/top-turismo-41492047000105",
-     "Top Turismo (Agência de Turismo em Macapá)"
+     "www.instagram.com",
+     "https://www.instagram.com/reel/DTRT0J3iTR6/",
+     "Tá entregue o Ônibus Citytour Panorâmico \"VIVA MACAPÁ ..."
     ],
     [
      9,
-     "www.instagram.com",
-     "https://www.instagram.com/vaivoandosumauma/",
-     "Agência de Viagens | Macapá (@vaivoandosumauma)"
+     "www.facebook.com",
+     "https://www.facebook.com/equadortur/?locale=pt_BR",
+     "EQUADOR AGÊNCIA DE VIAGENS E TURISMO E ..."
     ],
     [
      10,
-     "www.facebook.com",
-     "https://www.facebook.com/daviagenciadeviagens/?locale=pt_BR",
-     "Davi Agência de Viagens e Turismo | Macapá AP"
+     "www.econodata.com.br",
+     "https://www.econodata.com.br/empresas/ap-macapa/busca-turismo",
+     "Lista de Empresas de Turismo em Macapá, AP em 2026"
     ]
    ]
   },
@@ -5041,56 +5089,56 @@
     [
      2,
      "www.instagram.com",
-     "https://www.instagram.com/sbturviagensturismo/",
-     "SBTUR Viagens & Turismo🚌 (@sbturviagensturismo)"
+     "https://www.instagram.com/cerrado.rupestre/",
+     "Cerrado Rupestre | Agência de Turismo em Palmas/To ..."
     ],
     [
      3,
-     "www.tudodeturismo.com.br",
-     "https://www.tudodeturismo.com.br/agencias-de-turismo-tocantins/",
-     "Agencias de Turismo Tocantins"
-    ],
-    [
-     4,
      "www.turismodobrasil.com",
      "https://www.turismodobrasil.com/palmas/luara-medeiros-turismo-35276444000139",
      "Luara Medeiros Turismo (Agência de Turismo em Palmas)"
     ],
     [
+     4,
+     "www.tudodeturismo.com.br",
+     "https://www.tudodeturismo.com.br/agencias-de-turismo-tocantins/",
+     "Agencias de Turismo Tocantins"
+    ],
+    [
      5,
-     "www.instagram.com",
-     "https://www.instagram.com/tzviagens_gisaborges_to/",
-     "TZ Viagens Gisa Borges TO (@tzviagens_gisaborges_to)"
-    ],
-    [
-     6,
-     "www.econodata.com.br",
-     "https://www.econodata.com.br/empresas/to/agencias-de-viagens-n-7911200",
-     "Lista de Empresas de Agências de Viagens (N-7911-2/00) ..."
-    ],
-    [
-     7,
      "voucherviagemsim.orinter.com.br",
      "https://voucherviagemsim.orinter.com.br/home/tocantins/palmas",
      "Palmas"
     ],
     [
-     8,
+     6,
+     "supertur.com.br",
+     "https://supertur.com.br/turismo/palmas-to/transporte",
+     "Transfer e transporte turístico em Palmas/TO — 17 empresas"
+    ],
+    [
+     7,
      "palmasparapalmasturismo.webnode.page",
      "https://palmasparapalmasturismo.webnode.page/sobre-nos/",
      "Sobre Nós - Palmas Para Palmas Turismo - Webnode"
     ],
     [
+     8,
+     "www.cylex.com.br",
+     "https://www.cylex.com.br/palmas/ag%C3%AAncia-de-viagens/",
+     "Agência de Viagens em Palmas, TO"
+    ],
+    [
      9,
-     "www.instagram.com",
-     "https://www.instagram.com/cerrado.rupestre/",
-     "Cerrado Rupestre | Agência de Turismo em Palmas/To ..."
+     "agenciasdeviagens.tur.br",
+     "https://agenciasdeviagens.tur.br/sobre/top-viagens-e-turismo-palmas-to",
+     "TOP VIAGENS E TURISMO em Palmas - TO - Agências"
     ],
     [
      10,
-     "wanderboat.ai",
-     "https://wanderboat.ai/local-businesses/brazil/regi%C3%A3o-geogr%C3%A1fica-imediata-de-palmas/ag%C3%AAncia-de-viagem-em-palmas---esv-dunas/udOzjwhgQiaMAJm-vONMRA",
-     "Agência de Viagem em Palmas - ESV Dunas in ACSV SO, 41"
+     "guiadeagenciasdeviagens.com.br",
+     "https://guiadeagenciasdeviagens.com.br/to/palmas",
+     "Melhores pacotes de viagens - Palmas - TOcantins"
     ]
    ]
   },
@@ -5099,63 +5147,63 @@
    "top10": [
     [
      1,
-     "www.instagram.com",
-     "https://www.instagram.com/wr.viagens/",
-     "Agência de Viagens em Palmas ✈️ (@wr.viagens)"
+     "www.tocantinstransporte.com.br",
+     "https://www.tocantinstransporte.com.br/",
+     "Tocantins Transporte | ônibus para Palmas"
     ],
     [
      2,
-     "www.waviagens.net",
-     "https://www.waviagens.net/",
-     "WA Viagens – Agência de Viagens em Palmas – TO"
+     "www.instagram.com",
+     "https://www.instagram.com/depalmasturismo/",
+     "De Palmas Turismo RJ (@depalmasturismo)"
     ],
     [
      3,
      "www.instagram.com",
-     "https://www.instagram.com/vanildaviagens/",
-     "Vanilda Viagens - Palmas-TO (@vanildaviagens)"
+     "https://www.instagram.com/reel/DDK31cKPwix/",
+     "EXCURSÃO MORRO DE SÃO PAULO ..."
     ],
     [
      4,
-     "www.tripadvisor.com.br",
-     "https://www.tripadvisor.com.br/ShowUserReviews-g668997-d21179046-r923213129-NATIVOS_JALAPAO-Palmas_State_of_Tocantins.html",
-     "Melhor agência e guia de turismo de Palmas e Jalapão!"
+     "central3.to.gov.br",
+     "https://central3.to.gov.br/arquivo/211079/",
+     "AGÊNCIAS DE TURISMO DO ESTADO DO TOCANTINS ( ..."
     ],
     [
      5,
-     "agenciatrilheirosto.com.br",
-     "https://agenciatrilheirosto.com.br/",
-     "Trilheiros Tocantins | Agência de turismo em Tocantins"
+     "www.turismodobrasil.com",
+     "https://www.turismodobrasil.com/palmas/wr-milhas-e-turismo-50181398000188",
+     "Wr Milhas E Turismo (Agência de Turismo em Palmas)"
     ],
     [
      6,
-     "pmwviagens.com.br",
-     "https://pmwviagens.com.br/",
-     "pmw viagens ltda"
+     "www.tocantinsturismo.com",
+     "https://www.tocantinsturismo.com/",
+     "https://www.tocantinsturismo.com/"
     ],
     [
      7,
-     "agenciasdeviagens.org",
-     "https://agenciasdeviagens.org/pt-br/z/agencias-de-viagens/122417-palmas/",
-     "Descubra as melhores Agências de Viagem em Palmas"
+     "www.viagensecaminhos.com",
+     "https://www.viagensecaminhos.com/palmas-tocantins/",
+     "O que fazer em Palmas, Tocantins"
     ],
     [
      8,
      "www.instagram.com",
-     "https://www.instagram.com/waviagenstur/",
-     "WA Viagens e Tours (@waviagenstur) · Palmas, TO"
+     "https://www.instagram.com/p/C71YVD7ONDG/",
+     "Viagens Johnson Está pensando em ..."
     ],
     [
      9,
-     "portalexpedicoes.com.br",
-     "https://portalexpedicoes.com.br/wp/agenciaturismo/",
-     "Bem-vindo a Portal Expedições , o Paraíso é aqui!"
+     "www.instagram.com",
+     "https://www.instagram.com/palmas_tur/",
+     "Palmas-Tur (@palmas_tur)"
     ],
     [
      10,
-     "portalexpedicoes.com.br",
-     "https://portalexpedicoes.com.br/wp/agenciaturismo/",
-     "Bem-vindo a Portal Expedições , o Paraíso é aqui!"
+     "supertur.com.br",
+     "https://supertur.com.br/agencia/wr-viagens-ltda-palmas-to",
+     "WR VIAGENS — agência — Plano Diretor Norte, Palmas/TO"
     ]
    ]
   }
@@ -5170,7 +5218,7 @@
  "ultimaColeta": {
   "data": "2026-10-22",
   "keywords": 54,
-  "comPosicao": 7,
+  "comPosicao": 10,
   "erros": 0,
   "custoUsd": 0.2511
  }
