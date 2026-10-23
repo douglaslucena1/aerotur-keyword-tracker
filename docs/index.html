@@ -524,9 +524,16 @@
       .join("");
   }
 
+  /** A próxima coleta: toda sexta às 10h UTC (7h de Brasília, mesmo dia do calendário). */
+  function proximaColeta() {
+    const agora = new Date();
+    const alvo = new Date(Date.UTC(agora.getUTCFullYear(), agora.getUTCMonth(), agora.getUTCDate(), 10));
+    while (alvo.getUTCDay() !== 5 || alvo <= agora) alvo.setUTCDate(alvo.getUTCDate() + 1);
+    return alvo;
+  }
+
   function desenharSelos() {
-    const proxima = new Date();
-    proxima.setDate(proxima.getDate() + ((5 - proxima.getDay() + 7) % 7 || 7));
+    const proxima = proximaColeta();
     const selos = [];
     if (dados) {
       const ultima = dados.coletas[dados.coletas.length - 1];
