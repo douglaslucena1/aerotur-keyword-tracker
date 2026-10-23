@@ -32,6 +32,10 @@
     --sobe: #0f7b4d;
     --desce: #b42318;
     --sombra: 0 1px 2px rgba(15, 27, 45, .05), 0 4px 16px rgba(15, 27, 45, .05);
+    /* séries do gráfico de leads (validadas contra o fundo do cartão) */
+    --serie-1: #2a78d6;
+    --serie-2: #eb6834;
+    --serie-contexto: #898781;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -55,6 +59,9 @@
       --sobe: #4ad18f;
       --desce: #f2836f;
       --sombra: 0 1px 2px rgba(0, 0, 0, .3);
+      --serie-1: #3987e5;
+      --serie-2: #d95926;
+      --serie-contexto: #898781;
     }
   }
   * { box-sizing: border-box; }
@@ -90,7 +97,8 @@
   .indicador .rotulo { color: var(--suave); font-size: 12.5px; font-weight: 500; }
   .indicador .valor { font-size: 30px; font-weight: 800; margin: 4px 0 2px; letter-spacing: -.02em; }
   .indicador .valor small { font-size: 14px; color: var(--suave); font-weight: 600; }
-  .indicador .partes { display: flex; gap: 12px; font-size: 12.5px; color: var(--suave); }
+  .indicador .partes { display: flex; flex-wrap: wrap; gap: 2px 12px; font-size: 12.5px; color: var(--suave); }
+  .indicador .partes span { white-space: nowrap; }
   .indicador .partes b { color: var(--texto); font-weight: 600; }
   .variacao { font-size: 12px; font-weight: 600; margin-left: 6px; }
   .variacao.sobe { color: var(--sobe); }
@@ -177,10 +185,64 @@
   footer b { color: var(--texto); }
 
   .outra-curta { display: none; font-size: 11px; font-weight: 600; color: var(--top20); background: var(--top20-fundo); border-radius: 999px; padding: 1px 8px; }
+
+  /* Atalhos do topo */
+  .atalhos { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .atalhos a { color: #fff; text-decoration: none; font-weight: 600; font-size: 13px; padding: 7px 14px; border-radius: 10px; background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .24); }
+  .atalhos a:hover { background: rgba(255, 255, 255, .18); }
+  .atalhos a:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+
+  /* Leads do WhatsApp */
+  .bloco { margin-top: 44px; scroll-margin-top: 16px; }
+  #posicoes { scroll-margin-top: 16px; }
+  .bloco-topo { display: flex; flex-wrap: wrap; gap: 14px 24px; align-items: flex-end; justify-content: space-between; margin-bottom: 14px; }
+  .bloco-topo h2 { font-size: 22px; margin: 0; font-weight: 800; letter-spacing: -.01em; }
+  .bloco-topo p { margin: 4px 0 0; color: var(--suave); max-width: 620px; }
+  .indicadores.sem-sobreposicao { margin-top: 0; }
+  .indicador .comparacao { font-size: 12px; color: var(--suave); margin-top: 6px; }
+  .painel-corpo { padding: 14px 18px 18px; }
+  .legenda-grafico { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 12.5px; color: var(--suave); }
+  .legenda-grafico span { display: inline-flex; align-items: center; gap: 6px; }
+  .legenda-grafico i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+  .grafico-semanas { position: relative; height: 260px; }
+  details.tabela-semanas { margin-top: 12px; font-size: 13px; }
+  details.tabela-semanas summary { cursor: pointer; color: var(--suave); font-weight: 600; font-size: 12.5px; }
+  table.numeros-semanas { width: 100%; border-collapse: collapse; margin-top: 8px; }
+  .numeros-semanas th, .numeros-semanas td { text-align: right; padding: 5px 8px; border-bottom: 1px solid var(--linha); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .numeros-semanas th { color: var(--suave); font-weight: 600; font-size: 12px; }
+  .numeros-semanas th:first-child, .numeros-semanas td:first-child { text-align: left; }
+  .duas-colunas { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: 18px; align-items: start; }
+  table.paginas-leads { width: 100%; border-collapse: collapse; }
+  .paginas-leads th { text-align: left; font-size: 11.5px; letter-spacing: .05em; text-transform: uppercase; color: var(--suave); font-weight: 600; padding: 9px 18px; background: var(--fundo); border-bottom: 1px solid var(--borda); }
+  .paginas-leads td { padding: 8px 18px; border-bottom: 1px solid var(--linha); vertical-align: middle; }
+  .paginas-leads th.n, .paginas-leads td.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .paginas-leads td.n { font-weight: 600; }
+  .paginas-leads td.n.suave { color: var(--suave); font-weight: 500; }
+  .caminho { font-size: 13px; overflow-wrap: anywhere; }
+  .caminho a { color: var(--texto); text-decoration: none; }
+  .caminho a:hover { color: var(--marinho); text-decoration: underline; }
+  .tipo { display: inline-block; margin-top: 3px; font-size: 11px; font-weight: 600; border-radius: 999px; padding: 1px 8px; white-space: nowrap; background: var(--fundo); color: var(--suave); border: 1px solid var(--borda); }
+  .tipo.seo { background: var(--marinho-claro); color: var(--marinho); border-color: transparent; }
+  .tipo.blog { color: var(--texto); }
+  .mais { display: block; width: 100%; border: 0; border-top: 1px solid var(--borda); background: transparent; color: var(--marinho); font: inherit; font-weight: 600; font-size: 13px; padding: 11px; cursor: pointer; }
+  .mais:hover { background: var(--fundo); }
+  .subtitulo { font-size: 11.5px; text-transform: uppercase; letter-spacing: .05em; color: var(--suave); font-weight: 600; margin: 20px 0 10px; }
+  .subtitulo:first-child { margin-top: 2px; }
+  .barras { list-style: none; margin: 0; padding: 0; display: grid; gap: 9px; }
+  .barras li { display: grid; grid-template-columns: minmax(96px, 40%) minmax(0, 1fr); gap: 10px; align-items: center; font-size: 13px; }
+  .barras .nome { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .barras .trilho { display: flex; align-items: center; gap: 8px; min-width: 0; }
+  .barras .barra { height: 10px; background: var(--serie-1); border-radius: 0 4px 4px 0; min-width: 2px; flex: 0 0 auto; }
+  .barras .num { font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .barras .num small { color: var(--suave); font-weight: 500; margin-left: 4px; font-size: 12px; }
+  .leads-vazio { background: var(--cartao); border: 1px dashed var(--borda); border-radius: 14px; padding: 28px; text-align: center; color: var(--suave); }
+  .rotulo-curto { display: none; }
+
   @media (max-width: 900px) {
     .indicadores { grid-template-columns: repeat(2, 1fr); }
     .celula .pagina-certa { display: none; }
     .outra-curta { display: inline-block; }
+    .duas-colunas { grid-template-columns: minmax(0, 1fr); gap: 0; }
   }
   @media (max-width: 640px) {
     h1 { font-size: 24px; }
@@ -196,6 +258,13 @@
     .celula { margin: 0; padding: 4px 0; gap: 8px; flex-wrap: wrap; }
     .celula .spark { display: none; }
     .resumo { grid-template-columns: repeat(3, 1fr); }
+    .bloco-topo h2 { font-size: 19px; }
+    .bloco-topo .segmentos { width: 100%; }
+    .bloco-topo .segmentos button { flex: 1; padding: 6px 4px; }
+    .paginas-leads th, .paginas-leads td { padding: 8px 10px; }
+    .rotulo-longo { display: none; }
+    .rotulo-curto { display: inline; }
+    .grafico-semanas { height: 220px; }
   }
 </style>
 </head>
@@ -203,14 +272,18 @@
 <header class="topo">
   <div class="pagina">
     <div class="marca"><span class="ponto"></span>Aerotur · Radar de SEO</div>
-    <h1>Posição no Google por capital</h1>
-    <p class="sub">As buscas "agência de viagens corporativas em…" e "agência de viagens em…" nas 27 capitais, com a página da Aerotur que aparece em cada uma.</p>
+    <h1>Posição no Google e leads do WhatsApp</h1>
+    <p class="sub">As buscas "agência de viagens corporativas em…" e "agência de viagens em…" nas 27 capitais, a página da Aerotur que aparece em cada uma e os cliques no WhatsApp que o site gera.</p>
     <div class="selos" id="selos"></div>
+    <nav class="atalhos" aria-label="Seções">
+      <a href="#posicoes">Posições no Google</a>
+      <a href="#leads">Leads do WhatsApp</a>
+    </nav>
   </div>
 </header>
 
 <main class="pagina">
-  <section class="indicadores" id="indicadores" aria-label="Resumo da semana"></section>
+  <section class="indicadores" id="posicoes" aria-label="Resumo das posições"></section>
 
   <section class="painel">
     <div class="painel-topo">
@@ -238,18 +311,38 @@
     </table>
   </section>
 
+  <section class="bloco" id="leads" aria-labelledby="leads-titulo">
+    <div class="bloco-topo">
+      <div>
+        <h2 id="leads-titulo">Leads do WhatsApp</h2>
+        <p>Cliques nos links do WhatsApp do site: botões das páginas, botão flutuante e banners do blog.</p>
+      </div>
+      <div class="segmentos" role="group" aria-label="Período" id="periodos">
+        <button type="button" data-dias="7" aria-pressed="false">7 dias</button>
+        <button type="button" data-dias="28" aria-pressed="true">28 dias</button>
+        <button type="button" data-dias="90" aria-pressed="false">90 dias</button>
+        <button type="button" data-dias="365" aria-pressed="false">12 meses</button>
+      </div>
+    </div>
+    <div id="leads-conteudo">
+      <div class="leads-vazio">Carregando…</div>
+    </div>
+  </section>
+
   <details class="leitura">
     <summary>Como ler este radar</summary>
     <ul>
       <li><b>Posição</b>: o lugar da Aerotur entre os resultados orgânicos do Google Brasil (computador), sem anúncios. "—" quer dizer fora dos 100 primeiros.</li>
       <li><b>Variação</b>: comparada à coleta anterior. Verde subiu, vermelho caiu, "novo" entrou no top 100 e "saiu" deixou o top 100.</li>
       <li><b>Página</b>: qual página da Aerotur aparece. Quando não é a página da capital, ela vem em destaque: o Google está mostrando outra página no lugar da certa.</li>
-      <li>A coleta é automática, toda sexta-feira às 7h (Brasília), pelo DataForSEO.</li>
+      <li><b>Leads do WhatsApp</b>: cada clique num link do WhatsApp do site, medido pelo Google Analytics 4. Nem todo clique vira conversa, mas é o sinal de contato que o site registra.</li>
+      <li>Nos leads, a <b>página</b> é onde a pessoa estava quando clicou. <b>Busca orgânica</b> quer dizer que a visita começou numa busca no Google ou em outro buscador, sem anúncio.</li>
+      <li>Tudo é atualizado automaticamente toda sexta-feira às 7h (Brasília): as posições pelo DataForSEO e os cliques pelo Google Analytics, até o dia anterior.</li>
     </ul>
   </details>
 
   <footer>
-    Dados: <b>DataForSEO</b> · Google Brasil, computador, top 100 · Feito pela <b>Naper AI</b>
+    Dados: <b>DataForSEO</b> (Google Brasil, computador, top 100) e <b>Google Analytics 4</b> · Feito pela <b>Naper AI</b>
   </footer>
 </main>
 
@@ -411,7 +504,7 @@
       { rotulo: "No top 100", filtro: (kw, u) => !!u.pos },
       { rotulo: "Com a página certa", filtro: (kw, u) => paginaCerta(kw, u.url) },
     ];
-    el("indicadores").innerHTML = cartoes
+    el("posicoes").innerHTML = cartoes
       .map((c) => {
         const agora = contar(c.filtro, "atual");
         const soma = agora.corporativo + agora.lazer;
@@ -432,16 +525,17 @@
   }
 
   function desenharSelos() {
-    const ultima = dados.coletas[dados.coletas.length - 1];
     const proxima = new Date();
     proxima.setDate(proxima.getDate() + ((5 - proxima.getDay() + 7) % 7 || 7));
-    el("selos").innerHTML = [
-      ultima ? `Última coleta: ${dataBr(ultima.data)}` : "Sem coletas ainda",
-      `Próxima: sexta, ${dataBr(proxima.toISOString(), false)}`,
-      `${dados.keywords.length} buscas · ${dados.coletas.length} coletas`,
-    ]
-      .map((t) => `<span class="selo">${esc(t)}</span>`)
-      .join("");
+    const selos = [];
+    if (dados) {
+      const ultima = dados.coletas[dados.coletas.length - 1];
+      selos.push(ultima ? `Última coleta: ${dataBr(ultima.data)}` : "Sem coletas ainda");
+    }
+    selos.push(`Próxima: sexta, ${dataBr(proxima.toISOString(), false)}`);
+    if (dados) selos.push(`${dados.keywords.length} buscas · ${dados.coletas.length} coletas`);
+    if (leads) selos.push(`Leads até ${dataBr(leads.periodo.fim)}`);
+    el("selos").innerHTML = selos.map((t) => `<span class="selo">${esc(t)}</span>`).join("");
   }
 
   function abrir(id) {
@@ -467,6 +561,7 @@
       <h4>Página da Aerotur</h4>
       <div class="url">${atual?.url ? `<a href="${esc(atual.url)}" target="_blank" rel="noopener">${esc(atual.url)}</a>` : "Nenhuma página da Aerotur no top 100."}</div>
       ${atual?.pos ? `<div class="aviso ${certa ? "ok" : ""}">${certa ? "É a página desta capital." : `Não é a página desta capital. A página certa é <a href="${esc(kw.urlAlvo)}" target="_blank" rel="noopener">${esc(kw.urlAlvo.replace("https://", ""))}</a>.`}</div>` : `<div class="aviso">A página desta capital é <a href="${esc(kw.urlAlvo)}" target="_blank" rel="noopener">${esc(kw.urlAlvo.replace("https://", ""))}</a>.</div>`}
+      ${leadsDaPagina(kw.urlAlvo)}
       ${outras.length ? `<h4>Outras páginas da Aerotur no top 100</h4><ul class="nossas">${outras.map(([p, url]) => `<li class="url"><b class="numeros">${p}º</b> <a href="${esc(url)}" target="_blank" rel="noopener">${esc(url.replace(/^https?:\/\/(www\.)?/, ""))}</a></li>`).join("")}</ul>` : ""}
       <h4>Top 10 do Google${serp ? ` em ${dataBr(serp.data)}` : ""}</h4>
       ${serp && serp.top10.length ? `<table class="serp"><tbody>${serp.top10
@@ -539,6 +634,331 @@
     if (e.key === "Escape") fechar();
   });
 
+  // ─── Leads do WhatsApp (Google Analytics 4) ────────────────────────────────
+  // leads.json: linhas = [dia, página, canal, setor, forma, cliques], com os índices apontando para as listas do arquivo.
+  const GRUPOS = [
+    { id: "seo", rotulo: "Páginas de capital", cor: "--serie-1" },
+    { id: "blog", rotulo: "Blog", cor: "--serie-2" },
+    { id: "resto", rotulo: "Resto do site", cor: "--serie-contexto" },
+  ];
+  const TIPOS = { corporativo: "Capital · corporativo", lazer: "Capital · lazer", hub: "Hub de capitais", blog: "Blog", destino: "Destino", pacote: "Pacote", home: "Página inicial", outra: "Página do site" };
+  const FORMAS_ROTULO = { botao: "Botão da página", flutuante: "Botão flutuante", banner: "Banner do blog", outro: "Link no conteúdo" };
+  const CANAIS = {
+    "Organic Search": "Busca orgânica",
+    Direct: "Direto",
+    Referral: "Outros sites",
+    "Organic Social": "Redes sociais",
+    "Paid Search": "Anúncio no Google",
+    "Paid Social": "Anúncio em rede social",
+    "Paid Video": "Anúncio em vídeo",
+    "Paid Shopping": "Anúncio de shopping",
+    "Paid Other": "Outros anúncios",
+    "Cross-network": "Campanha multirrede",
+    Display: "Display",
+    Email: "E-mail",
+    SMS: "SMS",
+    Affiliates: "Afiliados",
+    "Organic Video": "Vídeo",
+    "Organic Shopping": "Shopping",
+    "Mobile Push Notifications": "Notificação",
+    "AI Assistant": "Assistentes de IA",
+    Unassigned: "Não identificado",
+  };
+  const PERIODOS = { 7: "7 dias", 28: "28 dias", 90: "90 dias", 365: "12 meses" };
+  const estadoLeads = { dias: 28, todas: false };
+  let leads = null;
+  let graficoLeads = null;
+
+  const fmt = (n) => Number(n).toLocaleString("pt-BR");
+  const pct = (parte, todo) => (todo ? `${Math.round((parte / todo) * 100)}%` : "0%");
+  const somarDias = (iso, n) => {
+    const d = new Date(`${iso}T12:00:00Z`);
+    d.setUTCDate(d.getUTCDate() + n);
+    return d.toISOString().slice(0, 10);
+  };
+
+  function prepararLeads(bruto) {
+    const grupo = bruto.paginas.map((p) => (["corporativo", "lazer", "hub"].includes(p.tipo) ? "seo" : p.tipo === "blog" ? "blog" : "resto"));
+    const familia = bruto.paginas.map((p) => (p.tipo === "hub" ? p.familia : p.tipo));
+    return { ...bruto, grupo, familia, organico: bruto.canais.indexOf("Organic Search"), banner: bruto.formas.indexOf("banner") };
+  }
+
+  /** Janela de `dias` dias terminando no último dia com dados; `voltar` = quantas janelas para trás. */
+  function janela(dias, voltar = 0) {
+    const fim = somarDias(leads.periodo.fim, -voltar * dias);
+    return { ini: somarDias(fim, -(dias - 1)), fim };
+  }
+
+  function somar(j, filtro) {
+    let s = 0;
+    for (const l of leads.linhas) if (l[0] >= j.ini && l[0] <= j.fim && (!filtro || filtro(l))) s += l[5];
+    return s;
+  }
+
+  /** Total por chave (índice da coluna da linha) dentro da janela, em ordem decrescente. */
+  function agrupar(j, coluna, filtro) {
+    const mapa = new Map();
+    for (const l of leads.linhas) {
+      if (l[0] < j.ini || l[0] > j.fim || (filtro && !filtro(l))) continue;
+      mapa.set(l[coluna], (mapa.get(l[coluna]) || 0) + l[5]);
+    }
+    return [...mapa.entries()].sort((a, b) => b[1] - a[1]);
+  }
+
+  function leadsIndicadores() {
+    const dias = estadoLeads.dias;
+    const atual = janela(dias);
+    const antes = janela(dias, 1);
+    const comparavel = antes.ini >= leads.periodo.inicio;
+    const total = somar(atual);
+    const cartoes = [
+      { rotulo: "Cliques no WhatsApp", filtro: null, partes: () => "no site inteiro" },
+      {
+        rotulo: "Nas páginas de capital",
+        filtro: (l) => leads.grupo[l[1]] === "seo",
+        partes: () =>
+          `<span>Corporativo <b>${fmt(somar(atual, (l) => leads.grupo[l[1]] === "seo" && leads.familia[l[1]] === "corporativo"))}</b></span><span>Lazer <b>${fmt(somar(atual, (l) => leads.grupo[l[1]] === "seo" && leads.familia[l[1]] === "lazer"))}</b></span>`,
+      },
+      {
+        rotulo: "No blog",
+        filtro: (l) => leads.grupo[l[1]] === "blog",
+        partes: () =>
+          `<span>Banners <b>${fmt(somar(atual, (l) => leads.grupo[l[1]] === "blog" && l[4] === leads.banner))}</b></span><span>Outros <b>${fmt(somar(atual, (l) => leads.grupo[l[1]] === "blog" && l[4] !== leads.banner))}</b></span>`,
+      },
+      { rotulo: "Pela busca orgânica", filtro: (l) => l[2] === leads.organico, partes: (v) => `<span><b>${pct(v, total)}</b> de todos os cliques</span>` },
+    ];
+    return `<div class="indicadores sem-sobreposicao">${cartoes
+      .map((c) => {
+        const v = somar(atual, c.filtro);
+        const a = somar(antes, c.filtro);
+        let variacaoHtml = "";
+        let comparacao = "";
+        if (comparavel) {
+          comparacao = `${fmt(a)} nos ${PERIODOS[dias]} anteriores`;
+          if (a > 0 && v !== a) {
+            const d = Math.round(((v - a) / a) * 100);
+            if (d) variacaoHtml = `<span class="variacao ${d > 0 ? "sobe" : "desce"}">${d > 0 ? "+" : ""}${d}%</span>`;
+          }
+        }
+        return `<div class="indicador">
+          <div class="rotulo">${c.rotulo}</div>
+          <div class="valor">${fmt(v)}${variacaoHtml}</div>
+          <div class="partes">${c.partes(v)}</div>
+          ${comparacao ? `<div class="comparacao">${comparacao}</div>` : ""}
+        </div>`;
+      })
+      .join("")}</div>`;
+  }
+
+  /** Semanas de 7 dias terminando no último dia com dados (a mais antiga primeiro). */
+  function semanas() {
+    const n = Math.max(12, Math.ceil(estadoLeads.dias / 7));
+    const lista = [];
+    for (let b = n - 1; b >= 0; b--) {
+      const fim = somarDias(leads.periodo.fim, -7 * b);
+      if (fim >= leads.periodo.inicio) lista.push({ ini: somarDias(fim, -6), fim });
+    }
+    return lista;
+  }
+
+  function valoresPorSemana(lista) {
+    const fimMs = Date.parse(`${leads.periodo.fim}T12:00:00Z`);
+    const valores = Object.fromEntries(GRUPOS.map((g) => [g.id, new Array(lista.length).fill(0)]));
+    for (const l of leads.linhas) {
+      const dif = Math.round((fimMs - Date.parse(`${l[0]}T12:00:00Z`)) / 86400000);
+      const b = lista.length - 1 - Math.floor(dif / 7);
+      if (dif < 0 || b < 0) continue;
+      valores[leads.grupo[l[1]]][b] += l[5];
+    }
+    return valores;
+  }
+
+  function leadsGrafico(lista, valores) {
+    const linhasTabela = lista
+      .map((s, i) => ({ s, i }))
+      .reverse()
+      .map(({ s, i }) => {
+        const soma = GRUPOS.reduce((t, g) => t + valores[g.id][i], 0);
+        return `<tr><td>${dataBr(s.ini, false)} a ${dataBr(s.fim, false)}</td>${GRUPOS.map((g) => `<td>${fmt(valores[g.id][i])}</td>`).join("")}<td><b>${fmt(soma)}</b></td></tr>`;
+      })
+      .join("");
+    return `<div class="painel">
+      <div class="painel-topo">
+        <h2>Cliques por semana</h2>
+        <div class="legenda-grafico">${GRUPOS.map((g) => `<span><i style="background:var(${g.cor})"></i>${g.rotulo}</span>`).join("")}</div>
+      </div>
+      <div class="painel-corpo">
+        <div class="grafico-semanas"><canvas id="canvas-leads" role="img" aria-label="Cliques no WhatsApp por semana, por tipo de página"></canvas></div>
+        <details class="tabela-semanas">
+          <summary>Ver os números por semana</summary>
+          <table class="numeros-semanas"><thead><tr><th>Semana</th>${GRUPOS.map((g) => `<th>${g.rotulo}</th>`).join("")}<th>Total</th></tr></thead><tbody>${linhasTabela}</tbody></table>
+        </details>
+      </div>
+    </div>`;
+  }
+
+  function desenharGraficoLeads(lista, valores) {
+    if (graficoLeads) {
+      graficoLeads.destroy();
+      graficoLeads = null;
+    }
+    const canvas = document.getElementById("canvas-leads");
+    if (!canvas || !window.Chart) return;
+    const estilo = getComputedStyle(document.documentElement);
+    const cor = (nome) => estilo.getPropertyValue(nome).trim();
+    const superficie = cor("--cartao");
+    // Só o segmento de cima de cada coluna tem as pontas arredondadas.
+    const noTopo = (ctx) => {
+      const { chart, dataIndex, datasetIndex } = ctx;
+      for (let k = chart.data.datasets.length - 1; k >= 0; k--) {
+        if (chart.isDatasetVisible(k) && chart.data.datasets[k].data[dataIndex] > 0) return k === datasetIndex;
+      }
+      return false;
+    };
+    graficoLeads = new Chart(canvas, {
+      type: "bar",
+      data: {
+        labels: lista.map((s) => dataBr(s.ini, false)),
+        datasets: GRUPOS.map((g) => ({
+          label: g.rotulo,
+          data: valores[g.id],
+          backgroundColor: cor(g.cor),
+          // a borda de cima, na cor do fundo, faz o respiro de 2px entre os segmentos
+          borderColor: superficie,
+          borderWidth: { top: 2, right: 0, bottom: 0, left: 0 },
+          borderSkipped: false,
+          borderRadius: (ctx) => (noTopo(ctx) ? { topLeft: 4, topRight: 4, bottomLeft: 0, bottomRight: 0 } : 0),
+          maxBarThickness: 24,
+          categoryPercentage: 0.8,
+          barPercentage: 0.9,
+        })),
+      },
+      options: {
+        maintainAspectRatio: false,
+        interaction: { mode: "index", intersect: false },
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            usePointStyle: true,
+            callbacks: {
+              title: (itens) => {
+                const s = lista[itens[0].dataIndex];
+                return `${dataBr(s.ini, false)} a ${dataBr(s.fim, false)}`;
+              },
+              label: (c) => ` ${fmt(c.parsed.y)}  ${c.dataset.label}`,
+              labelPointStyle: () => ({ pointStyle: "line", rotation: 0 }),
+              labelColor: (c) => ({ borderColor: c.dataset.backgroundColor, backgroundColor: c.dataset.backgroundColor, borderWidth: 3 }),
+              footer: (itens) => `Total: ${fmt(itens.reduce((t, i) => t + i.parsed.y, 0))}`,
+            },
+          },
+        },
+        scales: {
+          x: { stacked: true, grid: { display: false }, border: { color: cor("--borda") }, ticks: { color: cor("--suave"), maxRotation: 0, autoSkip: true, maxTicksLimit: 9 } },
+          y: { stacked: true, beginAtZero: true, border: { display: false }, grid: { color: cor("--linha") }, ticks: { color: cor("--suave"), precision: 0, maxTicksLimit: 5 } },
+        },
+      },
+    });
+  }
+
+  function leadsPaginas(j) {
+    const organicoPorPagina = new Map(agrupar(j, 1, (l) => l[2] === leads.organico));
+    const todas = agrupar(j, 1);
+    const visiveis = estadoLeads.todas ? todas : todas.slice(0, 12);
+    const linhas = visiveis
+      .map(([i, cliques]) => {
+        const p = leads.paginas[i];
+        const grupo = leads.grupo[i];
+        const caminho = p.caminho.startsWith("/") ? `<a href="https://aerotur.com.br${esc(p.caminho)}" target="_blank" rel="noopener">${esc(p.caminho)}</a>` : esc(p.caminho);
+        return `<tr><td><div class="caminho">${caminho}</div><span class="tipo ${grupo}">${esc(TIPOS[p.tipo] || p.tipo)}</span></td><td class="n">${fmt(cliques)}</td><td class="n suave">${fmt(organicoPorPagina.get(i) || 0)}</td></tr>`;
+      })
+      .join("");
+    return `<div class="painel">
+      <div class="painel-topo"><h2>Páginas que mais geram cliques</h2></div>
+      <table class="paginas-leads">
+        <thead><tr><th>Página</th><th class="n">Cliques</th><th class="n"><span class="rotulo-longo">Da busca orgânica</span><span class="rotulo-curto">Orgânica</span></th></tr></thead>
+        <tbody>${linhas || '<tr><td class="vazio" colspan="3">Nenhum clique no período.</td></tr>'}</tbody>
+      </table>
+      ${todas.length > 12 ? `<button class="mais" type="button" id="leads-mais">${estadoLeads.todas ? "Mostrar só as 12 primeiras" : `Mostrar todas as ${fmt(todas.length)} páginas`}</button>` : ""}
+    </div>`;
+  }
+
+  function barras(itens, total) {
+    const maximo = Math.max(1, ...itens.map(([, v]) => v));
+    return `<ul class="barras">${itens
+      .map(
+        ([nome, v]) =>
+          `<li><span class="nome" title="${esc(nome)}">${esc(nome)}</span><span class="trilho"><span class="barra" style="width:${Math.max(2, Math.round((v / maximo) * 100) * 0.7)}%"></span><span class="num">${fmt(v)}<small>${pct(v, total)}</small></span></span></li>`,
+      )
+      .join("")}</ul>`;
+  }
+
+  /** Junta o que passar de `limite` itens em "Outros". */
+  function dobrar(itens, limite) {
+    if (itens.length <= limite) return itens;
+    const resto = itens.slice(limite - 1).reduce((t, [, v]) => t + v, 0);
+    return [...itens.slice(0, limite - 1), ["Outros", resto]];
+  }
+
+  function leadsDestinos(j) {
+    const total = somar(j);
+    const setores = dobrar(agrupar(j, 3).map(([i, v]) => [leads.setores[i], v]), 8);
+    const formas = agrupar(j, 4).map(([i, v]) => [FORMAS_ROTULO[leads.formas[i]] || leads.formas[i], v]);
+    const canais = dobrar(agrupar(j, 2).map(([i, v]) => [CANAIS[leads.canais[i]] || leads.canais[i], v]), 6);
+    return `<div class="painel">
+      <div class="painel-topo"><h2>Para onde vão e de onde vêm</h2></div>
+      <div class="painel-corpo">
+        <div class="subtitulo">Setor do WhatsApp</div>${total ? barras(setores, total) : '<p class="sem-historico">Nenhum clique no período.</p>'}
+        <div class="subtitulo">Onde a pessoa clicou</div>${total ? barras(formas, total) : ""}
+        <div class="subtitulo">De onde veio a visita</div>${total ? barras(canais, total) : ""}
+      </div>
+    </div>`;
+  }
+
+  function desenharLeads() {
+    if (!leads) return;
+    const j = janela(estadoLeads.dias);
+    const lista = semanas();
+    const valores = valoresPorSemana(lista);
+    el("leads-conteudo").innerHTML = `
+      ${leadsIndicadores()}
+      ${leadsGrafico(lista, valores)}
+      <div class="duas-colunas">${leadsPaginas(j)}${leadsDestinos(j)}</div>`;
+    desenharGraficoLeads(lista, valores);
+  }
+
+  /** Bloco da gaveta: os cliques no WhatsApp na página-alvo de uma keyword. */
+  function leadsDaPagina(url) {
+    if (!leads) return "";
+    let caminho = "";
+    try {
+      caminho = new URL(url).pathname.toLowerCase();
+    } catch {
+      return "";
+    }
+    const i = leads.paginas.findIndex((p) => p.caminho === caminho);
+    const contar = (j, filtro) => (i < 0 ? 0 : somar(j, (l) => l[1] === i && (!filtro || filtro(l))));
+    const j28 = janela(28);
+    return `<h4>Cliques no WhatsApp nesta página</h4>
+      <div class="resumo">
+        <div><small>Últimos 28 dias</small><b class="numeros">${fmt(contar(j28))}</b></div>
+        <div><small>Da busca orgânica</small><b class="numeros">${fmt(contar(j28, (l) => l[2] === leads.organico))}</b></div>
+        <div><small>Últimos 12 meses</small><b class="numeros">${fmt(contar(janela(365)))}</b></div>
+      </div>`;
+  }
+
+  el("periodos").addEventListener("click", (e) => {
+    const b = e.target.closest("button[data-dias]");
+    if (!b) return;
+    estadoLeads.dias = Number(b.dataset.dias);
+    el("periodos").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    desenharLeads();
+  });
+  el("leads-conteudo").addEventListener("click", (e) => {
+    if (!e.target.closest("#leads-mais")) return;
+    estadoLeads.todas = !estadoLeads.todas;
+    desenharLeads();
+  });
+
   fetch("data/rankings.json", { cache: "no-store" })
     .then((r) => r.json())
     .then((bruto) => {
@@ -549,6 +969,18 @@
     })
     .catch(() => {
       el("linhas").innerHTML = '<tr><td class="vazio" colspan="3">Não foi possível carregar os dados.</td></tr>';
+    });
+
+  fetch("data/leads.json", { cache: "no-store" })
+    .then((r) => (r.ok ? r.json() : null))
+    .then((bruto) => {
+      if (!bruto) throw new Error("sem leads");
+      leads = prepararLeads(bruto);
+      desenharSelos();
+      desenharLeads();
+    })
+    .catch(() => {
+      el("leads-conteudo").innerHTML = '<div class="leads-vazio">Os cliques no WhatsApp aparecem aqui depois da primeira leitura do Google Analytics.</div>';
     });
 })();
 </script>
