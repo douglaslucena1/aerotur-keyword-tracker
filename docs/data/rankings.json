@@ -1,7 +1,7 @@
 {
  "versao": 2,
  "dominio": "aerotur.com.br",
- "atualizadoEm": "2026-10-23T15:23:12.397Z",
+ "atualizadoEm": "2026-10-30T16:30:28.354Z",
  "keywords": [
   {
    "id": "corporativo-fortaleza",
@@ -3029,6 +3029,879 @@
       null,
       null
      ]
+    }
+   },
+   "amostras": 3
+  },
+  {
+   "data": "2026-10-30",
+   "local": "capital",
+   "resultados": {
+    "corporativo-fortaleza": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-fortaleza": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-salvador": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-salvador": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-recife": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-recife": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-natal": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-natal": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-maceio": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-maceio": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-joao-pessoa": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-joao-pessoa": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-aracaju": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-aracaju": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-teresina": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-teresina": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-sao-luis": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-sao-luis": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-sao-paulo": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-sao-paulo": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-rio-de-janeiro": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-rio-de-janeiro": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-belo-horizonte": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-belo-horizonte": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-vitoria": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-vitoria": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-curitiba": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-curitiba": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-porto-alegre": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-porto-alegre": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-florianopolis": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-florianopolis": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-brasilia": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-brasilia": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-goiania": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-goiania": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-cuiaba": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-cuiaba": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-campo-grande": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-campo-grande": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-manaus": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-manaus": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-belem": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-belem": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-porto-velho": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-porto-velho": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-rio-branco": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-rio-branco": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-boa-vista": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-boa-vista": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-macapa": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-macapa": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-palmas": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-palmas": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    }
+   },
+   "celular": {
+    "corporativo-fortaleza": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-fortaleza": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-salvador": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-salvador": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-recife": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-recife": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-natal": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-natal": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-maceio": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-maceio": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-joao-pessoa": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-joao-pessoa": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-aracaju": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-aracaju": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-teresina": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-teresina": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-sao-luis": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-sao-luis": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-sao-paulo": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-sao-paulo": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-rio-de-janeiro": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-rio-de-janeiro": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-belo-horizonte": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-belo-horizonte": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-vitoria": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-vitoria": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-curitiba": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-curitiba": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-porto-alegre": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-porto-alegre": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-florianopolis": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-florianopolis": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-brasilia": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-brasilia": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-goiania": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-goiania": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-cuiaba": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-cuiaba": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-campo-grande": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-campo-grande": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-manaus": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-manaus": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-belem": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-belem": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-porto-velho": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-porto-velho": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-rio-branco": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-rio-branco": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-boa-vista": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-boa-vista": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-macapa": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-macapa": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "corporativo-palmas": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
+    },
+    "lazer-palmas": {
+     "pos": null,
+     "url": null,
+     "total": null,
+     "aerotur": [],
+     "amostras": [],
+     "erro": "sem resposta"
     }
    },
    "amostras": 3
@@ -6558,21 +7431,21 @@
   "profundidade": 50
  },
  "ultimaColeta": {
-  "data": "2026-10-23",
+  "data": "2026-10-30",
   "keywords": 54,
   "buscas": 324,
   "amostras": 3,
   "porDispositivo": {
    "desktop": {
-    "comPosicao": 15,
-    "erros": 0
+    "comPosicao": 0,
+    "erros": 54
    },
    "mobile": {
-    "comPosicao": 10,
-    "erros": 0
+    "comPosicao": 0,
+    "erros": 54
    }
   },
-  "custoUsd": 0.7776
+  "custoUsd": 0
  },
  "serpCelular": {
   "corporativo-fortaleza": {
